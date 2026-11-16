@@ -1,12 +1,20 @@
 # SewCraft — guided sewing projects (MVP)
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/benamotz/sewcraft)
+
+**Work on it with Claude Code:** clone the repo and open the folder in Claude Code (desktop app, CLI or claude.ai/code). `CLAUDE.md` gives Claude the architecture, commands, content rules and gotchas.
+
+```bash
+git clone https://github.com/benamotz/sewcraft.git && cd sewcraft && npm install && npm run dev
+```
+
 **Discover → Prepare → Measure → Cut → Sew → Finish.** Next.js 15 (App Router) · TypeScript · Tailwind v4 · SVG diagrams generated from pattern data.
 
 ```bash
 npm install
 npm run dev          # http://localhost:3000
 npm run validate     # content rules (§17) over every project file — use in CI
-npm run build
+npm run build      # static export → out/
 ```
 
 ## What's in the MVP
