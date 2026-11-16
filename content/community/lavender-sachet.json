@@ -1,0 +1,233 @@
+{
+ "id": "lavender-sachet",
+ "title": "Lavender Sachets",
+ "author": "Maya R.",
+ "category": "gifts",
+ "difficulty": "beginner",
+ "summary": "Tiny scented pillows for drawers and wardrobes — hand-sewn in an evening.",
+ "description": "I make a batch of these every winter from shirt offcuts. Fill with dried lavender (or rice + a few drops of essential oil). Shared from my sewing notebook!",
+ "tags": [
+  "gifts",
+  "home",
+  "beginner",
+  "hand-sewing",
+  "scraps",
+  "upcycling"
+ ],
+ "minutes": [
+  30,
+  45
+ ],
+ "costUSD": [
+  2,
+  6
+ ],
+ "machineRequired": false,
+ "popularity": 55,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Each sachet",
+  "dims": [
+   {
+    "label": "Size",
+    "value": 10
+   }
+  ]
+ },
+ "tools": [
+  "hand-needle",
+  "scissors",
+  "pins",
+  "funnel?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Tightly woven cotton scraps",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Shirting",
+    "Linen"
+   ],
+   "why": "Sachet.",
+   "swatch": "#9C8AB4",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 50,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "lav",
+   "name": "Dried lavender",
+   "kind": "notion",
+   "required": true,
+   "quantity": "About 2 tablespoons per sachet",
+   "why": "Scent.",
+   "swatch": "#8C7BA8",
+   "alternatives": [
+    "Rice + essential oil"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "sq",
+   "name": "Sachet square",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 12,
+   "height": 12,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#9C8AB4"
+  }
+ ],
+ "steps": [
+  {
+   "id": "ls1",
+   "stage": "cut",
+   "title": "Cut two squares",
+   "text": "Cut two 12 cm squares from a tightly woven fabric so the lavender doesn't poke through.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "sq"
+   ]
+  },
+  {
+   "id": "ls2",
+   "stage": "sew",
+   "title": "Backstitch three sides",
+   "text": "Right sides together, backstitch round three sides and 2 cm into the fourth, 1 cm from the edge.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "ltrb",
+     "gap": "t",
+     "gapLabel": "opening"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "sq"
+   ],
+   "techniques": [
+    "backstitching"
+   ]
+  },
+  {
+   "id": "ls3",
+   "stage": "sew",
+   "title": "Turn",
+   "text": "Clip the corners and turn right side out.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "ls4",
+   "stage": "assemble",
+   "title": "Fill",
+   "text": "Spoon in the lavender until it's about two-thirds full.",
+   "visual": {
+    "type": "template",
+    "name": "fill",
+    "args": {
+     "tone": "main",
+     "label": "⅔ full"
+    }
+   }
+  },
+  {
+   "id": "ls5",
+   "stage": "finish",
+   "title": "Close with ladder stitch",
+   "text": "Fold the edges in and ladder-stitch closed. I add a ribbon loop in the seam for hanging.",
+   "visual": {
+    "type": "template",
+    "name": "close",
+    "args": {
+     "tone": "main",
+     "method": "hand"
+    }
+   },
+   "pieces": [
+    "sq"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Sachet",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 120,
+      "y": 70,
+      "w": 160,
+      "h": 160,
+      "tone": "main",
+      "rx": 22
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        200,
+        72
+       ],
+       [
+        185,
+        30
+       ],
+       [
+        215,
+        30
+       ],
+       [
+        200,
+        72
+       ]
+      ],
+      "color": "#C0583A"
+     }
+    ]
+   }
+  }
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "updated": "2026-11-02"
+ }
+}

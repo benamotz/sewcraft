@@ -1,0 +1,640 @@
+{
+ "id": "laptop-sleeve",
+ "title": "Padded Laptop Sleeve",
+ "category": "bags",
+ "difficulty": "beginner",
+ "summary": "A snug, padded sleeve with a fold-over flap, made to your laptop's exact size.",
+ "description": "Measure your laptop and the pattern sizes itself, with allowance for the padding. Fusible fleece makes it soft and protective; an elastic loop and button close the flap.",
+ "tags": [
+  "bags",
+  "accessories",
+  "gifts",
+  "padded",
+  "custom size"
+ ],
+ "minutes": [
+  90,
+  140
+ ],
+ "costUSD": [
+  10,
+  22
+ ],
+ "machineRequired": true,
+ "popularity": 79,
+ "constants": {
+  "sa": 1,
+  "ease": 2,
+  "flap": 12
+ },
+ "params": [
+  {
+   "id": "Lw",
+   "label": "Laptop width",
+   "default": 31,
+   "min": 24,
+   "max": 40,
+   "step": 0.5
+  },
+  {
+   "id": "Lh",
+   "label": "Laptop depth (front to back)",
+   "default": 22,
+   "min": 16,
+   "max": 28,
+   "step": 0.5
+  },
+  {
+   "id": "Ld",
+   "label": "Laptop thickness",
+   "default": 1.6,
+   "min": 1,
+   "max": 3,
+   "step": 0.1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "13",
+   "label": "13″ laptop",
+   "values": {
+    "Lw": 31,
+    "Lh": 22,
+    "Ld": 1.6
+   }
+  },
+  {
+   "id": "14",
+   "label": "14″",
+   "values": {
+    "Lw": 32.5,
+    "Lh": 23,
+    "Ld": 1.8
+   }
+  },
+  {
+   "id": "15",
+   "label": "15–16″",
+   "values": {
+    "Lw": 36,
+    "Lh": 25,
+    "Ld": 2
+   }
+  }
+ ],
+ "customNote": "Width = laptop width + thickness + 2 cm padding ease + seam allowances. The length wraps front and back (2 × (depth + thickness + 1 cm)) plus a 12 cm flap. Measure the closed laptop at its largest point.",
+ "finished": {
+  "label": "Finished sleeve (inside)",
+  "dims": [
+   {
+    "label": "Inside width",
+    "value": "Lw + Ld + ease"
+   },
+   {
+    "label": "Inside depth",
+    "value": "Lh + Ld + ease/2"
+   },
+   {
+    "label": "Flap",
+    "value": "flap"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "ruler",
+  "marker",
+  "clips",
+  "iron",
+  "pressing-cloth",
+  "hand-needle",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton canvas",
+    "Waxed canvas",
+    "Denim",
+    "Wool felt"
+   ],
+   "why": "Outside.",
+   "swatch": "#5E6B57",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "lining",
+   "name": "Lining fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Poplin"
+   ],
+   "why": "Inside — something smooth so the laptop slides in.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "fleece",
+   "name": "Fusible fleece",
+   "kind": "interfacing",
+   "required": true,
+   "recommended": [
+    "Fusible fleece",
+    "Fusible foam (firmer)"
+   ],
+   "why": "Padding.",
+   "swatch": "#ECE7DD",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 90,
+    "widths": [
+     90
+    ]
+   }
+  },
+  {
+   "id": "elastic",
+   "name": "Round elastic cord",
+   "kind": "notion",
+   "required": true,
+   "quantity": "12 cm",
+   "why": "Closure loop.",
+   "swatch": "#3A3530",
+   "alternatives": [
+    "Hair elastic",
+    "Rouleau loop"
+   ]
+  },
+  {
+   "id": "button",
+   "name": "Button, about 2.5 cm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "1",
+   "why": "Closure.",
+   "swatch": "#C9A06A"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "outer",
+   "name": "Outer",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "Lw + Ld + ease + 2*sa",
+   "height": "2*(Lh + Ld + ease/2) + flap + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5E6B57",
+   "markings": [
+    "Fold line at {Lh + Ld + ease/2 + sa} from the bottom",
+    "Flap begins {2*(Lh + Ld + ease/2) + sa} from the bottom"
+   ]
+  },
+  {
+   "id": "liningp",
+   "name": "Lining",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": "Lw + Ld + ease + 2*sa",
+   "height": "2*(Lh + Ld + ease/2) + flap + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "fleecep",
+   "name": "Fleece",
+   "materialId": "fleece",
+   "quantity": 1,
+   "width": "Lw + Ld + ease",
+   "height": "2*(Lh + Ld + ease/2) + flap",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA"
+  }
+ ],
+ "steps": [
+  {
+   "id": "ls1",
+   "stage": "prep",
+   "title": "Measure your laptop",
+   "text": "Measure the closed laptop's width, depth and thickness at the widest points and enter them in Customise (or pick a size).",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "main",
+     "w": "Lw",
+     "h": "Lh",
+     "label": "your laptop"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Width",
+     "value": "Lw",
+     "unit": "len"
+    },
+    {
+     "label": "Depth",
+     "value": "Lh",
+     "unit": "len"
+    },
+    {
+     "label": "Thickness",
+     "value": "Ld",
+     "unit": "len"
+    }
+   ]
+  },
+  {
+   "id": "ls2",
+   "stage": "cut",
+   "title": "Cut the outer",
+   "text": "Cut one long outer rectangle.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "outer"
+   ]
+  },
+  {
+   "id": "ls3",
+   "stage": "cut",
+   "title": "Cut the lining",
+   "text": "Cut the lining the same size.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "liningp"
+   ]
+  },
+  {
+   "id": "ls4",
+   "stage": "cut",
+   "title": "Cut the fleece",
+   "text": "Cut the fleece without seam allowance.",
+   "visual": {
+    "type": "layout",
+    "materialId": "fleece"
+   },
+   "pieces": [
+    "fleecep"
+   ]
+  },
+  {
+   "id": "ls5",
+   "stage": "sew",
+   "title": "Fuse the fleece",
+   "text": "Fuse the fleece to the wrong side of the outer, 1 cm in from every edge, with a pressing cloth.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "fleece"
+     ],
+     "label": "fuse the fleece"
+    }
+   },
+   "pieces": [
+    "fleecep",
+    "outer"
+   ],
+   "techniques": [
+    "interfacing"
+   ],
+   "timerMin": 1
+  },
+  {
+   "id": "ls6",
+   "stage": "sew",
+   "title": "Mark the fold and flap",
+   "text": "On the wrong side of the outer and lining, mark the bottom fold line and the start of the flap.",
+   "visual": {
+    "type": "template",
+    "name": "fold",
+    "args": {
+     "tone": "main",
+     "label": "bottom fold · flap above",
+     "dim": "Lh + Ld + ease/2"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Bottom to fold",
+     "value": "Lh + Ld + ease/2 + sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer",
+    "liningp"
+   ]
+  },
+  {
+   "id": "ls7",
+   "stage": "sew",
+   "title": "Baste the elastic loop",
+   "text": "Fold the elastic cord in half and baste its ends to the centre of the flap's short edge on the outer's right side, loop pointing inwards.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "#3A3530"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Loop length (folded)",
+     "value": 5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer"
+   ]
+  },
+  {
+   "id": "ls8",
+   "stage": "sew",
+   "title": "Sew the outer pocket",
+   "text": "Fold the outer at the bottom fold, right sides together. Sew both sides up to the flap line with 1 cm. Clip the allowance diagonally at the flap line on both sides.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lr",
+     "label": "sides up to the flap line"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "ls9",
+   "stage": "sew",
+   "title": "Sew the lining pocket",
+   "text": "Repeat with the lining, leaving a 12 cm gap in one side seam.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "lining",
+     "sides": "lr",
+     "gap": "r",
+     "gapLabel": "12 cm gap"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Gap",
+     "value": 12,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "liningp"
+   ]
+  },
+  {
+   "id": "ls10",
+   "stage": "assemble",
+   "title": "Join round the opening and flap",
+   "text": "Turn the outer right side out and slide it into the lining (wrong side out) so right sides face. Match the side seams. Sew all the way round the front opening and up, across and down the flap with 1 cm, pivoting at the corners.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "lining",
+     "sides": "ltr",
+     "label": "opening + flap, right sides together"
+    }
+   },
+   "pieces": [
+    "outer",
+    "liningp"
+   ],
+   "techniques": [
+    "lining"
+   ]
+  },
+  {
+   "id": "ls11",
+   "stage": "assemble",
+   "title": "Clip, turn and close",
+   "text": "Clip the flap corners, turn through the lining gap, close the gap and push the lining inside.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "lining"
+    }
+   },
+   "techniques": [
+    "clipping-corners",
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "ls12",
+   "stage": "finish",
+   "title": "Topstitch",
+   "text": "Press and topstitch round the opening and the flap, 5 mm from the edge.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "ls13",
+   "stage": "finish",
+   "title": "Sew on the button",
+   "text": "Close the flap over the laptop and mark where the loop reaches. Sew the button on through the outer only, with a thread shank.",
+   "visual": {
+    "type": "template",
+    "name": "hand",
+    "args": {
+     "tone": "main",
+     "stitch": "running"
+    }
+   },
+   "techniques": [
+    "buttonholes"
+   ]
+  },
+  {
+   "id": "ls14",
+   "stage": "finish",
+   "title": "Slide your laptop in",
+   "text": "It should be snug but slide in easily.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Sleeve",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 70,
+      "y": 80,
+      "w": 260,
+      "h": 180,
+      "tone": "main",
+      "rx": 6
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        70,
+        80
+       ],
+       [
+        330,
+        80
+       ],
+       [
+        330,
+        140
+       ],
+       [
+        70,
+        140
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        78,
+        88
+       ],
+       [
+        322,
+        88
+       ],
+       [
+        322,
+        132
+       ],
+       [
+        78,
+        132
+       ]
+      ],
+      "closed": true
+     },
+     {
+      "k": "path",
+      "d": "M 200 150 A 9 9 0 1 1 199.9 150 Z",
+      "tone": "#C9A06A"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        200,
+        140
+       ],
+       [
+        190,
+        152
+       ],
+       [
+        200,
+        164
+       ],
+       [
+        210,
+        152
+       ],
+       [
+        200,
+        140
+       ]
+      ],
+      "color": "#3A3530"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "zip-pouch",
+  "crossbody-bag"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

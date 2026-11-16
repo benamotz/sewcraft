@@ -1,0 +1,275 @@
+{
+ "id": "grocery-bag",
+ "title": "Foldable Grocery Bag",
+ "category": "bags",
+ "difficulty": "beginner",
+ "summary": "A lightweight T-shirt-style shopping bag in ripstop, finished with French seams.",
+ "description": "The classic reusable 'T-shirt' bag: handles are part of the pattern, every seam is enclosed and it folds up small enough for a pocket. A great way to practise French seams and narrow hems on curves.",
+ "tags": [
+  "bags",
+  "gifts",
+  "beginner",
+  "zero waste",
+  "french seams",
+  "curves"
+ ],
+ "minutes": [
+  60,
+  90
+ ],
+ "costUSD": [
+  5,
+  12
+ ],
+ "machineRequired": true,
+ "popularity": 75,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished bag",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 38
+   },
+   {
+    "label": "Height incl. handles",
+    "value": 58
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "pins",
+  "clips",
+  "iron",
+  "seam-gauge?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Ripstop nylon or light cotton",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Ripstop nylon",
+    "Poplin",
+    "Parachute fabric"
+   ],
+   "why": "The whole bag.",
+   "swatch": "#5E7C8A",
+   "layout": {
+    "mode": "folded",
+    "defaultWidth": 140,
+    "widths": [
+     112,
+     140,
+     150
+    ]
+   },
+   "weight": "Light",
+   "alternatives": [
+    "An old umbrella canopy (upcycled)"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "body",
+   "name": "Bag body",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 40,
+   "height": 60,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5E7C8A",
+   "outline": "M 0 0 L 9 0 C 9 12 13 18 20 18 C 27 18 31 12 31 0 L 40 0 L 40 60 L 0 60 Z"
+  }
+ ],
+ "steps": [
+  {
+   "id": "gb1",
+   "stage": "prep",
+   "title": "Press (cool iron)",
+   "text": "Press the fabric on a low, synthetic setting — nylon melts at cotton temperatures. Test on a scrap first.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ],
+     "label": "cool iron · test first"
+    }
+   },
+   "warnings": [
+    "Nylon melts — use a low iron setting and a pressing cloth."
+   ]
+  },
+  {
+   "id": "gb2",
+   "stage": "cut",
+   "title": "Print the pattern and cut two",
+   "text": "Print the curved body pattern at 100%. Fold the fabric and cut two bodies at once.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "body"
+   ]
+  },
+  {
+   "id": "gb3",
+   "stage": "sew",
+   "title": "French seam: first pass",
+   "text": "Place the bodies WRONG sides together. Sew the sides and bottom with 0.5 cm, and the two short seams across the handle tops. Trim to 3 mm.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lbr",
+     "sa": 0.5,
+     "label": "WRONG sides together"
+    }
+   },
+   "measurements": [
+    {
+     "label": "First seam",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "french-seam"
+   ]
+  },
+  {
+   "id": "gb4",
+   "stage": "sew",
+   "title": "French seam: second pass",
+   "text": "Turn wrong side out, press the seams flat on the edge, and sew again 0.7 cm in, enclosing the raw edges. Do the same at the handle tops.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lbr",
+     "sa": 0.7,
+     "label": "right sides together"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Second seam",
+     "value": 0.7,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "french-seam"
+   ]
+  },
+  {
+   "id": "gb5",
+   "stage": "sew",
+   "title": "Hem the opening and handles",
+   "text": "Turn right side out. Press a narrow double hem (0.5 cm + 0.5 cm) round the scooped opening and along the outer edges of the handles, clipping lightly on the curves, and stitch.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 0.5,
+     "f2": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Each fold",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "hemming",
+    "sewing-curves"
+   ]
+  },
+  {
+   "id": "gb6",
+   "stage": "finish",
+   "title": "Fold and pack",
+   "text": "Fold it in thirds lengthwise, roll it up and tie it with a scrap — or sew a small pocket to one side to stuff it into.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Bag",
+   "scene": {
+    "els": [
+     {
+      "k": "path",
+      "d": "M 112.0 18.0 L 151.6 18.0 C 151.6 70.8 169.2 97.2 200.0 97.2 C 230.8 97.2 248.4 70.8 248.4 18.0 L 288.0 18.0 L 288.0 282.0 L 112.0 282.0 Z",
+      "tone": "main"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        154,
+        40
+       ],
+       [
+        158,
+        80
+       ],
+       [
+        200,
+        98
+       ],
+       [
+        244,
+        80
+       ],
+       [
+        248,
+        40
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "classic-tote",
+  "gift-bags"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

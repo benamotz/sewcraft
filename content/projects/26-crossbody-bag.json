@@ -1,0 +1,580 @@
+{
+ "id": "crossbody-bag",
+ "title": "Zip Crossbody Bag",
+ "category": "bags",
+ "difficulty": "intermediate",
+ "summary": "A small lined zip bag with an adjustable webbing strap on D-rings.",
+ "description": "Builds on the zip pouch: add D-ring tabs in the side seams and assemble an adjustable strap with a slider. Big enough for phone, keys and wallet.",
+ "tags": [
+  "bags",
+  "zipper",
+  "lined",
+  "hardware",
+  "adjustable strap"
+ ],
+ "minutes": [
+  150,
+  210
+ ],
+ "costUSD": [
+  15,
+  30
+ ],
+ "machineRequired": true,
+ "popularity": 86,
+ "featured": true,
+ "constants": {
+  "sa": 1,
+  "D": 4
+ },
+ "finished": {
+  "label": "Finished bag",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 24
+   },
+   {
+    "label": "Height",
+    "value": 16
+   },
+   {
+    "label": "Depth",
+    "value": "D"
+   },
+   {
+    "label": "Strap (max)",
+    "value": 130
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-90",
+  "zip-foot",
+  "scissors",
+  "ruler",
+  "marker",
+  "clips",
+  "iron",
+  "pressing-cloth",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Light canvas",
+    "Quilting cotton",
+    "Faux leather (no iron)"
+   ],
+   "why": "Outside and tabs.",
+   "swatch": "#B5727D",
+   "layout": {
+    "mode": "folded",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "lining",
+   "name": "Lining fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "Inside.",
+   "swatch": "#7E98A8",
+   "layout": {
+    "mode": "folded",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "intf",
+   "name": "Medium fusible interfacing",
+   "kind": "interfacing",
+   "required": true,
+   "recommended": [
+    "Woven fusible interfacing",
+    "Fusible fleece"
+   ],
+   "why": "Body.",
+   "swatch": "#ECE7DD",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 90,
+    "widths": [
+     90
+    ]
+   }
+  },
+  {
+   "id": "zipper",
+   "name": "Coil zipper",
+   "kind": "notion",
+   "required": true,
+   "quantity": "At least 32 cm",
+   "why": "Top opening.",
+   "swatch": "#2E3A40"
+  },
+  {
+   "id": "webbing",
+   "name": "Webbing, 2.5 cm wide",
+   "kind": "notion",
+   "required": true,
+   "quantity": "140 cm",
+   "why": "Strap.",
+   "swatch": "#3A3530",
+   "alternatives": [
+    "Cotton strap made from the outer fabric"
+   ]
+  },
+  {
+   "id": "hardware",
+   "name": "2 D-rings + 1 strap slider, 2.5 cm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "1 set",
+   "why": "Adjustable strap hardware.",
+   "swatch": "#B9C1C6",
+   "alternatives": [
+    "Swivel clips instead of D-rings for a detachable strap"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "outer",
+   "name": "Outer panel",
+   "materialId": "main",
+   "quantity": 2,
+   "width": "24 + D + 2*sa",
+   "height": "16 + D/2 + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#B5727D",
+   "markings": [
+    "Cut {D/2} squares from both bottom corners"
+   ]
+  },
+  {
+   "id": "ringtab",
+   "name": "D-ring tab",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 6,
+   "height": 8,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#93565F"
+  },
+  {
+   "id": "ziptab",
+   "name": "Zip end tab",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 5,
+   "height": 8,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#93565F"
+  },
+  {
+   "id": "liningp",
+   "name": "Lining panel",
+   "materialId": "lining",
+   "quantity": 2,
+   "width": "24 + D + 2*sa",
+   "height": "16 + D/2 + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#7E98A8"
+  },
+  {
+   "id": "intfp",
+   "name": "Interfacing",
+   "materialId": "intf",
+   "quantity": 2,
+   "width": "24 + D",
+   "height": "16 + D/2",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA"
+  }
+ ],
+ "steps": [
+  {
+   "id": "cb1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press fabrics. If using faux leather, skip the iron and use clips instead of pins.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "lining"
+     ]
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "cb2",
+   "stage": "cut",
+   "title": "Cut the outer pieces",
+   "text": "Cut two outer panels, two D-ring tabs and two zip end tabs.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "outer",
+    "ringtab",
+    "ziptab"
+   ]
+  },
+  {
+   "id": "cb3",
+   "stage": "cut",
+   "title": "Cut the lining",
+   "text": "Cut two lining panels.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "liningp"
+   ]
+  },
+  {
+   "id": "cb4",
+   "stage": "cut",
+   "title": "Cut the interfacing",
+   "text": "Cut two interfacing panels without seam allowance.",
+   "visual": {
+    "type": "layout",
+    "materialId": "intf"
+   },
+   "pieces": [
+    "intfp"
+   ]
+  },
+  {
+   "id": "cb5",
+   "stage": "sew",
+   "title": "Fuse and notch",
+   "text": "Fuse interfacing to the outer panels, then cut the corner squares from outer and lining panels.",
+   "visual": {
+    "type": "template",
+    "name": "notch",
+    "args": {
+     "tone": "main",
+     "value": "D/2"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Corner square",
+     "value": "D/2",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "intfp",
+    "outer",
+    "liningp"
+   ],
+   "techniques": [
+    "interfacing",
+    "boxed-corners"
+   ]
+  },
+  {
+   "id": "cb6",
+   "stage": "sew",
+   "title": "Make the D-ring tabs",
+   "text": "Press each D-ring tab into a four-fold strip and edgestitch. Slip a D-ring on and fold the tab in half; baste across close to the ring.",
+   "visual": {
+    "type": "template",
+    "name": "strap",
+    "args": {
+     "tone": "ringtab",
+     "width": 1.5
+    }
+   },
+   "pieces": [
+    "ringtab"
+   ],
+   "techniques": [
+    "edgestitching",
+    "adjustable-strap"
+   ]
+  },
+  {
+   "id": "cb7",
+   "stage": "sew",
+   "title": "Zipper tabs and zipper",
+   "text": "Wrap the zip ends in the zip tabs (trimmed so the total span equals the panel width minus 2 cm), then sew the zipper between outer and lining on both sides with the sandwich method, and topstitch.",
+   "visual": {
+    "type": "template",
+    "name": "zip",
+    "args": {
+     "tone": "main",
+     "lining": "lining"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Zip + tabs span",
+     "value": "24 + D",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "ziptab",
+    "outer",
+    "liningp"
+   ],
+   "techniques": [
+    "zipper",
+    "topstitching"
+   ]
+  },
+  {
+   "id": "cb8",
+   "stage": "assemble",
+   "title": "Baste the D-ring tabs",
+   "text": "Open the zipper halfway. Baste a D-ring tab to each side edge of the FRONT outer panel, 2 cm below the zipper, ring pointing inwards.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "ringtab"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Below zipper",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "ringtab"
+   ]
+  },
+  {
+   "id": "cb9",
+   "stage": "assemble",
+   "title": "Sew outer and lining",
+   "text": "Outer panels right sides together and lining panels right sides together. Sew sides and bottoms with 1 cm, leaving the corner squares open and an 8 cm gap in the lining bottom.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lbr",
+     "gap": "b",
+     "gapLabel": "lining gap 8 cm",
+     "notch": true
+    }
+   },
+   "pieces": [
+    "outer",
+    "liningp"
+   ],
+   "warnings": [
+    "Make sure the zipper is open."
+   ]
+  },
+  {
+   "id": "cb10",
+   "stage": "assemble",
+   "title": "Box the corners and turn",
+   "text": "Box all four corners with 1 cm seams, turn through the lining gap, close the gap and shape.",
+   "visual": {
+    "type": "template",
+    "name": "box",
+    "args": {
+     "tone": "main",
+     "depth": "D"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Boxing seam = depth",
+     "value": "D",
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "boxed-corners",
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "cb11",
+   "stage": "finish",
+   "title": "Assemble the strap",
+   "text": "Thread one webbing end through the slider centre bar and stitch it down. Take the other end through a D-ring, back through the slider, then through the second D-ring; fold the end under and box-stitch with an X.",
+   "visual": {
+    "type": "scene",
+    "scene": {
+     "els": [
+      {
+       "k": "cord",
+       "pts": [
+        [
+         30,
+         150
+        ],
+        [
+         120,
+         150
+        ],
+        [
+         200,
+         140
+        ],
+        [
+         300,
+         150
+        ],
+        [
+         370,
+         150
+        ]
+       ],
+       "color": "#3A3530"
+      },
+      {
+       "k": "path",
+       "d": "M 40 135 L 40 165 A 15 15 0 0 0 40 135 Z",
+       "tone": "#B9C1C6"
+      },
+      {
+       "k": "path",
+       "d": "M 360 135 L 360 165 A 15 15 0 0 1 360 135 Z",
+       "tone": "#B9C1C6"
+      },
+      {
+       "k": "panel",
+       "x": 190,
+       "y": 128,
+       "w": 22,
+       "h": 30,
+       "tone": "#B9C1C6",
+       "rx": 3
+      },
+      {
+       "k": "label",
+       "x": 200,
+       "y": 205,
+       "text": "D-ring · slider · D-ring",
+       "anchor": "middle",
+       "bold": true
+      }
+     ]
+    }
+   },
+   "techniques": [
+    "adjustable-strap"
+   ],
+   "tips": [
+    "Melt or zigzag the cut webbing ends so they don't fray."
+   ],
+   "alt": "A webbing strap threaded through a D-ring, a slider in the middle, and a second D-ring."
+  },
+  {
+   "id": "cb12",
+   "stage": "finish",
+   "title": "Ready to wear",
+   "text": "Clip on and adjust the length with the slider.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Crossbody",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 110,
+      "y": 130,
+      "w": 180,
+      "h": 120,
+      "tone": "main",
+      "rx": 10
+     },
+     {
+      "k": "zip",
+      "x": 110,
+      "y": 126,
+      "w": 180
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        112,
+        146
+       ],
+       [
+        90,
+        60
+       ],
+       [
+        200,
+        10
+       ],
+       [
+        310,
+        60
+       ],
+       [
+        288,
+        146
+       ]
+      ],
+      "color": "#3A3530"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "zip-pouch",
+  "laptop-sleeve",
+  "weekender-duffel"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

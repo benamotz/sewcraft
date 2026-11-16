@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "prewash",
+    "name": "Pre-washing fabric",
+    "summary": "Wash fabric the way you'll wash the finished item, before you cut.",
+    "explanation": "Natural fibres such as cotton, linen and rayon can shrink 3–8% the first time they are washed. Washing and drying before cutting means the shrinkage happens to the yardage — not to your finished project. It also removes sizing (stiffening finish) and reveals colour bleeding.",
+    "steps": [
+      "Zig-zag or overlock the cut ends so they don't fray in the machine.",
+      "Wash at the temperature you intend to use for the finished item.",
+      "Dry the same way (tumble or line).",
+      "Press out creases before laying out the pattern."
+    ],
+    "tools": [
+      "Washing machine",
+      "Iron"
+    ],
+    "mistakes": [
+      "Skipping pre-wash on cotton canvas — the finished bag shrinks and the lining puckers.",
+      "Washing dry-clean-only fabrics."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 70,
+          "w": 150,
+          "h": 160,
+          "tone": "a",
+          "label": "before"
+        },
+        {
+          "k": "panel",
+          "x": 230,
+          "y": 82,
+          "w": 140,
+          "h": 148,
+          "tone": "a",
+          "label": "after wash"
+        },
+        {
+          "k": "arrow",
+          "from": [
+            195,
+            150
+          ],
+          "to": [
+            225,
+            150
+          ]
+        },
+        {
+          "k": "label",
+          "x": 300,
+          "y": 260,
+          "text": "Shrinkage happens before cutting",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A fabric panel shown before and after washing; the washed panel is slightly smaller."
+  },
+  {
+    "id": "pressing",
+    "name": "Pressing",
+    "summary": "Lift-and-lower ironing that sets seams and folds precisely.",
+    "explanation": "Pressing is different from ironing. Instead of gliding the iron, you set it down, hold, and lift. This sets stitches, flattens seam allowances and creates crisp folds without stretching the fabric. Press every seam before crossing it with another.",
+    "steps": [
+      "Set the iron to the fibre (cotton: high with steam, synthetics: low).",
+      "Press the seam flat as sewn to 'set' the stitches.",
+      "Open the seam allowances with your fingertip and press them open (or to one side).",
+      "Let the fabric cool before moving it — that's when the crease sets."
+    ],
+    "tools": [
+      "Iron",
+      "Ironing board",
+      "Pressing cloth (optional)"
+    ],
+    "mistakes": [
+      "Sliding the iron and stretching bias edges.",
+      "Too much heat on synthetics — shiny marks or melting."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 150,
+          "w": 280,
+          "h": 90,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              200,
+              150
+            ],
+            [
+              200,
+              240
+            ]
+          ]
+        },
+        {
+          "k": "iron",
+          "x": 200,
+          "y": 95
+        },
+        {
+          "k": "arrow",
+          "from": [
+            200,
+            60
+          ],
+          "to": [
+            200,
+            130
+          ],
+          "label": "lift & lower"
+        }
+      ]
+    },
+    "alt": "An iron lowering straight down onto a pressed-open seam."
+  },
+  {
+    "id": "straight-stitch",
+    "name": "Straight stitch",
+    "summary": "The everyday machine stitch for seams.",
+    "explanation": "A straight stitch is a single line of stitches. Most seams use a length of 2.5 mm; use 3–3.5 mm on thick fabrics and for topstitching, and the longest length (4–5 mm) for basting.",
+    "steps": [
+      "Lower the needle into the fabric at the seam allowance guide.",
+      "Lower the presser foot.",
+      "Guide the fabric with the edge against the seam guide — don't pull it.",
+      "Backstitch at both ends."
+    ],
+    "tools": [
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Pulling the fabric through instead of letting the feed dogs move it.",
+      "Watching the needle instead of the seam guide."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 50,
+          "y": 90,
+          "w": 300,
+          "h": 120,
+          "tone": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              50,
+              110
+            ],
+            [
+              260,
+              110
+            ]
+          ]
+        },
+        {
+          "k": "foot",
+          "x": 270,
+          "y": 110
+        },
+        {
+          "k": "arrow",
+          "from": [
+            150,
+            160
+          ],
+          "to": [
+            80,
+            160
+          ],
+          "label": "fabric moves away from you"
+        }
+      ]
+    },
+    "alt": "A straight stitch line being sewn near the edge of a fabric panel under a presser foot."
+  },
+  {
+    "id": "zigzag-stitch",
+    "name": "Zigzag stitch",
+    "summary": "Side-to-side stitch for neatening raw edges and sewing elastic.",
+    "explanation": "Zigzag stretches, which makes it the right choice for elastic, and when sewn along a raw edge it wraps the threads to stop fraying. A width of 4–5 mm and length of 2–2.5 mm suits most edge finishing.",
+    "steps": [
+      "Set width 4–5 mm, length 2–2.5 mm.",
+      "Position the fabric so the right swing of the needle lands just off the raw edge.",
+      "Sew slowly along the edge."
+    ],
+    "tools": [
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Sewing too far in from the edge so threads still fray.",
+      "Stitch too short on thin fabric — it tunnels and puckers."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 80,
+          "w": 280,
+          "h": 150,
+          "tone": "b",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              222
+            ],
+            [
+              70,
+              236
+            ],
+            [
+              80,
+              222
+            ],
+            [
+              90,
+              236
+            ],
+            [
+              100,
+              222
+            ],
+            [
+              110,
+              236
+            ],
+            [
+              120,
+              222
+            ],
+            [
+              130,
+              236
+            ],
+            [
+              140,
+              222
+            ],
+            [
+              150,
+              236
+            ],
+            [
+              160,
+              222
+            ],
+            [
+              170,
+              236
+            ],
+            [
+              180,
+              222
+            ],
+            [
+              190,
+              236
+            ],
+            [
+              200,
+              222
+            ],
+            [
+              210,
+              236
+            ],
+            [
+              220,
+              222
+            ],
+            [
+              230,
+              236
+            ]
+          ]
+        },
+        {
+          "k": "label",
+          "x": 160,
+          "y": 270,
+          "text": "needle swings just off the raw edge",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A zigzag stitch running along the bottom raw edge of fabric."
+  },
+  {
+    "id": "backstitching",
+    "name": "Backstitching",
+    "summary": "Lock every seam so it can't unravel.",
+    "explanation": "At the start and end of each seam, sew forward 3–4 stitches, hold the reverse button and sew back over them, then continue. This knots the threads mechanically. Skip it only for basting and gathering stitches you'll remove or pull.",
+    "steps": [
+      "Start 1 cm in from the edge.",
+      "Reverse to the edge.",
+      "Sew forward over the reversed stitches.",
+      "Repeat at the end of the seam."
+    ],
+    "tools": [
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Forgetting to backstitch at a turning gap — the gap tears open when turning."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 100,
+          "w": 320,
+          "h": 110,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              140
+            ],
+            [
+              330,
+              140
+            ]
+          ]
+        },
+        {
+          "k": "arrow",
+          "from": [
+            110,
+            120
+          ],
+          "to": [
+            60,
+            120
+          ],
+          "label": "reverse"
+        },
+        {
+          "k": "arrow",
+          "from": [
+            60,
+            160
+          ],
+          "to": [
+            140,
+            160
+          ],
+          "label": "forward"
+        },
+        {
+          "k": "focus",
+          "x": 85,
+          "y": 140,
+          "r": 40
+        }
+      ]
+    },
+    "alt": "Arrows showing a few reverse stitches at the beginning of a seam."
+  },
+  {
+    "id": "seam-allowance",
+    "name": "Seam allowances & right sides together",
+    "summary": "Where to stitch, and which way the fabric faces.",
+    "explanation": "Most seams are sewn with the fabric right sides together so the seam is hidden after turning. The seam allowance — 1 cm in all SewCraft patterns unless stated — is the gap between the raw edge and the stitching. Your machine's throat plate has guide lines; keep the raw edge on the correct line.",
+    "steps": [
+      "Lay piece A right side up.",
+      "Lay piece B right side down on top, edges matched.",
+      "Pin or clip perpendicular to the edge.",
+      "Sew with the raw edge on the seam allowance guide."
+    ],
+    "tools": [
+      "Pins or clips",
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Using the wrong guide line — every seam ends up too wide or too narrow.",
+      "Sewing wrong sides together."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 70,
+          "y": 60,
+          "w": 260,
+          "h": 190,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              90,
+              60
+            ],
+            [
+              90,
+              250
+            ]
+          ]
+        },
+        {
+          "k": "dim",
+          "from": [
+            70,
+            270
+          ],
+          "to": [
+            90,
+            270
+          ],
+          "value": 1
+        },
+        {
+          "k": "pin",
+          "x": 110,
+          "y": 100,
+          "angle": 0
+        },
+        {
+          "k": "pin",
+          "x": 110,
+          "y": 200,
+          "angle": 0
+        },
+        {
+          "k": "label",
+          "x": 210,
+          "y": 160,
+          "text": "right sides together",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "Two layers of fabric pinned right sides together with a stitch line one centimetre from the edge."
+  },
+  {
+    "id": "edgestitching",
+    "name": "Edgestitching",
+    "summary": "Stitching 2–3 mm from a fold for crisp edges.",
+    "explanation": "Edgestitching holds folds in place and gives a professional finish. Move the needle position or use an edgestitch foot, and sew slowly, watching the fold — not the needle.",
+    "steps": [
+      "Press the fold first.",
+      "Align the fold with the foot's guide or a marked line 2–3 mm from the needle.",
+      "Stitch at a slow, even speed."
+    ],
+    "tools": [
+      "Sewing machine",
+      "Edgestitch foot (optional)"
+    ],
+    "mistakes": [
+      "Wandering off the edge — slow down and use a guide."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 110,
+          "w": 320,
+          "h": 70,
+          "tone": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              40,
+              116
+            ],
+            [
+              360,
+              116
+            ]
+          ]
+        },
+        {
+          "k": "dim",
+          "from": [
+            370,
+            110
+          ],
+          "to": [
+            370,
+            116
+          ],
+          "value": 3,
+          "unit": "mm",
+          "offset": 10
+        },
+        {
+          "k": "foot",
+          "x": 230,
+          "y": 116
+        }
+      ]
+    },
+    "alt": "A row of stitches very close to the folded top edge of a strip."
+  },
+  {
+    "id": "topstitching",
+    "name": "Topstitching",
+    "summary": "Visible stitching that strengthens and decorates.",
+    "explanation": "Topstitching sits on the right side, usually 5–7 mm from an edge. Lengthen the stitch to 3–3.5 mm for a neater look and use matching or contrast thread.",
+    "steps": [
+      "Press the edge.",
+      "Set stitch length to 3–3.5 mm.",
+      "Sew with the edge aligned to a guide 5–7 mm from the needle.",
+      "At corners, pivot with the needle down."
+    ],
+    "tools": [
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Short stitch length makes topstitching look busy and can pucker."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 70,
+          "y": 60,
+          "w": 260,
+          "h": 190,
+          "tone": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              70,
+              72
+            ],
+            [
+              330,
+              72
+            ]
+          ]
+        },
+        {
+          "k": "dim",
+          "from": [
+            345,
+            60
+          ],
+          "to": [
+            345,
+            72
+          ],
+          "value": 0.5,
+          "offset": 0
+        }
+      ]
+    },
+    "alt": "Visible stitching parallel to the top edge of a panel."
+  },
+  {
+    "id": "boxed-corners",
+    "name": "Boxed corners",
+    "summary": "Give a flat bag a base and depth.",
+    "explanation": "Cut a square from each bottom corner equal to half the desired depth. After sewing the side and bottom seams, pinch the corner so the side seam sits on top of the bottom seam, and sew straight across the opening. The length of that seam equals the finished depth.",
+    "steps": [
+      "Cut squares of ½ the depth from both bottom corners.",
+      "Sew side and bottom seams, leaving the cut-outs open.",
+      "Pinch the corner, matching the side seam to the bottom seam.",
+      "Sew across the opening using the usual seam allowance, backstitching both ends."
+    ],
+    "tools": [
+      "Ruler",
+      "Fabric marker",
+      "Scissors"
+    ],
+    "mistakes": [
+      "Seams not nested — the base twists.",
+      "Measuring the cut-out from the stitching instead of the raw edge."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "poly",
+          "pts": [
+            [
+              200,
+              50
+            ],
+            [
+              330,
+              220
+            ],
+            [
+              70,
+              220
+            ]
+          ],
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "fold",
+          "from": [
+            200,
+            50
+          ],
+          "to": [
+            200,
+            220
+          ],
+          "label": "seams matched"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              86,
+              206
+            ],
+            [
+              314,
+              206
+            ]
+          ]
+        },
+        {
+          "k": "label",
+          "x": 200,
+          "y": 255,
+          "text": "stitch length = depth of bag",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A pinched triangle corner with the side seam centred and a stitch across the base."
+  },
+  {
+    "id": "lining",
+    "name": "Lining a bag",
+    "summary": "A clean inside finish with no exposed seams.",
+    "explanation": "The outer bag and lining are sewn as two separate bags. One goes inside the other right sides together, they're joined around the top, and the whole thing is turned through a gap left in the lining.",
+    "steps": [
+      "Sew outer and lining bags; leave a turning gap in the lining bottom.",
+      "Outer right side out, lining wrong side out — put outer inside lining.",
+      "Match side seams, sew around the top.",
+      "Turn through the gap, close it, push the lining inside, topstitch."
+    ],
+    "tools": [
+      "Clips",
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Forgetting the turning gap.",
+      "Handles caught at the wrong angle — baste them first."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 80,
+          "y": 40,
+          "w": 240,
+          "h": 220,
+          "tone": "b",
+          "side": "wrong",
+          "label": "lining (wrong side out)"
+        },
+        {
+          "k": "panel",
+          "x": 100,
+          "y": 40,
+          "w": 200,
+          "h": 60,
+          "tone": "a",
+          "dim": true
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              80,
+              52
+            ],
+            [
+              320,
+              52
+            ]
+          ]
+        },
+        {
+          "k": "gap",
+          "from": [
+            160,
+            260
+          ],
+          "to": [
+            240,
+            260
+          ],
+          "label": "turning gap"
+        }
+      ]
+    },
+    "alt": "The outer bag nested inside the lining with a stitch line around the top."
+  },
+  {
+    "id": "attaching-straps",
+    "name": "Attaching straps",
+    "summary": "Position and secure handles so they last.",
+    "explanation": "Baste strap ends to the outer bag first with raw ends aligned to the top edge, loop hanging down. The top seam then encloses them. Topstitching around the bag top adds strength.",
+    "steps": [
+      "Mark the position on both outer panels.",
+      "Check the strap isn't twisted.",
+      "Baste 5 mm from the top edge.",
+      "Sew the top seam over them."
+    ],
+    "tools": [
+      "Ruler",
+      "Clips"
+    ],
+    "mistakes": [
+      "Twisted strap.",
+      "Straps placed asymmetrically front vs back."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 200,
+          "tone": "a"
+        },
+        {
+          "k": "panel",
+          "x": 130,
+          "y": 60,
+          "w": 24,
+          "h": 110,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 246,
+          "y": 60,
+          "w": 24,
+          "h": 110,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "cord",
+          "pts": [
+            [
+              142,
+              170
+            ],
+            [
+              170,
+              215
+            ],
+            [
+              230,
+              215
+            ],
+            [
+              258,
+              170
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              66
+            ],
+            [
+              340,
+              66
+            ]
+          ]
+        }
+      ]
+    },
+    "alt": "Two strap ends basted to the top edge of a bag panel with the loop hanging down."
+  },
+  {
+    "id": "clipping-corners",
+    "name": "Clipping corners & curves",
+    "summary": "Reduce bulk so corners turn out sharp.",
+    "explanation": "Cut diagonally across the seam allowance 2 mm from the stitching at each corner. This removes bulk so the corner can form a point when turned.",
+    "steps": [
+      "Sew and backstitch.",
+      "Cut diagonally across the corner allowance.",
+      "Don't cut through the stitches.",
+      "Turn and gently push the corner out with a blunt tool."
+    ],
+    "tools": [
+      "Sharp small scissors",
+      "Point turner or chopstick"
+    ],
+    "mistakes": [
+      "Snipping through the stitching — a hole appears when turned."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 100,
+          "y": 60,
+          "w": 200,
+          "h": 180,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              100,
+              80
+            ],
+            [
+              280,
+              80
+            ],
+            [
+              280,
+              240
+            ]
+          ]
+        },
+        {
+          "k": "fold",
+          "from": [
+            266,
+            60
+          ],
+          "to": [
+            300,
+            94
+          ]
+        },
+        {
+          "k": "scissors",
+          "x": 310,
+          "y": 50,
+          "angle": 135
+        }
+      ]
+    },
+    "alt": "Scissors trimming the seam allowance diagonally at a stitched corner."
+  },
+  {
+    "id": "ladder-stitch",
+    "name": "Turning gap & ladder stitch",
+    "summary": "Close an opening invisibly by hand.",
+    "explanation": "Press the seam allowances of the gap inward. Bring the needle out on one fold, cross straight over and take a 3–5 mm stitch inside the opposite fold, then cross back. Every few stitches, pull the thread snug — the stitches disappear. For hidden linings you can also simply edgestitch the gap closed by machine.",
+    "steps": [
+      "Press the gap's seam allowances in, in line with the seam.",
+      "Knot the thread and hide the knot inside the fold.",
+      "Alternate short stitches inside each fold, crossing straight across.",
+      "Pull snug, knot, and bury the tail."
+    ],
+    "tools": [
+      "Hand-sewing needle",
+      "Thread"
+    ],
+    "mistakes": [
+      "Diagonal crossing stitches — they show.",
+      "Pulling too tight and puckering."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 100,
+          "w": 320,
+          "h": 48,
+          "tone": "b"
+        },
+        {
+          "k": "panel",
+          "x": 40,
+          "y": 154,
+          "w": 320,
+          "h": 48,
+          "tone": "b"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              120,
+              148
+            ],
+            [
+              120,
+              154
+            ],
+            [
+              140,
+              154
+            ],
+            [
+              140,
+              148
+            ],
+            [
+              160,
+              148
+            ],
+            [
+              160,
+              154
+            ],
+            [
+              180,
+              154
+            ],
+            [
+              180,
+              148
+            ],
+            [
+              200,
+              148
+            ],
+            [
+              200,
+              154
+            ],
+            [
+              220,
+              154
+            ],
+            [
+              220,
+              148
+            ],
+            [
+              240,
+              148
+            ]
+          ]
+        },
+        {
+          "k": "label",
+          "x": 200,
+          "y": 240,
+          "text": "stitches cross straight over the gap",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A ladder of small hand stitches closing a gap between two folded edges."
+  },
+  {
+    "id": "zipper",
+    "name": "Installing a zipper (sandwich method)",
+    "summary": "Outer + zipper + lining sewn in one pass.",
+    "explanation": "For lined pouches, lay the outer right side up, the zipper face down on top with tape edge aligned to the raw edge, then the lining right side down. Sew through all layers with a zipper foot. Open the zipper partway when you reach the pull so you can sew past it in a straight line.",
+    "steps": [
+      "Attach a zipper foot.",
+      "Stack outer (right side up), zipper (face down), lining (face down).",
+      "Sew along the edge, stopping to slide the pull out of the way.",
+      "Press layers away from the teeth and topstitch."
+    ],
+    "tools": [
+      "Zipper foot",
+      "Clips"
+    ],
+    "mistakes": [
+      "Sewing too close to the teeth — the pull jams.",
+      "Forgetting to open the zipper before the final seam — you can't turn the pouch."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 120,
+          "w": 280,
+          "h": 130,
+          "tone": "a"
+        },
+        {
+          "k": "zip",
+          "x": 60,
+          "y": 112,
+          "w": 280
+        },
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 100,
+          "w": 280,
+          "h": 40,
+          "tone": "b",
+          "side": "wrong",
+          "dim": true
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              126
+            ],
+            [
+              340,
+              126
+            ]
+          ]
+        },
+        {
+          "k": "foot",
+          "x": 200,
+          "y": 126
+        }
+      ]
+    },
+    "alt": "Outer fabric, zipper and lining stacked and stitched along the top edge."
+  },
+  {
+    "id": "casing",
+    "name": "Making a casing",
+    "summary": "A channel for elastic or a drawstring.",
+    "explanation": "Fold the raw edge under 1 cm and press, then fold again by the casing depth (elastic width + 1 cm) and press. Stitch close to the lower fold, leaving an opening to insert the elastic or exit the cord.",
+    "steps": [
+      "Press 1 cm to the wrong side.",
+      "Press again by the casing depth.",
+      "Edgestitch along the lower fold.",
+      "Leave a 5 cm opening for elastic (not needed for side-exit drawstrings)."
+    ],
+    "tools": [
+      "Iron",
+      "Ruler or seam gauge",
+      "Safety pin or bodkin"
+    ],
+    "mistakes": [
+      "Casing too narrow — elastic twists or won't fit.",
+      "Catching the elastic in the stitching."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 180,
+          "tone": "c",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 50,
+          "tone": "c"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              106
+            ],
+            [
+              340,
+              106
+            ]
+          ]
+        },
+        {
+          "k": "elastic",
+          "x": 70,
+          "y": 74,
+          "w": 200
+        }
+      ]
+    },
+    "alt": "A folded channel at the top of a fabric piece with elastic inside."
+  },
+  {
+    "id": "elastic-waistband",
+    "name": "Elastic waistband",
+    "summary": "Cut, thread and join elastic for a comfortable fit.",
+    "explanation": "Elastic is cut shorter than the body measurement so it grips gently — about 90% of the waist plus a 2 cm overlap. Thread it with a safety pin, check it isn't twisted, overlap the ends and zigzag in a box.",
+    "steps": [
+      "Cut elastic to 0.9 × waist + 2 cm.",
+      "Pin one end to the casing so it can't disappear.",
+      "Feed it through with a safety pin.",
+      "Overlap ends 2 cm, zigzag a box, close the casing."
+    ],
+    "tools": [
+      "Safety pin",
+      "Zigzag stitch"
+    ],
+    "mistakes": [
+      "Twisted elastic.",
+      "Using non-woven 'braided' elastic that narrows when stretched."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "elastic",
+          "x": 60,
+          "y": 140,
+          "w": 160
+        },
+        {
+          "k": "elastic",
+          "x": 180,
+          "y": 140,
+          "w": 160
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              180,
+              140
+            ],
+            [
+              190,
+              158
+            ],
+            [
+              200,
+              140
+            ],
+            [
+              210,
+              158
+            ],
+            [
+              220,
+              140
+            ]
+          ]
+        },
+        {
+          "k": "dim",
+          "from": [
+            180,
+            185
+          ],
+          "to": [
+            220,
+            185
+          ],
+          "value": 2
+        }
+      ]
+    },
+    "alt": "Two elastic ends overlapped and joined with zigzag stitching."
+  },
+  {
+    "id": "hemming",
+    "name": "Double-fold hem",
+    "summary": "Enclose the raw edge in two folds.",
+    "explanation": "Press the edge under once (usually 1 cm), then again by the hem depth, and stitch close to the inner fold. The raw edge is fully enclosed, so no other finishing is needed.",
+    "steps": [
+      "Press the first fold.",
+      "Press the second fold.",
+      "Pin and stitch near the inner fold from the wrong side."
+    ],
+    "tools": [
+      "Iron",
+      "Seam gauge"
+    ],
+    "mistakes": [
+      "Uneven folds — measure with a seam gauge as you press."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 180,
+          "tone": "c",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 190,
+          "w": 280,
+          "h": 50,
+          "tone": "c"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              194
+            ],
+            [
+              340,
+              194
+            ]
+          ]
+        },
+        {
+          "k": "fold",
+          "from": [
+            60,
+            240
+          ],
+          "to": [
+            340,
+            240
+          ],
+          "label": "folded edge"
+        }
+      ]
+    },
+    "alt": "A folded hem at the bottom of a fabric piece stitched near its inner edge."
+  },
+  {
+    "id": "finishing-edges",
+    "name": "Finishing raw edges",
+    "summary": "Stop seams fraying inside unlined projects.",
+    "explanation": "Unlined items need their seam allowances neatened. Zigzag or overlock each raw edge, use pinking shears on tightly woven cottons, or press the allowances open and zigzag each one separately.",
+    "steps": [
+      "Choose a method that suits the fabric.",
+      "Finish edges before or after sewing the seam as the pattern says.",
+      "Press."
+    ],
+    "tools": [
+      "Zigzag stitch or overlocker",
+      "Pinking shears (optional)"
+    ],
+    "mistakes": [
+      "Leaving edges raw on loosely woven linen — it frays fast."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 80,
+          "y": 50,
+          "w": 240,
+          "h": 200,
+          "tone": "b",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              86,
+              60
+            ],
+            [
+              76,
+              70
+            ],
+            [
+              86,
+              80
+            ],
+            [
+              76,
+              90
+            ],
+            [
+              86,
+              100
+            ],
+            [
+              76,
+              110
+            ],
+            [
+              86,
+              120
+            ],
+            [
+              76,
+              130
+            ],
+            [
+              86,
+              140
+            ],
+            [
+              76,
+              150
+            ],
+            [
+              86,
+              160
+            ],
+            [
+              76,
+              170
+            ],
+            [
+              86,
+              180
+            ],
+            [
+              76,
+              190
+            ],
+            [
+              86,
+              200
+            ],
+            [
+              76,
+              210
+            ],
+            [
+              86,
+              220
+            ],
+            [
+              76,
+              230
+            ],
+            [
+              86,
+              240
+            ]
+          ]
+        }
+      ]
+    },
+    "alt": "Zigzag stitching along the left raw edge of a fabric piece."
+  },
+  {
+    "id": "interfacing",
+    "name": "Using fusible interfacing",
+    "summary": "Add body to soft fabrics.",
+    "explanation": "Place the glue (bumpy, shiny) side against the wrong side of the fabric. Cover with a damp pressing cloth and press — don't slide — for 10–15 seconds per position, overlapping positions. Let it cool flat before handling.",
+    "steps": [
+      "Glue side down on the wrong side of fabric.",
+      "Pressing cloth on top.",
+      "Press 10–15 s per spot, lifting between spots.",
+      "Cool flat."
+    ],
+    "tools": [
+      "Iron",
+      "Pressing cloth"
+    ],
+    "mistakes": [
+      "Glue side up — it fuses to your iron.",
+      "Sliding the iron — bubbles and wrinkles."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 80,
+          "y": 90,
+          "w": 240,
+          "h": 150,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 90,
+          "y": 100,
+          "w": 220,
+          "h": 130,
+          "tone": "d",
+          "label": "interfacing, glue side down"
+        },
+        {
+          "k": "iron",
+          "x": 200,
+          "y": 60
+        }
+      ]
+    },
+    "alt": "Interfacing laid on the wrong side of fabric with an iron above."
+  },
+  {
+    "id": "french-seam",
+    "name": "French seams",
+    "summary": "A seam that encloses its own raw edges — no fraying, no overlocker.",
+    "explanation": "Sew the seam first with WRONG sides together using a narrow allowance, trim it, then fold right sides together and sew again just wider than the trimmed allowance. The raw edges end up sealed inside a neat little tube. Ideal for pillowcases, unlined bags and sheer fabrics.",
+    "steps": [
+      "Wrong sides together, sew at 0.5 cm.",
+      "Trim the allowance to 3 mm and press.",
+      "Fold right sides together, rolling the seam to the edge; press.",
+      "Sew again at 0.7 cm, enclosing the raw edges."
+    ],
+    "tools": [
+      "Sewing machine",
+      "Iron"
+    ],
+    "mistakes": [
+      "Starting right sides together — the finished seam ends up on the outside.",
+      "Not trimming enough — whiskers poke through the second seam."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 180,
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 200,
+          "y": 60,
+          "w": 24,
+          "h": 180,
+          "tone": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              212,
+              60
+            ],
+            [
+              212,
+              240
+            ]
+          ]
+        },
+        {
+          "k": "label",
+          "x": 200,
+          "y": 275,
+          "text": "raw edges sealed inside the seam",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A French seam with the raw edges enclosed in a narrow folded tube."
+  },
+  {
+    "id": "quilting",
+    "name": "Quilting the layers",
+    "summary": "Stitching through top, batting and backing so they act as one.",
+    "explanation": "A quilt 'sandwich' is backing (right side down), batting, then the top (right side up). Smooth each layer, pin every 10 cm with safety pins, and quilt from the centre outwards so any excess is pushed to the edges. A walking foot feeds all layers evenly; lengthen the stitch to about 3 mm.",
+    "steps": [
+      "Smooth and tape the backing wrong side up.",
+      "Add batting, then the top.",
+      "Pin every 10 cm.",
+      "Quilt from the centre outwards with a 3 mm stitch."
+    ],
+    "tools": [
+      "Walking foot (recommended)",
+      "Curved safety pins"
+    ],
+    "mistakes": [
+      "Quilting from one edge to the other — the layers drift and pucker.",
+      "Too few pins."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 70,
+          "y": 50,
+          "w": 260,
+          "h": 210,
+          "tone": "b",
+          "side": "wrong"
+        },
+        {
+          "k": "panel",
+          "x": 64,
+          "y": 44,
+          "w": 260,
+          "h": 210,
+          "tone": "d"
+        },
+        {
+          "k": "panel",
+          "x": 58,
+          "y": 38,
+          "w": 260,
+          "h": 210,
+          "tone": "a"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              140,
+              38
+            ],
+            [
+              140,
+              248
+            ]
+          ]
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              220,
+              38
+            ],
+            [
+              220,
+              248
+            ]
+          ]
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              58,
+              140
+            ],
+            [
+              318,
+              140
+            ]
+          ]
+        }
+      ]
+    },
+    "alt": "A quilt sandwich of three layers with quilting lines stitched through."
+  },
+  {
+    "id": "binding",
+    "name": "Double-fold binding",
+    "summary": "A folded strip that wraps and finishes a quilted edge.",
+    "explanation": "Cut strips 6–6.5 cm wide, join them with diagonal seams and press in half lengthwise. Sew the raw edges to the front of the item, mitring each corner by folding the strip up at 45° and back down. Wrap the fold to the back and stitch it by hand or in the ditch from the front.",
+    "steps": [
+      "Join strips with diagonal seams; press in half.",
+      "Sew raw edges to the front.",
+      "Mitre each corner: stop 1 seam allowance from the corner, fold up at 45°, fold down, continue.",
+      "Wrap to the back and stitch."
+    ],
+    "tools": [
+      "Rotary cutter",
+      "Clips",
+      "Hand-sewing needle"
+    ],
+    "mistakes": [
+      "Binding too narrow to cover the stitching on the back.",
+      "Stretching the binding round corners."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 60,
+          "w": 280,
+          "h": 190,
+          "tone": "a"
+        },
+        {
+          "k": "panel",
+          "x": 60,
+          "y": 48,
+          "w": 280,
+          "h": 22,
+          "tone": "b"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              60,
+              66
+            ],
+            [
+              340,
+              66
+            ]
+          ]
+        },
+        {
+          "k": "label",
+          "x": 200,
+          "y": 285,
+          "text": "sew to front, wrap to back",
+          "anchor": "middle"
+        }
+      ]
+    },
+    "alt": "A binding strip sewn along an edge."
+  },
+  {
+    "id": "gathering",
+    "name": "Gathering",
+    "summary": "Two rows of long stitches pulled to ruffle fabric evenly.",
+    "explanation": "Sew two parallel rows of the longest straight stitch inside the seam allowance without backstitching. Hold both bobbin threads and slide the fabric along them until it fits, distribute the gathers evenly, then sew the seam between the two rows.",
+    "steps": [
+      "Longest stitch, no backstitching.",
+      "Two rows inside the seam allowance.",
+      "Pull the bobbin threads.",
+      "Even out gathers and sew."
+    ],
+    "tools": [
+      "Sewing machine",
+      "Pins"
+    ],
+    "mistakes": [
+      "Pulling the top threads — they snap.",
+      "Gathers bunched in one spot."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "poly",
+          "pts": [
+            [
+              40,
+              60
+            ],
+            [
+              360,
+              60
+            ],
+            [
+              360,
+              240
+            ],
+            [
+              40,
+              240
+            ]
+          ],
+          "tone": "c",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              40,
+              72
+            ],
+            [
+              360,
+              72
+            ]
+          ]
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              40,
+              84
+            ],
+            [
+              360,
+              84
+            ]
+          ]
+        },
+        {
+          "k": "arrow",
+          "from": [
+            330,
+            30
+          ],
+          "to": [
+            250,
+            30
+          ],
+          "label": "pull bobbin threads"
+        }
+      ]
+    },
+    "alt": "Two rows of basting stitches along the top edge with arrows showing the threads pulled."
+  },
+  {
+    "id": "sewing-curves",
+    "name": "Sewing curves",
+    "summary": "Smooth curved seams without puckers.",
+    "explanation": "Sew curves slowly, guiding the fabric so the edge stays on the seam guide just in front of the needle, and stop with the needle down to pivot slightly every few stitches. After sewing, clip inward (concave) curves and notch outward (convex) curves so the seam lies flat when turned.",
+    "steps": [
+      "Shorten the stitch slightly (2–2.2 mm).",
+      "Watch the seam guide, not the needle.",
+      "Stop with the needle down and turn the fabric a little at a time.",
+      "Clip or notch the allowance, then press."
+    ],
+    "tools": [
+      "Sewing machine",
+      "Small sharp scissors"
+    ],
+    "mistakes": [
+      "Pulling the fabric round the curve — it stretches and ripples.",
+      "Not clipping — the curve pulls and won't lie flat."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "path",
+          "d": "M 60 80 Q 200 280 340 80 L 340 260 L 60 260 Z",
+          "tone": "a",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              72,
+              96
+            ],
+            [
+              120,
+              160
+            ],
+            [
+              200,
+              194
+            ],
+            [
+              280,
+              160
+            ],
+            [
+              328,
+              96
+            ]
+          ]
+        },
+        {
+          "k": "scissors",
+          "x": 200,
+          "y": 230,
+          "angle": 270
+        }
+      ]
+    },
+    "alt": "A curved seam with small clips cut into the seam allowance."
+  },
+  {
+    "id": "staystitching",
+    "name": "Staystitching",
+    "summary": "A line of stitching that stops curved edges stretching.",
+    "explanation": "Necklines, waistlines and other curves cut partly on the bias stretch as soon as you handle them. Straight after cutting, sew a single line of regular stitching just inside the seam allowance (usually 1–1.2 cm from the edge), working from each end towards the centre. It stays inside the finished seam.",
+    "steps": [
+      "Do it right after cutting.",
+      "Stitch 2–3 mm inside the seam line.",
+      "Sew from the shoulder towards the centre on each side.",
+      "Don't pull the fabric."
+    ],
+    "tools": [
+      "Sewing machine"
+    ],
+    "mistakes": [
+      "Staystitching after the curve has already stretched."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "path",
+          "d": "M 60 60 L 150 60 Q 200 140 250 60 L 340 60 L 340 260 L 60 260 Z",
+          "tone": "c",
+          "side": "wrong"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              150,
+              72
+            ],
+            [
+              175,
+              108
+            ],
+            [
+              200,
+              122
+            ],
+            [
+              225,
+              108
+            ],
+            [
+              250,
+              72
+            ]
+          ]
+        }
+      ]
+    },
+    "alt": "Stitching following a curved neckline just inside the edge."
+  },
+  {
+    "id": "eyelets",
+    "name": "Installing eyelets",
+    "summary": "Metal grommets for drawstrings and laces.",
+    "explanation": "Mark the centre, cut a hole slightly smaller than the eyelet's inner diameter, push the tube part through from the right side, place the washer on the back and set it with the setting tool and a firm hammer blow on a hard surface. Add interfacing or a scrap behind thin fabric.",
+    "steps": [
+      "Mark and cut a small hole.",
+      "Tube from the front, washer on the back.",
+      "Use the setting tool on a hard surface.",
+      "Hammer firmly 2–3 times."
+    ],
+    "tools": [
+      "Eyelet kit and setting tool",
+      "Hammer",
+      "Hole punch or small scissors"
+    ],
+    "mistakes": [
+      "Hole too big — the eyelet pulls out.",
+      "Setting on a soft surface."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 80,
+          "y": 80,
+          "w": 240,
+          "h": 140,
+          "tone": "a"
+        },
+        {
+          "k": "path",
+          "d": "M 200 120 A 30 30 0 1 1 199.9 120 Z",
+          "tone": "#B9C1C6"
+        },
+        {
+          "k": "path",
+          "d": "M 200 135 A 15 15 0 1 1 199.9 135 Z",
+          "tone": "#FBF7F0"
+        }
+      ]
+    },
+    "alt": "A metal eyelet set into fabric."
+  },
+  {
+    "id": "buttonholes",
+    "name": "Buttonholes & buttons",
+    "summary": "Machine buttonholes and sewing on a button with a shank.",
+    "explanation": "Mark the buttonhole length (button diameter + thickness + 3 mm). Use your machine's buttonhole foot on a test scrap first, then sew it and cut it open with a seam ripper, a pin across the end to stop it. Sew buttons with a thread shank: put a matchstick on top of the button while sewing, then wind thread round the stitches underneath.",
+    "steps": [
+      "Interface the area.",
+      "Test on a scrap with the same layers.",
+      "Sew, then cut open carefully.",
+      "Sew the button with a shank."
+    ],
+    "tools": [
+      "Buttonhole foot",
+      "Seam ripper",
+      "Pins"
+    ],
+    "mistakes": [
+      "Cutting through the end bar.",
+      "No shank — the button pulls the fabric."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "panel",
+          "x": 80,
+          "y": 90,
+          "w": 240,
+          "h": 130,
+          "tone": "b"
+        },
+        {
+          "k": "stitch",
+          "pts": [
+            [
+              150,
+              150
+            ],
+            [
+              250,
+              150
+            ],
+            [
+              250,
+              162
+            ],
+            [
+              150,
+              162
+            ]
+          ],
+          "closed": true
+        },
+        {
+          "k": "pin",
+          "x": 248,
+          "y": 156,
+          "angle": 90
+        }
+      ]
+    },
+    "alt": "A machine buttonhole with a pin across one end."
+  },
+  {
+    "id": "adjustable-strap",
+    "name": "Adjustable straps",
+    "summary": "D-rings and a slider for a strap you can lengthen.",
+    "explanation": "Sew D-rings into fabric tabs caught in the bag's side seams. For the strap: stitch one webbing end round the slider's centre bar, take the other end through the first D-ring, back through the slider (over the centre bar), then through the second D-ring and stitch it down with a box-and-X. Seal cut webbing ends.",
+    "steps": [
+      "Tabs with D-rings in the side seams.",
+      "Webbing end round the slider bar, stitched.",
+      "Through D-ring 1, back through the slider.",
+      "Through D-ring 2, box-and-X stitch."
+    ],
+    "tools": [
+      "D-rings",
+      "Strap slider",
+      "Webbing"
+    ],
+    "mistakes": [
+      "Threading the slider the wrong way — the strap slips.",
+      "Unsealed webbing ends fray."
+    ],
+    "scene": {
+      "els": [
+        {
+          "k": "cord",
+          "pts": [
+            [
+              30,
+              150
+            ],
+            [
+              200,
+              140
+            ],
+            [
+              370,
+              150
+            ]
+          ],
+          "color": "#3A3530"
+        },
+        {
+          "k": "panel",
+          "x": 190,
+          "y": 128,
+          "w": 22,
+          "h": 30,
+          "tone": "#B9C1C6",
+          "rx": 3
+        }
+      ]
+    },
+    "alt": "A webbing strap threaded through a slider."
+  }
+]

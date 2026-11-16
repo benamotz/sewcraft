@@ -1,0 +1,509 @@
+{
+ "id": "headband",
+ "title": "Elastic-Back Headband",
+ "category": "accessories",
+ "difficulty": "beginner",
+ "summary": "A comfy wide headband with a hidden elastic section at the back.",
+ "description": "Two tubes and a short piece of elastic. The elastic sits in its own casing at the back, so the headband grips without pinching.",
+ "tags": [
+  "accessories",
+  "gifts",
+  "beginner",
+  "quick",
+  "scraps"
+ ],
+ "minutes": [
+  35,
+  50
+ ],
+ "costUSD": [
+  2,
+  6
+ ],
+ "machineRequired": true,
+ "popularity": 58,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished headband",
+  "dims": [
+   {
+    "label": "Band width",
+    "value": 5
+   },
+   {
+    "label": "Relaxed circumference",
+    "value": 50
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "pins",
+  "iron",
+  "safety-pin"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Cotton fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Cotton lawn",
+    "Jersey"
+   ],
+   "why": "Band and casing.",
+   "swatch": "#7F9473",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "elastic",
+   "name": "2 cm wide elastic",
+   "kind": "notion",
+   "required": true,
+   "quantity": "14 cm",
+   "why": "Stretchy back.",
+   "swatch": "#F1ECE4"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "band",
+   "name": "Front band",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 12,
+   "height": 42,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#7F9473"
+  },
+  {
+   "id": "casing",
+   "name": "Elastic casing",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 6,
+   "height": 22,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5F7354"
+  }
+ ],
+ "steps": [
+  {
+   "id": "hb1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press your fabric.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ]
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "hb2",
+   "stage": "cut",
+   "title": "Cut both pieces",
+   "text": "Cut the front band and the elastic casing.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "band",
+    "casing"
+   ]
+  },
+  {
+   "id": "hb3",
+   "stage": "sew",
+   "title": "Sew the band tube",
+   "text": "Fold the band in half lengthwise, right sides together. Sew the long edge with a 1 cm seam and turn right side out. Press with the seam centred on the back.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "hb4",
+   "stage": "sew",
+   "title": "Sew the casing tube",
+   "text": "Repeat with the casing strip.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "casing"
+    }
+   },
+   "pieces": [
+    "casing"
+   ]
+  },
+  {
+   "id": "hb5",
+   "stage": "assemble",
+   "title": "Thread the elastic",
+   "text": "Thread the elastic through the casing and stitch across each end to hold it, 5 mm from the edges. The casing gathers up.",
+   "visual": {
+    "type": "template",
+    "name": "cord",
+    "args": {
+     "tone": "casing",
+     "label": "elastic through the casing"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Elastic length",
+     "value": 14,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "casing"
+   ],
+   "techniques": [
+    "elastic-waistband"
+   ]
+  },
+  {
+   "id": "hb6",
+   "stage": "assemble",
+   "title": "Join the ends",
+   "text": "Fold the band's raw ends 1 cm to the inside. Insert one end of the casing 2 cm into each end of the band and topstitch across twice.",
+   "visual": {
+    "type": "template",
+    "name": "close",
+    "args": {
+     "tone": "main",
+     "method": "machine"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Overlap",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band",
+    "casing"
+   ]
+  },
+  {
+   "id": "hb7",
+   "stage": "finish",
+   "title": "Done",
+   "text": "Try it on.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Headband",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        330.0,
+        160.0
+       ],
+       [
+        326.7,
+        184.5
+       ],
+       [
+        317.1,
+        207.7
+       ],
+       [
+        301.6,
+        228.6
+       ],
+       [
+        281.1,
+        246.0
+       ],
+       [
+        256.4,
+        259.1
+       ],
+       [
+        228.9,
+        267.2
+       ],
+       [
+        200.0,
+        270.0
+       ],
+       [
+        171.1,
+        267.2
+       ],
+       [
+        143.6,
+        259.1
+       ],
+       [
+        118.9,
+        246.0
+       ],
+       [
+        98.4,
+        228.6
+       ],
+       [
+        82.9,
+        207.7
+       ],
+       [
+        73.3,
+        184.5
+       ],
+       [
+        70.0,
+        160.0
+       ],
+       [
+        73.3,
+        135.5
+       ],
+       [
+        82.9,
+        112.3
+       ],
+       [
+        98.4,
+        91.4
+       ],
+       [
+        118.9,
+        74.0
+       ],
+       [
+        143.6,
+        60.9
+       ],
+       [
+        171.1,
+        52.8
+       ],
+       [
+        200.0,
+        50.0
+       ],
+       [
+        228.9,
+        52.8
+       ],
+       [
+        256.4,
+        60.9
+       ],
+       [
+        281.1,
+        74.0
+       ],
+       [
+        301.6,
+        91.4
+       ],
+       [
+        317.1,
+        112.3
+       ],
+       [
+        326.7,
+        135.5
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        312.0,
+        175.0
+       ],
+       [
+        309.2,
+        196.8
+       ],
+       [
+        300.9,
+        217.5
+       ],
+       [
+        287.6,
+        236.1
+       ],
+       [
+        269.8,
+        251.6
+       ],
+       [
+        248.6,
+        263.3
+       ],
+       [
+        224.9,
+        270.5
+       ],
+       [
+        200.0,
+        273.0
+       ],
+       [
+        175.1,
+        270.5
+       ],
+       [
+        151.4,
+        263.3
+       ],
+       [
+        130.2,
+        251.6
+       ],
+       [
+        112.4,
+        236.1
+       ],
+       [
+        99.1,
+        217.5
+       ],
+       [
+        90.8,
+        196.8
+       ],
+       [
+        88.0,
+        175.0
+       ],
+       [
+        90.8,
+        153.2
+       ],
+       [
+        99.1,
+        132.5
+       ],
+       [
+        112.4,
+        113.9
+       ],
+       [
+        130.2,
+        98.4
+       ],
+       [
+        151.4,
+        86.7
+       ],
+       [
+        175.1,
+        79.5
+       ],
+       [
+        200.0,
+        77.0
+       ],
+       [
+        224.9,
+        79.5
+       ],
+       [
+        248.6,
+        86.7
+       ],
+       [
+        269.8,
+        98.4
+       ],
+       [
+        287.6,
+        113.9
+       ],
+       [
+        300.9,
+        132.5
+       ],
+       [
+        309.2,
+        153.2
+       ]
+      ],
+      "tone": "#FBF7F0"
+     },
+     {
+      "k": "panel",
+      "x": 160,
+      "y": 262,
+      "w": 80,
+      "h": 16,
+      "tone": "casing",
+      "rx": 6
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "scrunchie",
+  "infinity-scarf"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

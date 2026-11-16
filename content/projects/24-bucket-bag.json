@@ -1,0 +1,926 @@
+{
+ "id": "bucket-bag",
+ "title": "Drawstring Bucket Bag",
+ "category": "bags",
+ "difficulty": "intermediate",
+ "summary": "A round-bottomed, lined bucket bag with eyelets, a drawstring and a shoulder strap.",
+ "description": "A circular base and a tube body make a soft, roomy bucket. You'll learn to sew a curve to a straight edge evenly, install eyelets and make a drawstring channel between outer and lining.",
+ "tags": [
+  "bags",
+  "lined",
+  "curves",
+  "drawstring",
+  "eyelets"
+ ],
+ "minutes": [
+  180,
+  270
+ ],
+ "costUSD": [
+  18,
+  35
+ ],
+ "machineRequired": true,
+ "popularity": 82,
+ "featured": true,
+ "constants": {
+  "sa": 1
+ },
+ "params": [
+  {
+   "id": "D",
+   "label": "Base diameter",
+   "default": 20,
+   "min": 16,
+   "max": 26,
+   "step": 1
+  },
+  {
+   "id": "H",
+   "label": "Height",
+   "default": 28,
+   "min": 20,
+   "max": 34,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "s",
+   "label": "Small",
+   "values": {
+    "D": 16,
+    "H": 22
+   }
+  },
+  {
+   "id": "m",
+   "label": "Standard",
+   "values": {
+    "D": 20,
+    "H": 28
+   }
+  },
+  {
+   "id": "l",
+   "label": "Large",
+   "values": {
+    "D": 24,
+    "H": 32
+   }
+  }
+ ],
+ "customNote": "The base is a circle of the finished diameter plus seam allowance; the body is exactly π × diameter around (plus seam allowances), so the two always match. Strap and eyelet position stay fixed.",
+ "finished": {
+  "label": "Finished bag",
+  "dims": [
+   {
+    "label": "Base diameter",
+    "value": "D"
+   },
+   {
+    "label": "Height",
+    "value": "H"
+   },
+   {
+    "label": "Circumference",
+    "value": "3.1416*D"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-90",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "clips",
+  "iron",
+  "pressing-cloth",
+  "safety-pin",
+  "hand-needle?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer — canvas or denim",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton canvas",
+    "Denim",
+    "Waxed canvas (no iron)"
+   ],
+   "why": "Outside, base and strap.",
+   "swatch": "#8E4A36",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   },
+   "weight": "Medium–heavy"
+  },
+  {
+   "id": "lining",
+   "name": "Lining — cotton",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Poplin"
+   ],
+   "why": "Inside.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "intf",
+   "name": "Fusible fleece or heavy interfacing",
+   "kind": "interfacing",
+   "required": true,
+   "recommended": [
+    "Fusible fleece",
+    "Fusible foam for the base"
+   ],
+   "why": "Structure, especially the base.",
+   "swatch": "#ECE7DD",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 90,
+    "widths": [
+     90
+    ]
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord, 5–6 mm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "{3.1416*D + 60} long",
+   "why": "The drawstring.",
+   "swatch": "#E8E0D2",
+   "alternatives": [
+    "Leather lace"
+   ]
+  },
+  {
+   "id": "eyelets",
+   "name": "Eyelets (grommets), 10 mm inner",
+   "kind": "notion",
+   "required": true,
+   "quantity": "2 + setting tool",
+   "why": "Where the drawstring exits.",
+   "swatch": "#B9C1C6",
+   "alternatives": [
+    "Two vertical buttonholes"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "body",
+   "name": "Outer body",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "3.1416*D + 2*sa",
+   "height": "H + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#8E4A36",
+   "markings": [
+    "Mark quarter points along the bottom edge"
+   ]
+  },
+  {
+   "id": "base",
+   "name": "Outer base",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "D + 2*sa",
+   "height": "D + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#6E3828",
+   "markings": [
+    "Mark quarter points on the edge"
+   ],
+   "outline": "M {hw} 0 A {hw} {hw} 0 1 1 {hw} {h} A {hw} {hw} 0 1 1 {hw} 0 Z"
+  },
+  {
+   "id": "strap",
+   "name": "Strap",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 10,
+   "height": 110,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#A85E46"
+  },
+  {
+   "id": "lbody",
+   "name": "Lining body",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": "3.1416*D + 2*sa",
+   "height": "H + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "lbase",
+   "name": "Lining base",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": "D + 2*sa",
+   "height": "D + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C9A06A",
+   "outline": "M {hw} 0 A {hw} {hw} 0 1 1 {hw} {h} A {hw} {hw} 0 1 1 {hw} 0 Z"
+  },
+  {
+   "id": "ibody",
+   "name": "Interfacing body",
+   "materialId": "intf",
+   "quantity": 1,
+   "width": "3.1416*D",
+   "height": "H",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA"
+  },
+  {
+   "id": "ibase",
+   "name": "Interfacing base",
+   "materialId": "intf",
+   "quantity": 1,
+   "width": "D",
+   "height": "D",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA",
+   "outline": "M {hw} 0 A {hw} {hw} 0 1 1 {hw} {h} A {hw} {hw} 0 1 1 {hw} 0 Z"
+  }
+ ],
+ "steps": [
+  {
+   "id": "bk1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press the outer and lining fabrics.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "lining"
+     ]
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "bk2",
+   "stage": "cut",
+   "title": "Print the circle and cut the outer",
+   "text": "Print the base circle at 100%. Cut the outer body rectangle, the outer base circle and the strap.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "body",
+    "base",
+    "strap"
+   ]
+  },
+  {
+   "id": "bk3",
+   "stage": "cut",
+   "title": "Cut the lining",
+   "text": "Cut the lining body and lining base.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "lbody",
+    "lbase"
+   ]
+  },
+  {
+   "id": "bk4",
+   "stage": "cut",
+   "title": "Cut the interfacing",
+   "text": "Cut interfacing for the body and base without seam allowances.",
+   "visual": {
+    "type": "layout",
+    "materialId": "intf"
+   },
+   "pieces": [
+    "ibody",
+    "ibase"
+   ]
+  },
+  {
+   "id": "bk5",
+   "stage": "sew",
+   "title": "Fuse the interfacing",
+   "text": "Fuse the interfacing to the wrong side of the outer body and base, 1 cm in from the edges, using a pressing cloth.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "intf"
+     ],
+     "label": "fuse with a pressing cloth"
+    }
+   },
+   "pieces": [
+    "ibody",
+    "ibase",
+    "body",
+    "base"
+   ],
+   "techniques": [
+    "interfacing"
+   ],
+   "timerMin": 1
+  },
+  {
+   "id": "bk6",
+   "stage": "sew",
+   "title": "Make the strap",
+   "text": "Press the strap into a four-fold strap and edgestitch both long edges.",
+   "visual": {
+    "type": "template",
+    "name": "strap",
+    "args": {
+     "tone": "strap",
+     "width": 2.5
+    }
+   },
+   "pieces": [
+    "strap"
+   ],
+   "techniques": [
+    "edgestitching"
+   ]
+  },
+  {
+   "id": "bk7",
+   "stage": "sew",
+   "title": "Sew the body into a tube",
+   "text": "Fold the outer body right sides together, short edges matching, and sew with 1 cm. Press open. Repeat for the lining body, leaving a 12 cm gap in the middle of its seam.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "l",
+     "label": "short edges together → tube"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    },
+    {
+     "label": "Lining gap",
+     "value": 12,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body",
+    "lbody"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "bk8",
+   "stage": "sew",
+   "title": "Staystitch and clip the tube bottom",
+   "text": "Staystitch 8 mm from the bottom edge of each tube, then clip into the allowance every 2 cm, stopping just short of the staystitching. This lets the straight edge spread round the curve.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "dist": 8,
+     "label": "staystitch, then clip every 2 cm"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Staystitch from edge",
+     "value": 0.8,
+     "unit": "len"
+    },
+    {
+     "label": "Clip spacing",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "staystitching",
+    "sewing-curves"
+   ]
+  },
+  {
+   "id": "bk9",
+   "stage": "sew",
+   "title": "Sew in the base",
+   "text": "Mark quarter points on the base and the tube bottom (the seam is one quarter). Pin the base into the tube right sides together, matching the quarters, then pin generously between. Sew with the tube on top, 1 cm from the edge, easing as you go. Repeat for the lining.",
+   "visual": {
+    "type": "scene",
+    "scene": {
+     "els": [
+      {
+       "k": "path",
+       "d": "M 200 70 A 110 110 0 1 1 199.9 70 Z",
+       "tone": "base",
+       "side": "wrong",
+       "label": "base",
+       "lx": 200,
+       "ly": 180
+      },
+      {
+       "k": "stitch",
+       "pts": [
+        [
+         200,
+         82
+        ],
+        [
+         298,
+         180
+        ],
+        [
+         200,
+         278
+        ],
+        [
+         102,
+         180
+        ]
+       ],
+       "closed": true
+      },
+      {
+       "k": "pin",
+       "x": 200,
+       "y": 72
+      },
+      {
+       "k": "pin",
+       "x": 310,
+       "y": 180,
+       "angle": 0
+      },
+      {
+       "k": "pin",
+       "x": 200,
+       "y": 288
+      },
+      {
+       "k": "pin",
+       "x": 90,
+       "y": 180,
+       "angle": 0
+      },
+      {
+       "k": "label",
+       "x": 200,
+       "y": 30,
+       "text": "match the four quarter marks",
+       "anchor": "middle",
+       "bold": true
+      }
+     ]
+    }
+   },
+   "beginner": "A curve sewn to a straight edge is the trickiest part: go slowly, stop often with the needle down, and smooth only the next 3 cm in front of the foot. Puckers mean you need one more pin.",
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "base",
+    "body",
+    "lbase",
+    "lbody"
+   ],
+   "techniques": [
+    "sewing-curves"
+   ],
+   "alt": "A circular base pinned into the bottom of the tube at four quarter marks and stitched round."
+  },
+  {
+   "id": "bk10",
+   "stage": "sew",
+   "title": "Install the eyelets",
+   "text": "On the outer front, mark two eyelet positions 2.5 cm below the top edge, 3 cm either side of the centre. Cut the holes and set the eyelets following the kit instructions.",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "main",
+     "label": "eyelets 2.5 cm down, 6 cm apart"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Below top edge",
+     "value": 2.5,
+     "unit": "len"
+    },
+    {
+     "label": "Apart",
+     "value": 6,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "eyelets"
+   ],
+   "warnings": [
+    "Hammer eyelets on a hard surface with fingers well clear; wear eye protection."
+   ]
+  },
+  {
+   "id": "bk11",
+   "stage": "assemble",
+   "title": "Baste the strap and join the top",
+   "text": "Baste the strap ends to the outer at both sides, raw ends at the top edge. Put the outer (right side out) into the lining (wrong side out) and sew round the top with 1 cm.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "strap"
+    }
+   },
+   "pieces": [
+    "strap",
+    "body",
+    "lbody"
+   ],
+   "techniques": [
+    "attaching-straps",
+    "lining"
+   ]
+  },
+  {
+   "id": "bk12",
+   "stage": "assemble",
+   "title": "Turn and close",
+   "text": "Turn through the lining gap, close it, push the lining inside and press the top edge.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "lining"
+    }
+   },
+   "pieces": [
+    "lbody"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "bk13",
+   "stage": "finish",
+   "title": "Stitch the drawstring channel",
+   "text": "Topstitch round the top 1 cm from the edge, then again 4 cm from the edge, making a channel through which the eyelets open.",
+   "visual": {
+    "type": "template",
+    "name": "casing",
+    "args": {
+     "tone": "main",
+     "depth": 3,
+     "insert": "cord",
+     "gap": false
+    }
+   },
+   "measurements": [
+    {
+     "label": "First line",
+     "value": 1,
+     "unit": "len"
+    },
+    {
+     "label": "Second line",
+     "value": 4,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "casing",
+    "topstitching"
+   ]
+  },
+  {
+   "id": "bk14",
+   "stage": "finish",
+   "title": "Thread the drawstring",
+   "text": "Thread the cord in through one eyelet, all round the channel and out of the other. Knot the ends.",
+   "visual": {
+    "type": "template",
+    "name": "cord",
+    "args": {
+     "tone": "main",
+     "label": "in one eyelet, out the other"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Cord length",
+     "value": "3.1416*D + 60",
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "casing"
+   ]
+  },
+  {
+   "id": "bk15",
+   "stage": "finish",
+   "title": "Pull it closed",
+   "text": "Pull the cord to gather the top.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Bucket bag",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        120,
+        100
+       ],
+       [
+        280,
+        100
+       ],
+       [
+        290,
+        270
+       ],
+       [
+        110,
+        270
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        280.0,
+        100.0
+       ],
+       [
+        278.0,
+        103.1
+       ],
+       [
+        272.1,
+        106.1
+       ],
+       [
+        262.5,
+        108.7
+       ],
+       [
+        249.9,
+        110.9
+       ],
+       [
+        234.7,
+        112.6
+       ],
+       [
+        217.8,
+        113.6
+       ],
+       [
+        200.0,
+        114.0
+       ],
+       [
+        182.2,
+        113.6
+       ],
+       [
+        165.3,
+        112.6
+       ],
+       [
+        150.1,
+        110.9
+       ],
+       [
+        137.5,
+        108.7
+       ],
+       [
+        127.9,
+        106.1
+       ],
+       [
+        122.0,
+        103.1
+       ],
+       [
+        120.0,
+        100.0
+       ],
+       [
+        122.0,
+        96.9
+       ],
+       [
+        127.9,
+        93.9
+       ],
+       [
+        137.5,
+        91.3
+       ],
+       [
+        150.1,
+        89.1
+       ],
+       [
+        165.3,
+        87.4
+       ],
+       [
+        182.2,
+        86.4
+       ],
+       [
+        200.0,
+        86.0
+       ],
+       [
+        217.8,
+        86.4
+       ],
+       [
+        234.7,
+        87.4
+       ],
+       [
+        249.9,
+        89.1
+       ],
+       [
+        262.5,
+        91.3
+       ],
+       [
+        272.1,
+        93.9
+       ],
+       [
+        278.0,
+        96.9
+       ]
+      ],
+      "tone": "lining"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        118,
+        120
+       ],
+       [
+        282,
+        120
+       ]
+      ]
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        192,
+        116
+       ],
+       [
+        180,
+        150
+       ],
+       [
+        170,
+        170
+       ]
+      ],
+      "color": "#E8E0D2"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        208,
+        116
+       ],
+       [
+        222,
+        150
+       ],
+       [
+        232,
+        168
+       ]
+      ],
+      "color": "#E8E0D2"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        122,
+        104
+       ],
+       [
+        140,
+        20
+       ],
+       [
+        260,
+        20
+       ],
+       [
+        278,
+        104
+       ]
+      ],
+      "color": "strap"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "japanese-knot-bag",
+  "drawstring-backpack"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

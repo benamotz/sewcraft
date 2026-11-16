@@ -1,0 +1,288 @@
+{
+ "id": "bean-bags",
+ "title": "Juggling Bean Bags (set of 4)",
+ "category": "kids",
+ "difficulty": "beginner",
+ "summary": "Four little filled squares for juggling and throwing games — sew by hand or machine.",
+ "description": "The best first project for kids learning to sew with an adult: tiny seams, instant results. Use felt or cotton scraps and fill with rice or plastic pellets.",
+ "tags": [
+  "kids",
+  "gifts",
+  "beginner",
+  "hand-sewing",
+  "scraps",
+  "toys"
+ ],
+ "minutes": [
+  45,
+  75
+ ],
+ "costUSD": [
+  2,
+  6
+ ],
+ "machineRequired": false,
+ "popularity": 62,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Each bean bag",
+  "dims": [
+   {
+    "label": "Size (square)",
+    "value": 10
+   }
+  ]
+ },
+ "tools": [
+  "hand-needle",
+  "machine?",
+  "scissors",
+  "pins",
+  "funnel?",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Sturdy cotton or felt scraps",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Wool felt",
+    "Canvas"
+   ],
+   "why": "Bag fabric — tightly woven so filling can't escape.",
+   "swatch": "#D9A35F",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 50,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "filling",
+   "name": "Filling",
+   "kind": "notion",
+   "required": true,
+   "quantity": "About 120 g per bag (480 g total)",
+   "why": "Weight.",
+   "swatch": "#E9DFC9",
+   "alternatives": [
+    "Plastic poly pellets (washable)",
+    "Rice or dried lentils (not washable)"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "square",
+   "name": "Bean bag square",
+   "materialId": "main",
+   "quantity": 8,
+   "width": 12,
+   "height": 12,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#D9A35F"
+  }
+ ],
+ "steps": [
+  {
+   "id": "bb1",
+   "stage": "prep",
+   "title": "Choose and press fabrics",
+   "text": "Pick four pairs of fabrics — mismatched pairs look fun. Press them.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ]
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "bb2",
+   "stage": "cut",
+   "title": "Cut eight squares",
+   "text": "Cut eight 12 cm squares (two per bean bag).",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "square"
+   ],
+   "warnings": [
+    "Children should only use scissors with adult supervision."
+   ]
+  },
+  {
+   "id": "bb3",
+   "stage": "sew",
+   "title": "Sew around three and a half sides",
+   "text": "Place two squares right sides together. Sew all round with a 1 cm seam, leaving a 4 cm gap on one side. By hand, use a small backstitch so the filling can't escape.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "ltrb",
+     "gap": "b",
+     "gapLabel": "4 cm gap"
+    }
+   },
+   "beginner": "Backstitch by hand: bring the needle up, take a stitch backwards, then come up a stitch-length ahead. Keep stitches about 3 mm long.",
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    },
+    {
+     "label": "Gap",
+     "value": 4,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "square"
+   ],
+   "techniques": [
+    "backstitching",
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "bb4",
+   "stage": "sew",
+   "title": "Clip and turn",
+   "text": "Clip the corners, turn right side out and poke the corners out gently.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "bb5",
+   "stage": "assemble",
+   "title": "Fill",
+   "text": "Use a funnel to fill each bag about ¾ full — around 120 g. Leave room so it stays floppy for juggling.",
+   "visual": {
+    "type": "template",
+    "name": "fill",
+    "args": {
+     "tone": "main",
+     "label": "about 120 g"
+    }
+   },
+   "warnings": [
+    "Small parts and fillings are a choking hazard — not for children under 3."
+   ]
+  },
+  {
+   "id": "bb6",
+   "stage": "finish",
+   "title": "Close the gap",
+   "text": "Fold the gap's edges in and ladder-stitch it closed with small, firm stitches.",
+   "visual": {
+    "type": "template",
+    "name": "close",
+    "args": {
+     "tone": "main",
+     "method": "hand"
+    }
+   },
+   "pieces": [
+    "square"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "bb7",
+   "stage": "finish",
+   "title": "Play!",
+   "text": "Make all four and try a three-ball cascade.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Set",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 60,
+      "y": 120,
+      "w": 110,
+      "h": 110,
+      "tone": "main",
+      "rx": 18
+     },
+     {
+      "k": "panel",
+      "x": 150,
+      "y": 70,
+      "w": 110,
+      "h": 110,
+      "tone": "#7F9473",
+      "rx": 18
+     },
+     {
+      "k": "panel",
+      "x": 240,
+      "y": 130,
+      "w": 110,
+      "h": 110,
+      "tone": "#C0583A",
+      "rx": 18
+     },
+     {
+      "k": "panel",
+      "x": 160,
+      "y": 170,
+      "w": 100,
+      "h": 100,
+      "tone": "#5E7C8A",
+      "rx": 18
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "crayon-roll",
+  "scrunchie"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "bags", "name": "Bags & Totes", "blurb": "Carry-alls, backpacks and market bags", "tone": "#C66B4E" },
+  { "id": "clothing", "name": "Clothing", "blurb": "Skirts, tops and easy garments", "tone": "#8A9A7B" },
+  { "id": "accessories", "name": "Accessories", "blurb": "Pouches, scrunchies, wallets", "tone": "#D9A35F" },
+  { "id": "home", "name": "Home Decor", "blurb": "Cushions, table linens, storage", "tone": "#A88B73" },
+  { "id": "kids", "name": "Kids & Baby", "blurb": "Small makes for little people", "tone": "#7E98A8" },
+  { "id": "gifts", "name": "Gifts", "blurb": "Handmade things to give away", "tone": "#B5727D" },
+  { "id": "upcycling", "name": "Upcycling", "blurb": "New life for old textiles", "tone": "#6F8471" },
+  { "id": "beginner", "name": "Beginner Projects", "blurb": "Your first confident makes", "tone": "#C9A27E" }
+]

@@ -1,0 +1,702 @@
+{
+ "id": "weekender-duffel",
+ "title": "Weekender Duffel Bag",
+ "category": "bags",
+ "difficulty": "advanced",
+ "summary": "A structured, lined weekend bag with a top zipper, end panels and webbing handles.",
+ "description": "An advanced bag that combines everything: fusible fleece for structure, a zipper panel, webbing handles running under the bag, and end panels sewn in with pivoted corners. Allow a full weekend.",
+ "tags": [
+  "bags",
+  "travel",
+  "zipper",
+  "lined",
+  "advanced"
+ ],
+ "minutes": [
+  600,
+  900
+ ],
+ "costUSD": [
+  40,
+  80
+ ],
+ "machineRequired": true,
+ "popularity": 73,
+ "constants": {
+  "sa": 1
+ },
+ "params": [
+  {
+   "id": "Lb",
+   "label": "Length",
+   "default": 50,
+   "min": 40,
+   "max": 60,
+   "step": 1
+  },
+  {
+   "id": "H",
+   "label": "Height",
+   "default": 28,
+   "min": 24,
+   "max": 34,
+   "step": 1
+  },
+  {
+   "id": "D",
+   "label": "Depth",
+   "default": 22,
+   "min": 18,
+   "max": 26,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "cabin",
+   "label": "Cabin",
+   "values": {
+    "Lb": 45,
+    "H": 26,
+    "D": 20
+   }
+  },
+  {
+   "id": "weekend",
+   "label": "Weekend",
+   "values": {
+    "Lb": 50,
+    "H": 28,
+    "D": 22
+   }
+  },
+  {
+   "id": "large",
+   "label": "Large",
+   "values": {
+    "Lb": 58,
+    "H": 32,
+    "D": 25
+   }
+  }
+ ],
+ "customNote": "The body wraps front, bottom and back (2 × height + depth). Two zipper panels make up the top depth. End panels are depth × height. All pieces carry 1 cm seam allowances; the zipper must be at least the bag length + 10 cm. Webbing length is recalculated.",
+ "finished": {
+  "label": "Finished bag",
+  "dims": [
+   {
+    "label": "Length",
+    "value": "Lb"
+   },
+   {
+    "label": "Height",
+    "value": "H"
+   },
+   {
+    "label": "Depth",
+    "value": "D"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-90",
+  "zip-foot",
+  "walking-foot?",
+  "rotary",
+  "ruler",
+  "marker",
+  "clips",
+  "iron",
+  "pressing-cloth",
+  "hand-needle",
+  "seam-ripper"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer — heavy canvas",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Waxed canvas",
+    "Duck canvas",
+    "Cordura"
+   ],
+   "why": "Outside.",
+   "swatch": "#5E6B57",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 140,
+    "widths": [
+     112,
+     140,
+     150
+    ]
+   },
+   "weight": "Heavy, 340+ g/m²"
+  },
+  {
+   "id": "lining",
+   "name": "Lining — cotton twill",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton twill",
+    "Quilting cotton"
+   ],
+   "why": "Inside.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 140,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "fleece",
+   "name": "Fusible fleece",
+   "kind": "interfacing",
+   "required": true,
+   "recommended": [
+    "Fusible fleece",
+    "Fusible foam (stiffer)"
+   ],
+   "why": "Structure and padding.",
+   "swatch": "#ECE7DD",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     90,
+     112
+    ]
+   }
+  },
+  {
+   "id": "zipper",
+   "name": "Heavy zipper, #5 or #8",
+   "kind": "notion",
+   "required": true,
+   "quantity": "1 zipper, at least {Lb + 10} long",
+   "why": "Top opening.",
+   "swatch": "#2E3A40",
+   "alternatives": [
+    "Two-way zipper"
+   ]
+  },
+  {
+   "id": "webbing",
+   "name": "Cotton webbing, 3 cm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "2 pieces, each {2*H + D + 70} long",
+   "why": "Handles that run under the bag.",
+   "swatch": "#3A3530",
+   "alternatives": [
+    "Leather straps"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "body",
+   "name": "Body (front–bottom–back)",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "Lb + 2*sa",
+   "height": "2*H + D + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5E6B57"
+  },
+  {
+   "id": "ends",
+   "name": "End panel",
+   "materialId": "main",
+   "quantity": 2,
+   "width": "D + 2*sa",
+   "height": "H + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#4B5746"
+  },
+  {
+   "id": "zippanel",
+   "name": "Zipper panel",
+   "materialId": "main",
+   "quantity": 2,
+   "width": "Lb + 2*sa",
+   "height": "D/2 + 1.5",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#6E7C66"
+  },
+  {
+   "id": "lbody",
+   "name": "Lining body",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": "Lb + 2*sa",
+   "height": "2*H + D + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "lends",
+   "name": "Lining end",
+   "materialId": "lining",
+   "quantity": 2,
+   "width": "D + 2*sa",
+   "height": "H + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C9A06A"
+  },
+  {
+   "id": "fbody",
+   "name": "Fleece body",
+   "materialId": "fleece",
+   "quantity": 1,
+   "width": "Lb",
+   "height": "2*H + D",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA"
+  },
+  {
+   "id": "fends",
+   "name": "Fleece end",
+   "materialId": "fleece",
+   "quantity": 2,
+   "width": "D",
+   "height": "H",
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#CFC8BA"
+  }
+ ],
+ "steps": [
+  {
+   "id": "w1",
+   "stage": "prep",
+   "title": "Press and plan",
+   "text": "Press the lining. Waxed canvas must not be ironed — finger-press it instead. Read all steps before cutting; this is a long project.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "lining"
+     ]
+    }
+   },
+   "warnings": [
+    "Never iron waxed canvas directly; the wax melts."
+   ]
+  },
+  {
+   "id": "w2",
+   "stage": "cut",
+   "title": "Cut the outer",
+   "text": "Cut the body, two end panels and two zipper panels.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "body",
+    "ends",
+    "zippanel"
+   ]
+  },
+  {
+   "id": "w3",
+   "stage": "cut",
+   "title": "Cut the lining",
+   "text": "Cut the lining body and two lining ends.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "lbody",
+    "lends"
+   ]
+  },
+  {
+   "id": "w4",
+   "stage": "cut",
+   "title": "Cut the fleece",
+   "text": "Cut fleece for the body and ends, without seam allowances.",
+   "visual": {
+    "type": "layout",
+    "materialId": "fleece"
+   },
+   "pieces": [
+    "fbody",
+    "fends"
+   ]
+  },
+  {
+   "id": "w5",
+   "stage": "sew",
+   "title": "Fuse the fleece",
+   "text": "Fuse fleece to the wrong side of the outer body and end panels, 1 cm in from each edge, with a pressing cloth.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "fleece"
+     ],
+     "label": "fuse fleece, pressing cloth on top"
+    }
+   },
+   "pieces": [
+    "fbody",
+    "fends",
+    "body",
+    "ends"
+   ],
+   "techniques": [
+    "interfacing"
+   ],
+   "timerMin": 2
+  },
+  {
+   "id": "w6",
+   "stage": "sew",
+   "title": "Attach the webbing handles",
+   "text": "Mark two lines on the body, each a quarter of the length in from the ends. Pin a webbing loop along each line, running across the bottom and up both sides, handles left free above the body. Edgestitch both edges of the webbing and box-stitch with an X where the stitching stops at the top.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "#3A3530",
+     "dist": "Lb/4"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Webbing from body ends",
+     "value": "Lb/4",
+     "unit": "len"
+    },
+    {
+     "label": "Edgestitch",
+     "value": 3,
+     "unit": "mm"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "attaching-straps",
+    "edgestitching"
+   ],
+   "tips": [
+    "Use a 100/16 needle and walk the wheel by hand over the webbing joins."
+   ]
+  },
+  {
+   "id": "w7",
+   "stage": "sew",
+   "title": "Install the zipper",
+   "text": "Press 1 cm under on one long edge of each zipper panel. Place the folds 3 mm from the zipper teeth, one on each side, and topstitch with a zipper foot.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "dist": 3,
+     "label": "panel folds 3 mm from the teeth"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Fold to teeth",
+     "value": 3,
+     "unit": "mm"
+    }
+   ],
+   "pieces": [
+    "zippanel"
+   ],
+   "techniques": [
+    "zipper",
+    "topstitching"
+   ]
+  },
+  {
+   "id": "w8",
+   "stage": "assemble",
+   "title": "Make the main tube",
+   "text": "Sew the long raw edges of the zipper unit to the top edges of the body, right sides together, with 1 cm seams, forming a tube. Topstitch the seams 5 mm towards the body.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "tb",
+     "label": "zipper unit + body → tube"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "zippanel",
+    "body"
+   ]
+  },
+  {
+   "id": "w9",
+   "stage": "assemble",
+   "title": "Sew in the end panels",
+   "text": "OPEN THE ZIPPER halfway. Mark the corners of each end panel 1 cm in. Clip the tube's seam allowance at the corresponding points. Sew each end panel into the tube right sides together, stopping with the needle down at each corner, pivoting and continuing.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "ltrb",
+     "label": "end panel into the tube · pivot at corners"
+    }
+   },
+   "beginner": "Pivoting means stopping exactly at the corner mark with the needle down, lifting the foot, turning the work 90° and carrying on. Clipping the tube's allowance at the corners lets it turn the corner flat.",
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "ends",
+    "body"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "clipping-corners"
+   ],
+   "warnings": [
+    "Open the zipper before sewing the second end, or you can't turn the bag."
+   ]
+  },
+  {
+   "id": "w10",
+   "stage": "assemble",
+   "title": "Turn and shape",
+   "text": "Trim the corners, turn right side out through the zipper and push out the corners.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main",
+     "label": "turn through the open zipper"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "w11",
+   "stage": "assemble",
+   "title": "Sew the lining",
+   "text": "Sew the lining body to the lining ends the same way (pivoting at the corners). Leave the top open. Press 1 cm to the wrong side along both top edges.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "lining",
+     "sides": "lrb",
+     "label": "lining body + ends, top left open"
+    }
+   },
+   "pieces": [
+    "lbody",
+    "lends"
+   ],
+   "techniques": [
+    "lining"
+   ]
+  },
+  {
+   "id": "w12",
+   "stage": "finish",
+   "title": "Hand-stitch the lining",
+   "text": "Drop the lining into the bag, wrong sides together. Pin the folded top edges to the zipper tape, just clear of the teeth, and slip-stitch by hand.",
+   "visual": {
+    "type": "template",
+    "name": "hand",
+    "args": {
+     "tone": "lining",
+     "stitch": "ladder"
+    }
+   },
+   "pieces": [
+    "lbody"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "w13",
+   "stage": "finish",
+   "title": "Pack your bag",
+   "text": "Run the zipper end to end, check the handles and you're ready to travel.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Duffel",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        60,
+        120
+       ],
+       [
+        300,
+        120
+       ],
+       [
+        340,
+        100
+       ],
+       [
+        340,
+        220
+       ],
+       [
+        300,
+        250
+       ],
+       [
+        60,
+        250
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        60,
+        120
+       ],
+       [
+        100,
+        95
+       ],
+       [
+        340,
+        95
+       ],
+       [
+        300,
+        120
+       ]
+      ],
+      "tone": "zippanel"
+     },
+     {
+      "k": "zip",
+      "x": 90,
+      "y": 108,
+      "w": 220
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        120,
+        250
+       ],
+       [
+        120,
+        120
+       ],
+       [
+        150,
+        40
+       ],
+       [
+        210,
+        40
+       ],
+       [
+        240,
+        120
+       ],
+       [
+        240,
+        250
+       ]
+      ],
+      "color": "#3A3530"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        300,
+        120
+       ],
+       [
+        340,
+        100
+       ],
+       [
+        340,
+        220
+       ],
+       [
+        300,
+        250
+       ]
+      ],
+      "tone": "ends"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "classic-tote",
+  "zip-pouch",
+  "fabric-basket"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

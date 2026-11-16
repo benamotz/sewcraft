@@ -1,0 +1,567 @@
+{
+ "id": "crayon-roll",
+ "title": "Crayon Roll",
+ "category": "kids",
+ "difficulty": "beginner",
+ "summary": "A roll-up case with eight crayon slots and a ribbon tie.",
+ "description": "Pocket channels, a turned-and-topstitched finish and a ribbon tie — quick to make and a favourite party gift. Sized for standard wax crayons.",
+ "tags": [
+  "kids",
+  "gifts",
+  "beginner",
+  "quick",
+  "scraps"
+ ],
+ "minutes": [
+  45,
+  70
+ ],
+ "costUSD": [
+  3,
+  8
+ ],
+ "machineRequired": true,
+ "popularity": 74,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished roll (open)",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 32
+   },
+   {
+    "label": "Height",
+    "value": 20
+   },
+   {
+    "label": "Slot width",
+    "value": 4
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Canvas"
+   ],
+   "why": "Outside of the roll.",
+   "swatch": "#5E7C8A",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "lining",
+   "name": "Lining & pocket fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "Inside and the crayon pocket.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "ribbon",
+   "name": "Ribbon, 1 cm wide",
+   "kind": "notion",
+   "required": true,
+   "quantity": "60 cm",
+   "why": "Tie.",
+   "swatch": "#C0583A",
+   "alternatives": [
+    "Twill tape",
+    "Elastic loop + button"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "outerp",
+   "name": "Outer",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 34,
+   "height": 22,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5E7C8A"
+  },
+  {
+   "id": "liningp",
+   "name": "Lining",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": 34,
+   "height": 22,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "pocketp",
+   "name": "Pocket",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": 34,
+   "height": 20,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C9A06A",
+   "notes": "Folded in half lengthwise to 10 cm."
+  }
+ ],
+ "steps": [
+  {
+   "id": "cr1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press your fabrics.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "lining"
+     ]
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "cr2",
+   "stage": "cut",
+   "title": "Cut the outer",
+   "text": "Cut the outer rectangle.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "outerp"
+   ]
+  },
+  {
+   "id": "cr3",
+   "stage": "cut",
+   "title": "Cut the lining and pocket",
+   "text": "Cut the lining and the pocket from the lining fabric.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "liningp",
+    "pocketp"
+   ]
+  },
+  {
+   "id": "cr4",
+   "stage": "sew",
+   "title": "Fold the pocket",
+   "text": "Fold the pocket in half lengthwise, wrong sides together, and press. The fold is the pocket's top edge.",
+   "visual": {
+    "type": "template",
+    "name": "fold",
+    "args": {
+     "tone": "pocketp",
+     "label": "fold in half, wrong sides together",
+     "dim": 10
+    }
+   },
+   "pieces": [
+    "pocketp"
+   ],
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "cr5",
+   "stage": "sew",
+   "title": "Sew the crayon channels",
+   "text": "Lay the pocket on the lining's right side with raw edges level at the bottom. Mark vertical lines 4 cm apart starting from 1 cm in, and stitch along each line through pocket and lining, backstitching at the top.",
+   "visual": {
+    "type": "template",
+    "name": "channels",
+    "args": {
+     "tone": "lining",
+     "pocket": "pocketp",
+     "count": 8,
+     "spacing": 4
+    }
+   },
+   "measurements": [
+    {
+     "label": "Channel spacing",
+     "value": 4,
+     "unit": "len"
+    },
+    {
+     "label": "First line from side edge",
+     "value": 5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "pocketp",
+    "liningp"
+   ],
+   "techniques": [
+    "backstitching"
+   ]
+  },
+  {
+   "id": "cr6",
+   "stage": "assemble",
+   "title": "Baste the ribbon",
+   "text": "Fold the ribbon in half and baste the fold to the middle of the outer's right-hand short edge, ribbon lying across the fabric.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "#C0583A"
+    }
+   },
+   "pieces": [
+    "outerp"
+   ],
+   "techniques": [
+    "attaching-straps"
+   ]
+  },
+  {
+   "id": "cr7",
+   "stage": "assemble",
+   "title": "Sew outer to lining",
+   "text": "Place outer and lining right sides together. Sew all round with a 1 cm seam, keeping the ribbon tails inside, and leave a 7 cm gap along the top.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "ltrb",
+     "gap": "t",
+     "gapLabel": "7 cm gap"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outerp",
+    "liningp"
+   ]
+  },
+  {
+   "id": "cr8",
+   "stage": "assemble",
+   "title": "Clip and turn",
+   "text": "Clip the corners, turn right side out, push out the corners and press.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "cr9",
+   "stage": "finish",
+   "title": "Topstitch",
+   "text": "Topstitch 3 mm from the edge all round, closing the gap.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 0.3
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch",
+     "value": 0.3,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outerp"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "cr10",
+   "stage": "finish",
+   "title": "Fill with crayons",
+   "text": "Slide a crayon into each slot, roll up and tie.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Open roll",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 50,
+      "y": 70,
+      "w": 300,
+      "h": 170,
+      "tone": "lining"
+     },
+     {
+      "k": "panel",
+      "x": 62,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#C0583A",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 98,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#D9A35F",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 134,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#7F9473",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 170,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#5E7C8A",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 206,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#B5727D",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 242,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#3A3530",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 278,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#E3C48D",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 314,
+      "y": 90,
+      "w": 14,
+      "h": 90,
+      "tone": "#8E4A36",
+      "rx": 3
+     },
+     {
+      "k": "panel",
+      "x": 50,
+      "y": 150,
+      "w": 300,
+      "h": 90,
+      "tone": "pocketp"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        87.5,
+        150
+       ],
+       [
+        87.5,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        125.0,
+        150
+       ],
+       [
+        125.0,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        162.5,
+        150
+       ],
+       [
+        162.5,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        200.0,
+        150
+       ],
+       [
+        200.0,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        237.5,
+        150
+       ],
+       [
+        237.5,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        275.0,
+        150
+       ],
+       [
+        275.0,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        312.5,
+        150
+       ],
+       [
+        312.5,
+        240
+       ]
+      ]
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        350,
+        150
+       ],
+       [
+        380,
+        140
+       ],
+       [
+        390,
+        170
+       ]
+      ],
+      "color": "#C0583A"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "bean-bags",
+  "burp-cloth"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

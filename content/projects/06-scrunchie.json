@@ -1,0 +1,625 @@
+{
+ "id": "scrunchie",
+ "title": "Fabric Scrunchie",
+ "category": "accessories",
+ "difficulty": "beginner",
+ "summary": "A soft, gathered hair tie — the perfect 30-minute scrap buster.",
+ "description": "One strip of fabric and a short length of elastic. Sew a tube, thread the elastic, close the ring. You can sew it entirely by hand, and it's a great first project for using up leftover fabric.",
+ "tags": [
+  "accessories",
+  "gifts",
+  "beginner",
+  "quick",
+  "scraps",
+  "upcycling",
+  "hand-sewing"
+ ],
+ "minutes": [
+  25,
+  40
+ ],
+ "costUSD": [
+  1,
+  4
+ ],
+ "machineRequired": false,
+ "popularity": 91,
+ "featured": true,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished scrunchie (approx.)",
+  "dims": [
+   {
+    "label": "Tube width",
+    "value": 4
+   },
+   {
+    "label": "Elastic loop",
+    "value": 18.5
+   }
+  ]
+ },
+ "tools": [
+  "machine?",
+  "hand-needle",
+  "scissors",
+  "pins",
+  "safety-pin",
+  "iron"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Lightweight woven fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton lawn",
+    "Rayon",
+    "Satin",
+    "Quilting cotton"
+   ],
+   "why": "Becomes the gathered tube.",
+   "swatch": "#C98AA0",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112,
+     140
+    ]
+   },
+   "weight": "Light",
+   "alternatives": [
+    "A scrap at least 10 × 50 cm",
+    "An old silk scarf"
+   ]
+  },
+  {
+   "id": "elastic",
+   "name": "6 mm flat elastic",
+   "kind": "notion",
+   "required": true,
+   "quantity": "20 cm",
+   "why": "Gives the stretch.",
+   "swatch": "#F1ECE4",
+   "alternatives": [
+    "Hair elastic, cut open"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "tube",
+   "name": "Scrunchie strip",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 10,
+   "height": 50,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#C98AA0"
+  }
+ ],
+ "steps": [
+  {
+   "id": "sc1",
+   "stage": "prep",
+   "title": "Press your fabric",
+   "text": "Press the fabric smooth. Lightweight fabrics like lawn, rayon or satin gather softly; quilting cotton gives a fuller, puffier scrunchie.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ],
+     "label": "press flat"
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "sc2",
+   "stage": "cut",
+   "title": "Cut the strip",
+   "text": "Cut one strip 10 × 50 cm. The direction doesn't matter much for a scrunchie, so place it wherever it fits your scrap.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "tube"
+   ],
+   "warnings": [
+    "Cut away from your body and keep fingers clear of the blades."
+   ]
+  },
+  {
+   "id": "sc3",
+   "stage": "sew",
+   "title": "Sew the tube",
+   "text": "Fold the strip in half lengthwise, right sides together. Sew the long edge with a 1 cm seam, leaving both short ends open. Turn right side out with a safety pin.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "main",
+     "label": "sew the long edge, turn right side out"
+    }
+   },
+   "beginner": "By hand, use a small backstitch (about 3 mm stitches) — it's as strong as machine stitching. Attach a safety pin to one end and work it through the tube to turn it.",
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "tube"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "backstitching"
+   ]
+  },
+  {
+   "id": "sc4",
+   "stage": "assemble",
+   "title": "Thread the elastic",
+   "text": "Cut 20 cm of elastic. Pin a safety pin to one end and feed it through the tube. Pin the trailing end to the tube so it can't slip inside.",
+   "visual": {
+    "type": "template",
+    "name": "cord",
+    "args": {
+     "tone": "main",
+     "label": "elastic through the tube"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Elastic length",
+     "value": 20,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "tube"
+   ],
+   "techniques": [
+    "elastic-waistband"
+   ]
+  },
+  {
+   "id": "sc5",
+   "stage": "assemble",
+   "title": "Join the elastic",
+   "text": "Check the elastic isn't twisted. Overlap the ends by 1.5 cm and zigzag back and forth several times, or hand-stitch firmly through both layers.",
+   "visual": {
+    "type": "template",
+    "name": "elastic",
+    "args": {
+     "overlap": 1.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Overlap",
+     "value": 1.5,
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "zigzag-stitch"
+   ]
+  },
+  {
+   "id": "sc6",
+   "stage": "finish",
+   "title": "Close the ring",
+   "text": "Fold 1 cm of one tube end to the inside. Tuck the other raw end into it by 1 cm and slip-stitch all the way round to join the tube into a ring.",
+   "visual": {
+    "type": "template",
+    "name": "close",
+    "args": {
+     "tone": "main",
+     "method": "hand"
+    }
+   },
+   "pieces": [
+    "tube"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ],
+   "tips": [
+    "Spread the gathers away from the join before you stitch so it's easier to reach."
+   ]
+  },
+  {
+   "id": "sc7",
+   "stage": "finish",
+   "title": "Shake out the gathers",
+   "text": "Spread the fabric evenly round the elastic. Make a few more — they make lovely small gifts.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Ready to wear"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Scrunchie",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        320.0,
+        150.0
+       ],
+       [
+        317.0,
+        172.3
+       ],
+       [
+        308.1,
+        193.4
+       ],
+       [
+        293.8,
+        212.3
+       ],
+       [
+        274.8,
+        228.2
+       ],
+       [
+        252.1,
+        240.1
+       ],
+       [
+        226.7,
+        247.5
+       ],
+       [
+        200.0,
+        250.0
+       ],
+       [
+        173.3,
+        247.5
+       ],
+       [
+        147.9,
+        240.1
+       ],
+       [
+        125.2,
+        228.2
+       ],
+       [
+        106.2,
+        212.3
+       ],
+       [
+        91.9,
+        193.4
+       ],
+       [
+        83.0,
+        172.3
+       ],
+       [
+        80.0,
+        150.0
+       ],
+       [
+        83.0,
+        127.7
+       ],
+       [
+        91.9,
+        106.6
+       ],
+       [
+        106.2,
+        87.7
+       ],
+       [
+        125.2,
+        71.8
+       ],
+       [
+        147.9,
+        59.9
+       ],
+       [
+        173.3,
+        52.5
+       ],
+       [
+        200.0,
+        50.0
+       ],
+       [
+        226.7,
+        52.5
+       ],
+       [
+        252.1,
+        59.9
+       ],
+       [
+        274.8,
+        71.8
+       ],
+       [
+        293.8,
+        87.7
+       ],
+       [
+        308.1,
+        106.6
+       ],
+       [
+        317.0,
+        127.7
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        242.0,
+        150.0
+       ],
+       [
+        240.9,
+        157.6
+       ],
+       [
+        237.8,
+        164.8
+       ],
+       [
+        232.8,
+        171.2
+       ],
+       [
+        226.2,
+        176.6
+       ],
+       [
+        218.2,
+        180.6
+       ],
+       [
+        209.3,
+        183.1
+       ],
+       [
+        200.0,
+        184.0
+       ],
+       [
+        190.7,
+        183.1
+       ],
+       [
+        181.8,
+        180.6
+       ],
+       [
+        173.8,
+        176.6
+       ],
+       [
+        167.2,
+        171.2
+       ],
+       [
+        162.2,
+        164.8
+       ],
+       [
+        159.1,
+        157.6
+       ],
+       [
+        158.0,
+        150.0
+       ],
+       [
+        159.1,
+        142.4
+       ],
+       [
+        162.2,
+        135.2
+       ],
+       [
+        167.2,
+        128.8
+       ],
+       [
+        173.8,
+        123.4
+       ],
+       [
+        181.8,
+        119.4
+       ],
+       [
+        190.7,
+        116.9
+       ],
+       [
+        200.0,
+        116.0
+       ],
+       [
+        209.3,
+        116.9
+       ],
+       [
+        218.2,
+        119.4
+       ],
+       [
+        226.2,
+        123.4
+       ],
+       [
+        232.8,
+        128.8
+       ],
+       [
+        237.8,
+        135.2
+       ],
+       [
+        240.9,
+        142.4
+       ]
+      ],
+      "tone": "#FBF7F0"
+     },
+     {
+      "k": "fold",
+      "from": [
+       250.0,
+       150.0
+      ],
+      "to": [
+       310.0,
+       150.0
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       240.5,
+       173.5
+      ],
+      "to": [
+       289.0,
+       204.1
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       215.5,
+       188.0
+      ],
+      "to": [
+       234.0,
+       237.5
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       184.5,
+       188.0
+      ],
+      "to": [
+       166.0,
+       237.5
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       159.5,
+       173.5
+      ],
+      "to": [
+       111.0,
+       204.1
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       150.0,
+       150.0
+      ],
+      "to": [
+       90.0,
+       150.0
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       159.5,
+       126.5
+      ],
+      "to": [
+       111.0,
+       95.9
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       184.5,
+       112.0
+      ],
+      "to": [
+       166.0,
+       62.5
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       215.5,
+       112.0
+      ],
+      "to": [
+       234.0,
+       62.5
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       240.5,
+       126.5
+      ],
+      "to": [
+       289.0,
+       95.9
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "infinity-scarf",
+  "headband",
+  "zip-pouch"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

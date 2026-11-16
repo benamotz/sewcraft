@@ -1,0 +1,415 @@
+{
+ "id": "pillowcase",
+ "title": "Burrito-Method Pillowcase",
+ "category": "home",
+ "difficulty": "beginner",
+ "summary": "A standard pillowcase with a contrast cuff and trim — every raw edge enclosed.",
+ "description": "The 'burrito' roll hides the cuff seam completely, and French seams finish the sides, so the inside is as neat as the outside. Fits a standard 50 × 75 cm pillow.",
+ "tags": [
+  "home",
+  "gifts",
+  "beginner",
+  "bedroom",
+  "french seams"
+ ],
+ "minutes": [
+  60,
+  90
+ ],
+ "costUSD": [
+  12,
+  25
+ ],
+ "machineRequired": true,
+ "popularity": 70,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished pillowcase",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 52
+   },
+   {
+    "label": "Length",
+    "value": 78
+   },
+   {
+    "label": "Cuff depth",
+    "value": 22
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "rotary",
+  "iron",
+  "pins",
+  "ruler"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Body fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Cotton percale",
+    "Flannel"
+   ],
+   "why": "Main part of the case.",
+   "swatch": "#8FA3B8",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   },
+   "minWidthCm": 108
+  },
+  {
+   "id": "cuff",
+   "name": "Cuff fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "The wide band at the opening.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   },
+   "minWidthCm": 108
+  },
+  {
+   "id": "trim",
+   "name": "Accent trim fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "Thin flat piping between body and cuff.",
+   "swatch": "#B5727D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   },
+   "minWidthCm": 108
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "body",
+   "name": "Body",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 106,
+   "height": 58,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#8FA3B8",
+   "notes": "106 cm runs selvedge to selvedge."
+  },
+  {
+   "id": "cuffp",
+   "name": "Cuff",
+   "materialId": "cuff",
+   "quantity": 1,
+   "width": 106,
+   "height": 46,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "trimp",
+   "name": "Trim strip",
+   "materialId": "trim",
+   "quantity": 1,
+   "width": 106,
+   "height": 8,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#B5727D"
+  }
+ ],
+ "steps": [
+  {
+   "id": "pc1",
+   "stage": "prep",
+   "title": "Pre-wash and press",
+   "text": "Pre-wash all three fabrics together so they shrink the same, then press.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "cuff"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "pc2",
+   "stage": "cut",
+   "title": "Cut the body",
+   "text": "Cut the body 106 × 58 cm, with the 106 cm running across the fabric.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "body"
+   ]
+  },
+  {
+   "id": "pc3",
+   "stage": "cut",
+   "title": "Cut the cuff",
+   "text": "Cut the cuff 106 × 46 cm.",
+   "visual": {
+    "type": "layout",
+    "materialId": "cuff"
+   },
+   "pieces": [
+    "cuffp"
+   ]
+  },
+  {
+   "id": "pc4",
+   "stage": "cut",
+   "title": "Cut the trim",
+   "text": "Cut the trim strip 106 × 8 cm.",
+   "visual": {
+    "type": "layout",
+    "materialId": "trim"
+   },
+   "pieces": [
+    "trimp"
+   ]
+  },
+  {
+   "id": "pc5",
+   "stage": "sew",
+   "title": "Press the trim in half",
+   "text": "Fold the trim strip in half lengthwise, wrong sides together, and press.",
+   "visual": {
+    "type": "template",
+    "name": "fold",
+    "args": {
+     "tone": "trim",
+     "label": "press in half lengthwise",
+     "dim": 4
+    }
+   },
+   "pieces": [
+    "trimp"
+   ],
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "pc6",
+   "stage": "assemble",
+   "title": "Roll the burrito",
+   "text": "Lay the cuff right side up. Along its top long edge, place the body right side up, then the folded trim, all raw edges together. Roll the body up towards the cuff edge, then bring the cuff's bottom edge up over the roll to meet the top edge. Pin all layers together — the body is wrapped inside the cuff like a burrito.",
+   "visual": {
+    "type": "template",
+    "name": "layer",
+    "args": {
+     "base": "cuff",
+     "top": "main",
+     "label": "cuff · body · trim — raw edges together"
+    }
+   },
+   "beginner": "It feels odd the first time. Check before pinning: the cuff's right side faces outwards and completely encloses the rolled-up body.",
+   "pieces": [
+    "cuffp",
+    "body",
+    "trimp"
+   ]
+  },
+  {
+   "id": "pc7",
+   "stage": "assemble",
+   "title": "Sew the burrito seam",
+   "text": "Sew along the pinned edge through all layers with a 1 cm seam.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "cuff",
+     "sides": "t",
+     "label": "sew through all layers"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "cuffp"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "pc8",
+   "stage": "assemble",
+   "title": "Pull it through",
+   "text": "Reach into the tube and pull the body out. The cuff turns right side out with the seam fully enclosed. Press the cuff.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "cuff",
+     "label": "pull the body out through the cuff tube"
+    }
+   },
+   "pieces": [
+    "body"
+   ]
+  },
+  {
+   "id": "pc9",
+   "stage": "sew",
+   "title": "French seam — first pass",
+   "text": "Fold the case in half WRONG sides together, matching the cuff seams. Sew the side and bottom with a 0.5 cm seam. Trim the allowance to 3 mm and clip the corner.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lb",
+     "label": "WRONG sides together",
+     "sa": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "First seam",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "french-seam"
+   ]
+  },
+  {
+   "id": "pc10",
+   "stage": "sew",
+   "title": "French seam — second pass",
+   "text": "Turn the case wrong side out, roll the seam exactly to the edge and press. Sew again 0.7 cm from the edge, enclosing the raw edges.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lb",
+     "label": "right sides together",
+     "sa": 0.7
+    }
+   },
+   "measurements": [
+    {
+     "label": "Second seam",
+     "value": 0.7,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "french-seam"
+   ]
+  },
+  {
+   "id": "pc11",
+   "stage": "finish",
+   "title": "Turn and press",
+   "text": "Turn right side out, push out the corners and give it a final press.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Pillowcase",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 40,
+      "y": 80,
+      "w": 230,
+      "h": 150,
+      "tone": "main",
+      "rx": 6
+     },
+     {
+      "k": "panel",
+      "x": 270,
+      "y": 80,
+      "w": 8,
+      "h": 150,
+      "tone": "trim"
+     },
+     {
+      "k": "panel",
+      "x": 278,
+      "y": 80,
+      "w": 90,
+      "h": 150,
+      "tone": "cuff",
+      "rx": 4
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "envelope-cushion",
+  "cloth-napkins"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

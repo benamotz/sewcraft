@@ -1,0 +1,986 @@
+{
+ "id": "baby-quilt",
+ "title": "Patchwork Baby Quilt",
+ "category": "kids",
+ "difficulty": "intermediate",
+ "summary": "A 60 × 80 cm patchwork quilt of 48 squares, quilted and bound.",
+ "description": "Your first quilt: simple squares, nested seams, a quilt sandwich and a machine-sewn binding. Two alternating prints make a classic checkerboard.",
+ "tags": [
+  "kids",
+  "gifts",
+  "baby",
+  "quilting",
+  "patchwork",
+  "binding"
+ ],
+ "minutes": [
+  480,
+  720
+ ],
+ "costUSD": [
+  30,
+  60
+ ],
+ "machineRequired": true,
+ "popularity": 85,
+ "featured": true,
+ "constants": {
+  "sa": 0.75
+ },
+ "finished": {
+  "label": "Finished quilt",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 60
+   },
+   {
+    "label": "Length",
+    "value": 80
+   },
+   {
+    "label": "Square (finished)",
+    "value": 10
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "walking-foot?",
+  "rotary",
+  "iron",
+  "pins",
+  "clips",
+  "hand-needle?",
+  "safety-pin"
+ ],
+ "materials": [
+  {
+   "id": "printA",
+   "name": "Print A",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "24 squares.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112
+    ]
+   }
+  },
+  {
+   "id": "printB",
+   "name": "Print B",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "24 squares.",
+   "swatch": "#7F9473",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112
+    ]
+   }
+  },
+  {
+   "id": "backing",
+   "name": "Backing",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Cotton flannel"
+   ],
+   "why": "Back of the quilt.",
+   "swatch": "#F0E6D8",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "batt",
+   "name": "Cotton batting",
+   "kind": "interfacing",
+   "required": true,
+   "recommended": [
+    "100% cotton batting",
+    "Bamboo-cotton batting"
+   ],
+   "why": "Warmth.",
+   "swatch": "#F5F1EA",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     228
+    ]
+   }
+  },
+  {
+   "id": "bind",
+   "name": "Binding fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "Edge binding.",
+   "swatch": "#C0583A",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112
+    ]
+   }
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "sqA",
+   "name": "Square A",
+   "materialId": "printA",
+   "quantity": 24,
+   "width": 11.5,
+   "height": 11.5,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#E3C48D"
+  },
+  {
+   "id": "sqB",
+   "name": "Square B",
+   "materialId": "printB",
+   "quantity": 24,
+   "width": 11.5,
+   "height": 11.5,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#7F9473"
+  },
+  {
+   "id": "backp",
+   "name": "Backing",
+   "materialId": "backing",
+   "quantity": 1,
+   "width": 70,
+   "height": 90,
+   "seamAllowance": 5,
+   "grain": "lengthwise",
+   "color": "#E6D8C4",
+   "notes": "5 cm larger than the top all round; trimmed after quilting."
+  },
+  {
+   "id": "battp",
+   "name": "Batting",
+   "materialId": "batt",
+   "quantity": 1,
+   "width": 70,
+   "height": 90,
+   "seamAllowance": 5,
+   "grain": "lengthwise",
+   "color": "#E4E0D8"
+  },
+  {
+   "id": "bindp",
+   "name": "Binding strip",
+   "materialId": "bind",
+   "quantity": 3,
+   "width": 110,
+   "height": 6.5,
+   "seamAllowance": 0.75,
+   "grain": "any",
+   "color": "#C0583A",
+   "notes": "Cut across the width; join end to end."
+  }
+ ],
+ "steps": [
+  {
+   "id": "q1",
+   "stage": "prep",
+   "title": "Pre-wash and press",
+   "text": "Pre-wash all fabrics (baby quilts are washed often), then starch-press the prints so the squares cut accurately.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "printA",
+      "printB"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "q2",
+   "stage": "cut",
+   "title": "Cut squares A",
+   "text": "Cut 24 squares of print A with a rotary cutter and ruler.",
+   "visual": {
+    "type": "layout",
+    "materialId": "printA"
+   },
+   "pieces": [
+    "sqA"
+   ],
+   "warnings": [
+    "Rotary blades are extremely sharp — close the guard every time you put it down."
+   ]
+  },
+  {
+   "id": "q3",
+   "stage": "cut",
+   "title": "Cut squares B",
+   "text": "Cut 24 squares of print B.",
+   "visual": {
+    "type": "layout",
+    "materialId": "printB"
+   },
+   "pieces": [
+    "sqB"
+   ]
+  },
+  {
+   "id": "q4",
+   "stage": "cut",
+   "title": "Cut backing and batting",
+   "text": "Cut the backing and batting 5 cm larger than the quilt top on every side.",
+   "visual": {
+    "type": "layout",
+    "materialId": "backing"
+   },
+   "pieces": [
+    "backp"
+   ]
+  },
+  {
+   "id": "q5",
+   "stage": "cut",
+   "title": "Cut the batting",
+   "text": "Cut the batting the same size as the backing.",
+   "visual": {
+    "type": "layout",
+    "materialId": "batt"
+   },
+   "pieces": [
+    "battp"
+   ]
+  },
+  {
+   "id": "q6",
+   "stage": "cut",
+   "title": "Cut binding strips",
+   "text": "Cut three binding strips across the width of the fabric.",
+   "visual": {
+    "type": "layout",
+    "materialId": "bind"
+   },
+   "pieces": [
+    "bindp"
+   ]
+  },
+  {
+   "id": "q7",
+   "stage": "sew",
+   "title": "Arrange the squares",
+   "text": "Lay out 8 rows of 6 squares in a checkerboard, alternating A and B. Photograph the layout so you can find your place.",
+   "visual": {
+    "type": "template",
+    "name": "patchwork",
+    "args": {
+     "tones": [
+      "printA",
+      "printB"
+     ],
+     "cols": 6,
+     "rows": 8,
+     "sewn": false
+    }
+   },
+   "pieces": [
+    "sqA",
+    "sqB"
+   ]
+  },
+  {
+   "id": "q8",
+   "stage": "sew",
+   "title": "Sew the rows",
+   "text": "Sew the squares of each row together with a 0.75 cm seam. Press seams of odd rows to the left and even rows to the right.",
+   "visual": {
+    "type": "template",
+    "name": "patchwork",
+    "args": {
+     "tones": [
+      "printA",
+      "printB"
+     ],
+     "cols": 6,
+     "rows": 8,
+     "sewn": false
+    }
+   },
+   "beginner": "Alternating the pressing direction lets the seams 'nest' — they lock together when you join the rows, so the corners match.",
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "sqA",
+    "sqB"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "pressing"
+   ]
+  },
+  {
+   "id": "q9",
+   "stage": "sew",
+   "title": "Join the rows",
+   "text": "Sew the rows together, nesting the seams and pinning at every intersection. Press the long seams in one direction.",
+   "visual": {
+    "type": "template",
+    "name": "patchwork",
+    "args": {
+     "tones": [
+      "printA",
+      "printB"
+     ],
+     "cols": 6,
+     "rows": 8,
+     "sewn": true
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "sqA",
+    "sqB"
+   ]
+  },
+  {
+   "id": "q10",
+   "stage": "assemble",
+   "title": "Make the quilt sandwich",
+   "text": "Tape the backing to the floor wrong side up, smooth the batting on top, then the quilt top right side up. Pin every 10 cm with safety pins.",
+   "visual": {
+    "type": "template",
+    "name": "quilt",
+    "args": {
+     "top": "printA",
+     "back": "backing",
+     "pattern": "lines"
+    }
+   },
+   "pieces": [
+    "backp",
+    "battp"
+   ],
+   "techniques": [
+    "quilting"
+   ]
+  },
+  {
+   "id": "q11",
+   "stage": "assemble",
+   "title": "Quilt",
+   "text": "Quilt straight lines 5 mm either side of every seam ('stitch in the ditch' or just beside it), working from the centre out with a walking foot.",
+   "visual": {
+    "type": "template",
+    "name": "quilt",
+    "args": {
+     "top": "printB",
+     "back": "backing",
+     "pattern": "grid"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Stitch length",
+     "value": 3,
+     "unit": "mm"
+    }
+   ],
+   "techniques": [
+    "quilting"
+   ]
+  },
+  {
+   "id": "q12",
+   "stage": "assemble",
+   "title": "Trim",
+   "text": "Trim the backing and batting level with the quilt top and square the corners.",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "printA",
+     "w": 60,
+     "h": 80,
+     "label": "trim to the quilt top"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Trimmed size",
+     "value": 60,
+     "unit": "len"
+    },
+    {
+     "label": "Length",
+     "value": 80,
+     "unit": "len"
+    }
+   ]
+  },
+  {
+   "id": "q13",
+   "stage": "finish",
+   "title": "Prepare the binding",
+   "text": "Join the binding strips end to end with diagonal seams, trim, press open, then press the whole strip in half lengthwise.",
+   "visual": {
+    "type": "template",
+    "name": "fold",
+    "args": {
+     "tone": "bind",
+     "label": "binding pressed in half",
+     "dim": 3.25
+    }
+   },
+   "pieces": [
+    "bindp"
+   ],
+   "techniques": [
+    "binding"
+   ]
+  },
+  {
+   "id": "q14",
+   "stage": "finish",
+   "title": "Attach and finish the binding",
+   "text": "Sew the binding to the front with a 0.75 cm seam, mitring the corners. Wrap it to the back and hand-stitch, or stitch in the ditch from the front.",
+   "visual": {
+    "type": "template",
+    "name": "binding",
+    "args": {
+     "tone": "printB",
+     "bind": "bind",
+     "width": 1
+    }
+   },
+   "measurements": [
+    {
+     "label": "Binding seam",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "bindp"
+   ],
+   "techniques": [
+    "binding",
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "q15",
+   "stage": "finish",
+   "title": "Wash",
+   "text": "Wash and dry the quilt for that soft, crinkly look.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Quilt",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 84,
+      "y": 14,
+      "w": 232,
+      "h": 272,
+      "tone": "bind"
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 20.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 52.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 85.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 117.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 150.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 182.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 215.0,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 90.0,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 126.7,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 163.4,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 200.10000000000002,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 236.8,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printB",
+      "rx": 0
+     },
+     {
+      "k": "panel",
+      "x": 273.5,
+      "y": 247.5,
+      "w": 36.7,
+      "h": 32.5,
+      "tone": "printA",
+      "rx": 0
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "burp-cloth",
+  "potholder"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

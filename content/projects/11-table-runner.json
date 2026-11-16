@@ -1,0 +1,407 @@
+{
+ "id": "table-runner",
+ "title": "Reversible Table Runner",
+ "category": "home",
+ "difficulty": "beginner",
+ "summary": "Two fabrics, one seam all round — a fast, reversible table update.",
+ "description": "Sew a top and a back together, turn, topstitch. Choose a seasonal print on one side and a plain on the other. Set it to the exact length of your table.",
+ "tags": [
+  "home",
+  "gifts",
+  "beginner",
+  "quick",
+  "table",
+  "reversible"
+ ],
+ "minutes": [
+  45,
+  75
+ ],
+ "costUSD": [
+  10,
+  25
+ ],
+ "machineRequired": true,
+ "popularity": 64,
+ "constants": {
+  "sa": 1
+ },
+ "params": [
+  {
+   "id": "L",
+   "label": "Finished length",
+   "default": 150,
+   "min": 90,
+   "max": 200,
+   "step": 5,
+   "help": "Table length plus about 15–20 cm overhang each end."
+  },
+  {
+   "id": "W",
+   "label": "Finished width",
+   "default": 35,
+   "min": 28,
+   "max": 45,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "small",
+   "label": "Small table",
+   "values": {
+    "L": 110,
+    "W": 32
+   }
+  },
+  {
+   "id": "std",
+   "label": "Standard",
+   "values": {
+    "L": 150,
+    "W": 35
+   }
+  },
+  {
+   "id": "long",
+   "label": "Long table",
+   "values": {
+    "L": 190,
+    "W": 38
+   }
+  }
+ ],
+ "customNote": "Top and back are cut at finished size plus a 1 cm seam allowance on every side. The length runs along the grain so the runner hangs straight.",
+ "finished": {
+  "label": "Finished runner",
+  "dims": [
+   {
+    "label": "Length",
+    "value": "L"
+   },
+   {
+    "label": "Width",
+    "value": "W"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "rotary",
+  "iron",
+  "pins",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "top",
+   "name": "Top fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Linen",
+    "Cotton canvas (light)"
+   ],
+   "why": "Main side.",
+   "swatch": "#C26A4E",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Linen"
+   ],
+   "why": "Reverse side.",
+   "swatch": "#9DB09A",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "topp",
+   "name": "Runner top",
+   "materialId": "top",
+   "quantity": 1,
+   "width": "W + 2*sa",
+   "height": "L + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C26A4E"
+  },
+  {
+   "id": "backp",
+   "name": "Runner back",
+   "materialId": "back",
+   "quantity": 1,
+   "width": "W + 2*sa",
+   "height": "L + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#9DB09A"
+  }
+ ],
+ "steps": [
+  {
+   "id": "r1",
+   "stage": "prep",
+   "title": "Pre-wash and press",
+   "text": "Pre-wash both fabrics so the runner doesn't pucker after its first wash, and press.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "top",
+      "back"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "r2",
+   "stage": "cut",
+   "title": "Cut the top",
+   "text": "Cut the top rectangle with the length along the grain.",
+   "visual": {
+    "type": "layout",
+    "materialId": "top"
+   },
+   "pieces": [
+    "topp"
+   ]
+  },
+  {
+   "id": "r3",
+   "stage": "cut",
+   "title": "Cut the back",
+   "text": "Cut the back the same size.",
+   "visual": {
+    "type": "layout",
+    "materialId": "back"
+   },
+   "pieces": [
+    "backp"
+   ]
+  },
+  {
+   "id": "r4",
+   "stage": "assemble",
+   "title": "Layer and pin",
+   "text": "Lay the top right side up and the back right side down on it. Match all edges and pin every 15 cm.",
+   "visual": {
+    "type": "template",
+    "name": "layer",
+    "args": {
+     "base": "top",
+     "top": "back",
+     "label": "right sides together, edges matched"
+    }
+   },
+   "pieces": [
+    "topp",
+    "backp"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "r5",
+   "stage": "sew",
+   "title": "Sew all round",
+   "text": "Sew all round with a 1 cm seam, pivoting at each corner, leaving a 15 cm gap in one long side. Backstitch either side of the gap.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "back",
+     "sides": "ltrb",
+     "gap": "r",
+     "gapLabel": "15 cm gap"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    },
+    {
+     "label": "Gap",
+     "value": 15,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "topp",
+    "backp"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "backstitching"
+   ]
+  },
+  {
+   "id": "r6",
+   "stage": "sew",
+   "title": "Clip the corners",
+   "text": "Clip each corner diagonally, close to — but not through — the stitching.",
+   "visual": {
+    "type": "template",
+    "name": "clip",
+    "args": {
+     "tone": "back"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "r7",
+   "stage": "assemble",
+   "title": "Turn and press",
+   "text": "Turn right side out through the gap, push the corners out and press, tucking the gap's allowances in line with the seam.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "back"
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "r8",
+   "stage": "finish",
+   "title": "Topstitch",
+   "text": "Topstitch 5 mm from the edge all round. This closes the gap and keeps the runner flat.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "top",
+     "dist": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch from edge",
+     "value": 0.5,
+     "unit": "len"
+    },
+    {
+     "label": "Stitch length",
+     "value": 3,
+     "unit": "mm"
+    }
+   ],
+   "pieces": [
+    "topp"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "r9",
+   "stage": "finish",
+   "title": "Final press",
+   "text": "Press both sides.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Runner",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        40,
+        200
+       ],
+       [
+        300,
+        80
+       ],
+       [
+        370,
+        110
+       ],
+       [
+        110,
+        230
+       ]
+      ],
+      "tone": "top"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        110,
+        230
+       ],
+       [
+        370,
+        110
+       ],
+       [
+        370,
+        116
+       ],
+       [
+        110,
+        236
+       ]
+      ],
+      "tone": "back"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "cloth-napkins",
+  "envelope-cushion"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

@@ -1,0 +1,514 @@
+{
+ "id": "apron",
+ "title": "Classic Kitchen Apron",
+ "category": "home",
+ "difficulty": "beginner",
+ "summary": "A full bib apron with a big front pocket and long waist ties.",
+ "description": "Hemmed edges, straps and a patch pocket — skills that carry over into almost every other project. Sturdy cotton twill or canvas makes it last for years in the kitchen or workshop.",
+ "tags": [
+  "home",
+  "clothing",
+  "gifts",
+  "beginner",
+  "kitchen"
+ ],
+ "minutes": [
+  120,
+  180
+ ],
+ "costUSD": [
+  12,
+  25
+ ],
+ "machineRequired": true,
+ "popularity": 78,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished apron",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 65
+   },
+   {
+    "label": "Length",
+    "value": 82
+   },
+   {
+    "label": "Ties (each)",
+    "value": 82
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-90",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "seam-gauge?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Cotton twill or canvas",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton twill",
+    "Light canvas",
+    "Denim",
+    "Linen"
+   ],
+   "why": "Body, ties and neck strap.",
+   "swatch": "#5E7C8A",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   },
+   "weight": "Medium"
+  },
+  {
+   "id": "pocket",
+   "name": "Pocket fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Canvas"
+   ],
+   "why": "Contrast pocket.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   },
+   "alternatives": [
+    "Same as the body"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "body",
+   "name": "Apron body",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 70,
+   "height": 85,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5E7C8A"
+  },
+  {
+   "id": "ties",
+   "name": "Waist tie",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 10,
+   "height": 85,
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#46616D"
+  },
+  {
+   "id": "neck",
+   "name": "Neck strap",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 10,
+   "height": 62,
+   "seamAllowance": 0,
+   "grain": "lengthwise",
+   "color": "#46616D"
+  },
+  {
+   "id": "pocketp",
+   "name": "Pocket",
+   "materialId": "pocket",
+   "quantity": 1,
+   "width": 32,
+   "height": 22,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E3C48D"
+  }
+ ],
+ "steps": [
+  {
+   "id": "ap1",
+   "stage": "prep",
+   "title": "Pre-wash and press",
+   "text": "Pre-wash both fabrics and press.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "pocket"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "ap2",
+   "stage": "cut",
+   "title": "Cut the body, ties and neck strap",
+   "text": "Cut the apron body, two waist ties and the neck strap with the long sides on the grain.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "body",
+    "ties",
+    "neck"
+   ]
+  },
+  {
+   "id": "ap3",
+   "stage": "cut",
+   "title": "Cut the pocket",
+   "text": "Cut the pocket from the contrast fabric.",
+   "visual": {
+    "type": "layout",
+    "materialId": "pocket"
+   },
+   "pieces": [
+    "pocketp"
+   ]
+  },
+  {
+   "id": "ap4",
+   "stage": "sew",
+   "title": "Make the straps",
+   "text": "Press the neck strap and both ties into four-fold straps: in half lengthwise, open, edges to the centre, then in half again. On each tie, fold one short end in 1 cm before the final fold. Edgestitch both long edges.",
+   "visual": {
+    "type": "template",
+    "name": "strap",
+    "args": {
+     "tone": "ties",
+     "width": 2.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Finished strap width",
+     "value": 2.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "ties",
+    "neck"
+   ],
+   "techniques": [
+    "edgestitching",
+    "pressing"
+   ]
+  },
+  {
+   "id": "ap5",
+   "stage": "sew",
+   "title": "Hem the pocket",
+   "text": "Double-fold hem the top edge of the pocket (1 cm, then 2 cm) and stitch. Press the other three edges 1 cm to the wrong side.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "pocket",
+     "f1": 1,
+     "f2": 2
+    }
+   },
+   "measurements": [
+    {
+     "label": "First fold",
+     "value": 1,
+     "unit": "len"
+    },
+    {
+     "label": "Second fold",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "pocketp"
+   ],
+   "techniques": [
+    "hemming"
+   ]
+  },
+  {
+   "id": "ap6",
+   "stage": "sew",
+   "title": "Attach the pocket",
+   "text": "Centre the pocket on the apron body with its top 30 cm below the body's top edge. Edgestitch the sides and bottom, backstitching at the top corners. For two pockets, stitch a vertical line down the middle.",
+   "visual": {
+    "type": "template",
+    "name": "patch",
+    "args": {
+     "base": "main",
+     "patch": "pocket",
+     "from": 30
+    }
+   },
+   "measurements": [
+    {
+     "label": "Pocket top below apron top",
+     "value": 30,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "pocketp",
+    "body"
+   ],
+   "techniques": [
+    "edgestitching"
+   ]
+  },
+  {
+   "id": "ap7",
+   "stage": "sew",
+   "title": "Hem the sides and bottom",
+   "text": "Double-fold hem both sides and the bottom of the body: press 1 cm, then 1.5 cm, and stitch close to the inner fold.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 1,
+     "f2": 1.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "First fold",
+     "value": 1,
+     "unit": "len"
+    },
+    {
+     "label": "Second fold",
+     "value": 1.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "body"
+   ],
+   "techniques": [
+    "hemming"
+   ]
+  },
+  {
+   "id": "ap8",
+   "stage": "assemble",
+   "title": "Hem the top and attach the neck strap",
+   "text": "Press the top edge 1 cm, then 2 cm. Tuck the neck strap ends under the second fold, 8 cm in from each side, check the strap isn't twisted, and stitch the hem. Flip the strap ends up and stitch across the hem again to lock them.",
+   "visual": {
+    "type": "template",
+    "name": "loops",
+    "args": {
+     "base": "main",
+     "strap": "neck",
+     "dist": 8
+    }
+   },
+   "measurements": [
+    {
+     "label": "Strap ends from sides",
+     "value": 8,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "neck",
+    "body"
+   ],
+   "techniques": [
+    "attaching-straps"
+   ]
+  },
+  {
+   "id": "ap9",
+   "stage": "assemble",
+   "title": "Attach the waist ties",
+   "text": "Tuck the raw end of a tie under each side hem, 30 cm below the top edge. Stitch a small box with an X through all layers.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "label": "box-and-X over each tie end"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Tie position below top",
+     "value": 30,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "ties"
+   ],
+   "techniques": [
+    "attaching-straps"
+   ]
+  },
+  {
+   "id": "ap10",
+   "stage": "finish",
+   "title": "Press",
+   "text": "Give the apron a final press and trim threads.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Apron",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        150,
+        60
+       ],
+       [
+        250,
+        60
+       ],
+       [
+        250,
+        120
+       ],
+       [
+        300,
+        150
+       ],
+       [
+        300,
+        280
+       ],
+       [
+        100,
+        280
+       ],
+       [
+        100,
+        150
+       ],
+       [
+        150,
+        120
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "panel",
+      "x": 150,
+      "y": 175,
+      "w": 100,
+      "h": 60,
+      "tone": "pocket"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        160,
+        62
+       ],
+       [
+        180,
+        20
+       ],
+       [
+        220,
+        20
+       ],
+       [
+        240,
+        62
+       ]
+      ],
+      "color": "neck"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        100,
+        152
+       ],
+       [
+        60,
+        170
+       ],
+       [
+        40,
+        220
+       ]
+      ],
+      "color": "ties"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        300,
+        152
+       ],
+       [
+        340,
+        170
+       ],
+       [
+        360,
+        220
+       ]
+      ],
+      "color": "ties"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "classic-tote",
+  "potholder"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

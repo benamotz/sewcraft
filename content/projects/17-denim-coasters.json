@@ -1,0 +1,351 @@
+{
+ "id": "denim-coasters",
+ "title": "Upcycled Denim Coasters",
+ "category": "upcycling",
+ "difficulty": "beginner",
+ "summary": "Turn one leg of old jeans into a set of four sturdy coasters.",
+ "description": "Old denim is thick, absorbent and already worn soft. One jeans leg, cut open, gives plenty of fabric for four coasters backed with a cheerful cotton.",
+ "tags": [
+  "upcycling",
+  "home",
+  "gifts",
+  "beginner",
+  "quick",
+  "denim"
+ ],
+ "minutes": [
+  40,
+  60
+ ],
+ "costUSD": [
+  0,
+  3
+ ],
+ "machineRequired": true,
+ "popularity": 71,
+ "featured": true,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Each coaster",
+  "dims": [
+   {
+    "label": "Size (square)",
+    "value": 10
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-90",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Old jeans — one leg, opened flat",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Denim"
+   ],
+   "why": "Coaster tops.",
+   "swatch": "#4F6A8C",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 40,
+    "widths": [
+     36,
+     40,
+     45
+    ]
+   },
+   "weight": "Heavy",
+   "alternatives": [
+    "Denim scraps"
+   ]
+  },
+  {
+   "id": "back",
+   "name": "Cotton scraps",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Canvas"
+   ],
+   "why": "Coaster backs.",
+   "swatch": "#E3C48D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 50,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "top",
+   "name": "Coaster top",
+   "materialId": "main",
+   "quantity": 4,
+   "width": 12,
+   "height": 12,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#4F6A8C"
+  },
+  {
+   "id": "bottom",
+   "name": "Coaster back",
+   "materialId": "back",
+   "quantity": 4,
+   "width": 12,
+   "height": 12,
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#E3C48D"
+  }
+ ],
+ "steps": [
+  {
+   "id": "dc1",
+   "stage": "cut",
+   "title": "Open up the jeans leg",
+   "text": "Cut one leg off the jeans just below the pocket. Cut along the inseam (not the thick outer seam) and open it flat. Press it.",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "main",
+     "label": "cut along the inseam, open flat"
+    }
+   },
+   "pieces": [
+    "top"
+   ],
+   "warnings": [
+    "Denim is tough — use sharp scissors and cut slowly."
+   ]
+  },
+  {
+   "id": "dc2",
+   "stage": "cut",
+   "title": "Cut the coaster tops",
+   "text": "Cut four 12 cm squares from the denim, avoiding worn holes and the thick seams.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "top"
+   ]
+  },
+  {
+   "id": "dc3",
+   "stage": "cut",
+   "title": "Cut the backs",
+   "text": "Cut four 12 cm squares from the cotton.",
+   "visual": {
+    "type": "layout",
+    "materialId": "back"
+   },
+   "pieces": [
+    "bottom"
+   ]
+  },
+  {
+   "id": "dc4",
+   "stage": "sew",
+   "title": "Set up for denim",
+   "text": "Fit a 90/14 or denim needle and set a 3 mm stitch.",
+   "visual": {
+    "type": "template",
+    "name": "setup",
+    "args": {
+     "tone": "main",
+     "stitch": 3,
+     "note": "Denim needle 90/14"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Stitch length",
+     "value": 3,
+     "unit": "mm"
+    }
+   ]
+  },
+  {
+   "id": "dc5",
+   "stage": "assemble",
+   "title": "Sew top to back",
+   "text": "Place a denim and a cotton square right sides together. Sew all round with a 1 cm seam, leaving a 5 cm gap.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "ltrb",
+     "gap": "b",
+     "gapLabel": "5 cm gap"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "top",
+    "bottom"
+   ]
+  },
+  {
+   "id": "dc6",
+   "stage": "assemble",
+   "title": "Clip, turn and press",
+   "text": "Clip the corners close to the stitching, turn, push the corners out and press with steam.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "techniques": [
+    "clipping-corners",
+    "pressing"
+   ]
+  },
+  {
+   "id": "dc7",
+   "stage": "finish",
+   "title": "Double topstitch",
+   "text": "Topstitch 3 mm and then 1 cm from the edge, closing the gap. Contrast thread looks great on denim.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 0.3
+    }
+   },
+   "measurements": [
+    {
+     "label": "First line",
+     "value": 0.3,
+     "unit": "len"
+    },
+    {
+     "label": "Second line",
+     "value": 1,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "top"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "dc8",
+   "stage": "finish",
+   "title": "Stack and gift",
+   "text": "Make all four and tie the stack with twine.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Coasters",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 80,
+      "y": 60,
+      "w": 160,
+      "h": 160,
+      "tone": "main"
+     },
+     {
+      "k": "panel",
+      "x": 102,
+      "y": 78,
+      "w": 160,
+      "h": 160,
+      "tone": "main"
+     },
+     {
+      "k": "panel",
+      "x": 124,
+      "y": 96,
+      "w": 160,
+      "h": 160,
+      "tone": "main"
+     },
+     {
+      "k": "panel",
+      "x": 146,
+      "y": 114,
+      "w": 160,
+      "h": 160,
+      "tone": "main"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        152,
+        128
+       ],
+       [
+        298,
+        128
+       ],
+       [
+        298,
+        274
+       ],
+       [
+        152,
+        274
+       ]
+      ],
+      "closed": true
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "zip-pouch",
+  "classic-tote"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

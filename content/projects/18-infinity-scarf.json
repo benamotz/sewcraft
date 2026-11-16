@@ -1,0 +1,497 @@
+{
+ "id": "infinity-scarf",
+ "title": "Infinity Scarf",
+ "category": "clothing",
+ "difficulty": "beginner",
+ "summary": "A long, soft loop scarf from a single length of jersey or rayon.",
+ "description": "One long seam and one joining seam. Jersey doesn't fray, so there are no edges to finish — the perfect first knit project.",
+ "tags": [
+  "clothing",
+  "accessories",
+  "gifts",
+  "beginner",
+  "knits",
+  "quick"
+ ],
+ "minutes": [
+  40,
+  60
+ ],
+ "costUSD": [
+  8,
+  20
+ ],
+ "machineRequired": true,
+ "popularity": 66,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished scarf",
+  "dims": [
+   {
+    "label": "Loop length",
+    "value": 148
+   },
+   {
+    "label": "Width (flat)",
+    "value": 34
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "needle-ball",
+  "scissors",
+  "pins",
+  "safety-pin?",
+  "hand-needle"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Jersey or rayon challis",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton jersey",
+    "Viscose jersey",
+    "Rayon challis",
+    "Double gauze"
+   ],
+   "why": "The scarf.",
+   "swatch": "#8C6E9C",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 140,
+    "widths": [
+     140,
+     150
+    ]
+   },
+   "weight": "Light, drapey",
+   "minWidthCm": 140
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "scarf",
+   "name": "Scarf",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 70,
+   "height": 150,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#8C6E9C",
+   "notes": "Width runs across the fabric; length along the grain."
+  }
+ ],
+ "steps": [
+  {
+   "id": "is1",
+   "stage": "prep",
+   "title": "Set up for knits",
+   "text": "Fit a ballpoint (stretch) needle and choose a narrow zigzag (width 1, length 2.5) or your machine's stretch stitch, so the seam can stretch with the fabric.",
+   "visual": {
+    "type": "template",
+    "name": "setup",
+    "args": {
+     "tone": "main",
+     "stitch": 2.5,
+     "note": "Ballpoint needle · narrow zigzag"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Stitch length",
+     "value": 2.5,
+     "unit": "mm"
+    }
+   ],
+   "techniques": [
+    "zigzag-stitch"
+   ]
+  },
+  {
+   "id": "is2",
+   "stage": "cut",
+   "title": "Cut the scarf",
+   "text": "Lay the fabric single-layer and cut one long rectangle — 70 cm across the width and 150 cm along the length.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "scarf"
+   ]
+  },
+  {
+   "id": "is3",
+   "stage": "sew",
+   "title": "Sew the long seam",
+   "text": "Fold the scarf in half lengthwise, right sides together. Sew the long edge with a 1 cm seam. Don't turn it yet.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "main",
+     "label": "sew the long edge — leave it inside out"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "scarf"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "is4",
+   "stage": "assemble",
+   "title": "Join the ends",
+   "text": "Reach inside the tube and pull one end through until the two open ends meet, right sides together and long seams matched. Sew round the ends, leaving an 8 cm gap.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "t",
+     "gap": "t",
+     "gapLabel": "8 cm gap",
+     "label": "ends right sides together"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Gap",
+     "value": 8,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "scarf"
+   ]
+  },
+  {
+   "id": "is5",
+   "stage": "assemble",
+   "title": "Turn",
+   "text": "Pull the scarf right side out through the gap.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main"
+    }
+   }
+  },
+  {
+   "id": "is6",
+   "stage": "finish",
+   "title": "Close the gap",
+   "text": "Ladder-stitch the gap closed by hand.",
+   "visual": {
+    "type": "template",
+    "name": "close",
+    "args": {
+     "tone": "main",
+     "method": "hand"
+    }
+   },
+   "pieces": [
+    "scarf"
+   ],
+   "techniques": [
+    "ladder-stitch"
+   ]
+  },
+  {
+   "id": "is7",
+   "stage": "finish",
+   "title": "Wear it",
+   "text": "Loop it twice round your neck.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Scarf",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        310.0,
+        140.0
+       ],
+       [
+        307.2,
+        166.7
+       ],
+       [
+        299.1,
+        192.1
+       ],
+       [
+        286.0,
+        214.8
+       ],
+       [
+        268.6,
+        233.8
+       ],
+       [
+        247.7,
+        248.1
+       ],
+       [
+        224.5,
+        257.0
+       ],
+       [
+        200.0,
+        260.0
+       ],
+       [
+        175.5,
+        257.0
+       ],
+       [
+        152.3,
+        248.1
+       ],
+       [
+        131.4,
+        233.8
+       ],
+       [
+        114.0,
+        214.8
+       ],
+       [
+        100.9,
+        192.1
+       ],
+       [
+        92.8,
+        166.7
+       ],
+       [
+        90.0,
+        140.0
+       ],
+       [
+        92.8,
+        113.3
+       ],
+       [
+        100.9,
+        87.9
+       ],
+       [
+        114.0,
+        65.2
+       ],
+       [
+        131.4,
+        46.2
+       ],
+       [
+        152.3,
+        31.9
+       ],
+       [
+        175.5,
+        23.0
+       ],
+       [
+        200.0,
+        20.0
+       ],
+       [
+        224.5,
+        23.0
+       ],
+       [
+        247.7,
+        31.9
+       ],
+       [
+        268.6,
+        46.2
+       ],
+       [
+        286.0,
+        65.2
+       ],
+       [
+        299.1,
+        87.9
+       ],
+       [
+        307.2,
+        113.3
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        255.0,
+        120.0
+       ],
+       [
+        253.6,
+        135.6
+       ],
+       [
+        249.6,
+        150.4
+       ],
+       [
+        243.0,
+        163.6
+       ],
+       [
+        234.3,
+        174.7
+       ],
+       [
+        223.9,
+        183.1
+       ],
+       [
+        212.2,
+        188.2
+       ],
+       [
+        200.0,
+        190.0
+       ],
+       [
+        187.8,
+        188.2
+       ],
+       [
+        176.1,
+        183.1
+       ],
+       [
+        165.7,
+        174.7
+       ],
+       [
+        157.0,
+        163.6
+       ],
+       [
+        150.4,
+        150.4
+       ],
+       [
+        146.4,
+        135.6
+       ],
+       [
+        145.0,
+        120.0
+       ],
+       [
+        146.4,
+        104.4
+       ],
+       [
+        150.4,
+        89.6
+       ],
+       [
+        157.0,
+        76.4
+       ],
+       [
+        165.7,
+        65.3
+       ],
+       [
+        176.1,
+        56.9
+       ],
+       [
+        187.8,
+        51.8
+       ],
+       [
+        200.0,
+        50.0
+       ],
+       [
+        212.2,
+        51.8
+       ],
+       [
+        223.9,
+        56.9
+       ],
+       [
+        234.3,
+        65.3
+       ],
+       [
+        243.0,
+        76.4
+       ],
+       [
+        249.6,
+        89.6
+       ],
+       [
+        253.6,
+        104.4
+       ]
+      ],
+      "tone": "#FBF7F0"
+     },
+     {
+      "k": "fold",
+      "from": [
+       140,
+       220
+      ],
+      "to": [
+       260,
+       230
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "scrunchie",
+  "kimono-jacket",
+  "headband"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

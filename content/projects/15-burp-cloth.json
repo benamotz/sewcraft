@@ -1,0 +1,321 @@
+{
+ "id": "burp-cloth",
+ "title": "Baby Burp Cloth",
+ "category": "kids",
+ "difficulty": "beginner",
+ "summary": "A soft, absorbent two-layer burp cloth — a classic baby-shower gift.",
+ "description": "A printed cotton front and a thirsty terry or flannel back, turned and topstitched. Takes under an hour and uses fat quarters.",
+ "tags": [
+  "kids",
+  "gifts",
+  "beginner",
+  "quick",
+  "baby"
+ ],
+ "minutes": [
+  30,
+  50
+ ],
+ "costUSD": [
+  4,
+  10
+ ],
+ "machineRequired": true,
+ "popularity": 69,
+ "constants": {
+  "sa": 1
+ },
+ "finished": {
+  "label": "Finished cloth",
+  "dims": [
+   {
+    "label": "Width",
+    "value": 23
+   },
+   {
+    "label": "Length",
+    "value": 48
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "ruler",
+  "pins",
+  "iron",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Front — cotton print",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Cotton flannel"
+   ],
+   "why": "Pretty side.",
+   "swatch": "#B5727D",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back — terry or flannel",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton terry",
+    "Bamboo terry",
+    "Flannel",
+    "Minky (less absorbent)"
+   ],
+   "why": "Absorbent side.",
+   "swatch": "#F0E6D8",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112
+    ]
+   },
+   "alternatives": [
+    "An old cotton bath towel"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "front",
+   "name": "Front",
+   "materialId": "main",
+   "quantity": 1,
+   "width": 25,
+   "height": 50,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#B5727D"
+  },
+  {
+   "id": "backp",
+   "name": "Back",
+   "materialId": "back",
+   "quantity": 1,
+   "width": 25,
+   "height": 50,
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#E6D8C4"
+  }
+ ],
+ "steps": [
+  {
+   "id": "bc1",
+   "stage": "prep",
+   "title": "Pre-wash both fabrics",
+   "text": "Pre-wash and dry both fabrics hot — flannel and terry can shrink a lot, and baby items get washed often.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "back"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "bc2",
+   "stage": "cut",
+   "title": "Cut the front",
+   "text": "Cut the front rectangle.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "front"
+   ]
+  },
+  {
+   "id": "bc3",
+   "stage": "cut",
+   "title": "Cut the back",
+   "text": "Cut the back rectangle.",
+   "visual": {
+    "type": "layout",
+    "materialId": "back"
+   },
+   "pieces": [
+    "backp"
+   ]
+  },
+  {
+   "id": "bc4",
+   "stage": "assemble",
+   "title": "Layer",
+   "text": "Place front and back right sides together and pin all round. Terry is slippery — use plenty of pins.",
+   "visual": {
+    "type": "template",
+    "name": "layer",
+    "args": {
+     "base": "main",
+     "top": "back"
+    }
+   },
+   "pieces": [
+    "front",
+    "backp"
+   ]
+  },
+  {
+   "id": "bc5",
+   "stage": "sew",
+   "title": "Sew all round",
+   "text": "Sew all round with a 1 cm seam, leaving an 8 cm gap on one long side.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "back",
+     "sides": "ltrb",
+     "gap": "r",
+     "gapLabel": "8 cm gap"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "front",
+    "backp"
+   ],
+   "techniques": [
+    "seam-allowance"
+   ]
+  },
+  {
+   "id": "bc6",
+   "stage": "sew",
+   "title": "Clip and turn",
+   "text": "Clip the corners, turn right side out, push out the corners and press (gently on terry).",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "back"
+    }
+   },
+   "techniques": [
+    "clipping-corners"
+   ]
+  },
+  {
+   "id": "bc7",
+   "stage": "finish",
+   "title": "Topstitch",
+   "text": "Topstitch 5 mm from the edge all round, closing the gap. Optionally add two lines down the middle to keep the layers together in the wash.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "front"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "bc8",
+   "stage": "finish",
+   "title": "Done",
+   "text": "Wash once before gifting so it's soft and absorbent.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Burp cloth",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 130,
+      "y": 30,
+      "w": 140,
+      "h": 240,
+      "tone": "main",
+      "rx": 6
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        140,
+        40
+       ],
+       [
+        260,
+        40
+       ],
+       [
+        260,
+        260
+       ],
+       [
+        140,
+        260
+       ]
+      ],
+      "closed": true
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "baby-quilt",
+  "crayon-roll"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

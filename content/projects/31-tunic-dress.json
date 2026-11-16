@@ -1,0 +1,475 @@
+{
+ "id": "tunic-dress",
+ "title": "Easy Rectangle Tunic Dress",
+ "category": "clothing",
+ "difficulty": "beginner",
+ "summary": "A loose boat-neck dress from two rectangles, with a tie belt.",
+ "description": "Possibly the simplest dress there is: two rectangles joined at the shoulders (leaving the neck open) and the sides (leaving the armholes open). Wear it loose or belted. Choose a fabric with drape.",
+ "tags": [
+  "clothing",
+  "dress",
+  "beginner",
+  "rectangles",
+  "summer"
+ ],
+ "minutes": [
+  120,
+  180
+ ],
+ "costUSD": [
+  15,
+  35
+ ],
+ "machineRequired": true,
+ "popularity": 78,
+ "constants": {
+  "sa": 1.5,
+  "ease": 30,
+  "hem": 3,
+  "nk": 26,
+  "arm": 22
+ },
+ "params": [
+  {
+   "id": "bust",
+   "label": "Bust",
+   "default": 92,
+   "min": 78,
+   "max": 126,
+   "step": 1
+  },
+  {
+   "id": "L",
+   "label": "Length (shoulder to hem)",
+   "default": 95,
+   "min": 70,
+   "max": 120,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "s",
+   "label": "S",
+   "values": {
+    "bust": 86,
+    "L": 92
+   }
+  },
+  {
+   "id": "m",
+   "label": "M",
+   "values": {
+    "bust": 92,
+    "L": 95
+   }
+  },
+  {
+   "id": "l",
+   "label": "L",
+   "values": {
+    "bust": 102,
+    "L": 97
+   }
+  },
+  {
+   "id": "xl",
+   "label": "XL",
+   "values": {
+    "bust": 112,
+    "L": 99
+   }
+  }
+ ],
+ "customNote": "Each panel is (bust + 30 cm ease) ÷ 2 wide plus seam allowances; the neck opening (26 cm) and armhole openings (22 cm) stay fixed so they fit any size.",
+ "finished": {
+  "label": "Finished dress",
+  "dims": [
+   {
+    "label": "Circumference",
+    "value": "bust + ease"
+   },
+   {
+    "label": "Length",
+    "value": "L"
+   },
+   {
+    "label": "Neck opening",
+    "value": "nk"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "tape",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Drapey woven",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Rayon challis",
+    "Linen",
+    "Cotton voile",
+    "Double gauze"
+   ],
+   "why": "Dress and belt.",
+   "swatch": "#8C6E9C",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 140,
+    "widths": [
+     140,
+     150
+    ]
+   },
+   "weight": "Light–medium"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "panel",
+   "name": "Front / back panel",
+   "materialId": "main",
+   "quantity": 2,
+   "width": "(bust + ease)/2 + 2*sa",
+   "height": "L + sa + hem",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#8C6E9C"
+  },
+  {
+   "id": "belt",
+   "name": "Belt",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 8,
+   "height": 75,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#6F5680",
+   "notes": "Joined end to end."
+  }
+ ],
+ "steps": [
+  {
+   "id": "td1",
+   "stage": "prep",
+   "title": "Measure",
+   "text": "Measure your bust and the length from the top of your shoulder; enter them in Customise.",
+   "visual": {
+    "type": "template",
+    "name": "measure",
+    "args": {
+     "lines": "bust"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Bust",
+     "value": "bust",
+     "unit": "len"
+    },
+    {
+     "label": "Length",
+     "value": "L",
+     "unit": "len"
+    }
+   ]
+  },
+  {
+   "id": "td2",
+   "stage": "prep",
+   "title": "Pre-wash",
+   "text": "Pre-wash and press.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "td3",
+   "stage": "cut",
+   "title": "Cut the panels and belt",
+   "text": "Cut two identical panels and two belt strips.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "panel",
+    "belt"
+   ]
+  },
+  {
+   "id": "td4",
+   "stage": "sew",
+   "title": "Neaten the edges",
+   "text": "Zigzag or overlock the shoulder and side edges of both panels.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "dist": 3,
+     "label": "neaten shoulder & side edges"
+    }
+   },
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "finishing-edges",
+    "zigzag-stitch"
+   ]
+  },
+  {
+   "id": "td5",
+   "stage": "sew",
+   "title": "Sew the shoulders, leaving the neck open",
+   "text": "Place the panels right sides together. Sew each shoulder from the outer edge inwards, stopping so the centre 26 cm stays open. Backstitch well.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "t",
+     "gap": "t",
+     "gapLabel": "26 cm neck opening",
+     "sa": 1.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Neck opening",
+     "value": "nk",
+     "unit": "len"
+    },
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ]
+  },
+  {
+   "id": "td6",
+   "stage": "sew",
+   "title": "Finish the neckline",
+   "text": "Press the shoulder seams open and continue pressing the seam allowance under along the neck opening. Topstitch round the neck 1 cm from the edge.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 1,
+     "all": false
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch",
+     "value": 1,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "td7",
+   "stage": "sew",
+   "title": "Sew the sides, leaving armholes",
+   "text": "Sew each side seam from the hem up, stopping 22 cm below the shoulder for the armhole. Press open, including the allowance along the armhole, and topstitch round each armhole.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lr",
+     "sa": 1.5,
+     "label": "stop 22 cm below the shoulder"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Armhole opening",
+     "value": "arm",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "td8",
+   "stage": "finish",
+   "title": "Hem",
+   "text": "Try on, adjust the length if needed, then press 1 cm and 2 cm and stitch the hem.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 1,
+     "f2": 2
+    }
+   },
+   "measurements": [
+    {
+     "label": "First fold",
+     "value": 1,
+     "unit": "len"
+    },
+    {
+     "label": "Second fold",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "hemming"
+   ]
+  },
+  {
+   "id": "td9",
+   "stage": "finish",
+   "title": "Make the belt",
+   "text": "Join the belt strips end to end, fold into a tube, sew, turn and press; fold the ends in and edgestitch all round.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "belt"
+    }
+   },
+   "pieces": [
+    "belt"
+   ],
+   "techniques": [
+    "edgestitching"
+   ]
+  },
+  {
+   "id": "td10",
+   "stage": "finish",
+   "title": "Wear it",
+   "text": "Wear it loose or belted.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Dress",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        110,
+        30
+       ],
+       [
+        290,
+        30
+       ],
+       [
+        300,
+        280
+       ],
+       [
+        100,
+        280
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "fold",
+      "from": [
+       165,
+       30
+      ],
+      "to": [
+       235,
+       30
+      ]
+     },
+     {
+      "k": "panel",
+      "x": 104,
+      "y": 130,
+      "w": 192,
+      "h": 12,
+      "tone": "belt",
+      "rx": 4
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        200,
+        140
+       ],
+       [
+        190,
+        190
+       ],
+       [
+        180,
+        210
+       ]
+      ],
+      "color": "belt"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "boxy-tee",
+  "kimono-jacket"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

@@ -1,0 +1,410 @@
+{
+ "id": "kids-cape",
+ "title": "Kids' Hero Cape",
+ "category": "kids",
+ "difficulty": "beginner",
+ "summary": "A lined dress-up cape with a breakaway hook-and-loop neck band.",
+ "description": "A flared, curved-hem cape in any size from toddler to tween. It's lined so it swishes nicely, and the neck closes with hook-and-loop tape that pulls apart safely — never ties.",
+ "tags": [
+  "kids",
+  "clothing",
+  "gifts",
+  "costume",
+  "dress-up",
+  "curves"
+ ],
+ "minutes": [
+  75,
+  120
+ ],
+ "costUSD": [
+  8,
+  18
+ ],
+ "machineRequired": true,
+ "popularity": 80,
+ "constants": {
+  "sa": 1
+ },
+ "params": [
+  {
+   "id": "L",
+   "label": "Cape length",
+   "default": 55,
+   "min": 35,
+   "max": 80,
+   "step": 1,
+   "help": "Back of neck to where the cape should end."
+  }
+ ],
+ "sizes": [
+  {
+   "id": "2-4",
+   "label": "Age 2–4",
+   "values": {
+    "L": 40
+   }
+  },
+  {
+   "id": "5-7",
+   "label": "Age 5–7",
+   "values": {
+    "L": 55
+   }
+  },
+  {
+   "id": "8-10",
+   "label": "Age 8–10",
+   "values": {
+    "L": 68
+   }
+  }
+ ],
+ "customNote": "The cape flares from a fixed 26 cm neck edge to 1.2 × its length at the hem, with a gently curved hem. The neck band and closure stay the same at every size.",
+ "finished": {
+  "label": "Finished cape",
+  "dims": [
+   {
+    "label": "Length",
+    "value": "L"
+   },
+   {
+    "label": "Hem width",
+    "value": "L*1.2"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "point-turner?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Outer — satin or cotton",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Poly satin",
+    "Quilting cotton",
+    "Felt"
+   ],
+   "why": "Outside.",
+   "swatch": "#C0583A",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "lining",
+   "name": "Lining — contrast cotton",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton"
+   ],
+   "why": "Inside and neck band.",
+   "swatch": "#D9A35F",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     112,
+     140
+    ]
+   }
+  },
+  {
+   "id": "velcro",
+   "name": "Hook-and-loop tape, 2.5 cm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "5 cm",
+   "why": "Breakaway closure.",
+   "swatch": "#E8E0D2"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "outer",
+   "name": "Cape outer",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "L*1.2 + 2*sa",
+   "height": "L + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C0583A",
+   "outline": "M {(w - 26)/2} 0 L {(w + 26)/2} 0 L {w} {h - 6} Q {hw} {h} 0 {h - 6} Z"
+  },
+  {
+   "id": "liningp",
+   "name": "Cape lining",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": "L*1.2 + 2*sa",
+   "height": "L + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#D9A35F",
+   "outline": "M {(w - 26)/2} 0 L {(w + 26)/2} 0 L {w} {h - 6} Q {hw} {h} 0 {h - 6} Z"
+  },
+  {
+   "id": "band",
+   "name": "Neck band",
+   "materialId": "lining",
+   "quantity": 1,
+   "width": 60,
+   "height": 10,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#B88A4A",
+   "notes": "Encloses the neck edge; the ends overlap with hook-and-loop."
+  }
+ ],
+ "steps": [
+  {
+   "id": "kc1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press both fabrics (satin on a low setting).",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main",
+      "lining"
+     ]
+    }
+   },
+   "warnings": [
+    "Satin is usually polyester — use a cool iron."
+   ]
+  },
+  {
+   "id": "kc2",
+   "stage": "cut",
+   "title": "Print and cut the outer",
+   "text": "Print the cape pattern at 100% for your size and cut one outer.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "outer"
+   ]
+  },
+  {
+   "id": "kc3",
+   "stage": "cut",
+   "title": "Cut the lining and band",
+   "text": "Cut one lining and the neck band.",
+   "visual": {
+    "type": "layout",
+    "materialId": "lining"
+   },
+   "pieces": [
+    "liningp",
+    "band"
+   ]
+  },
+  {
+   "id": "kc4",
+   "stage": "sew",
+   "title": "Optional: add an emblem",
+   "text": "Appliqué a felt initial or star on the outer back with a zigzag stitch before assembling.",
+   "visual": {
+    "type": "template",
+    "name": "patch",
+    "args": {
+     "base": "main",
+     "patch": "#D9A35F",
+     "label": "emblem"
+    }
+   },
+   "pieces": [
+    "outer"
+   ],
+   "techniques": [
+    "zigzag-stitch"
+   ]
+  },
+  {
+   "id": "kc5",
+   "stage": "sew",
+   "title": "Sew outer to lining",
+   "text": "Place outer and lining right sides together. Sew both sides and the curved hem with 1 cm, leaving the neck edge open.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lbr",
+     "label": "sides + curved hem, neck open"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer",
+    "liningp"
+   ],
+   "techniques": [
+    "sewing-curves"
+   ]
+  },
+  {
+   "id": "kc6",
+   "stage": "sew",
+   "title": "Clip, turn and press",
+   "text": "Clip the hem curve and the corners, turn right side out through the neck and press.",
+   "visual": {
+    "type": "template",
+    "name": "turn",
+    "args": {
+     "tone": "main",
+     "label": "turn through the neck edge"
+    }
+   },
+   "techniques": [
+    "clipping-corners",
+    "sewing-curves"
+   ]
+  },
+  {
+   "id": "kc7",
+   "stage": "sew",
+   "title": "Topstitch",
+   "text": "Topstitch 5 mm round the sides and hem.",
+   "visual": {
+    "type": "template",
+    "name": "topstitch",
+    "args": {
+     "tone": "main",
+     "dist": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Topstitch",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "outer"
+   ],
+   "techniques": [
+    "topstitching"
+   ]
+  },
+  {
+   "id": "kc8",
+   "stage": "assemble",
+   "title": "Bind the neck edge",
+   "text": "Press the band in half lengthwise and press the long edges in 1 cm. Centre the cape's neck edge inside the band (17 cm of band extends each side), pin and edgestitch the band closed along its whole length.",
+   "visual": {
+    "type": "template",
+    "name": "binding",
+    "args": {
+     "tone": "main",
+     "bind": "band",
+     "width": 2.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Band extends each side",
+     "value": 17,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band"
+   ],
+   "techniques": [
+    "binding",
+    "edgestitching"
+   ]
+  },
+  {
+   "id": "kc9",
+   "stage": "finish",
+   "title": "Add the breakaway closure",
+   "text": "Sew the hook side of the tape to the inside of one band end and the loop side to the outside of the other. Stitch a box round each piece.",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "band",
+     "label": "hook inside · loop outside"
+    }
+   },
+   "warnings": [
+    "Never replace the hook-and-loop with ties or cords: a closure that pulls apart is safer for children's play."
+   ]
+  },
+  {
+   "id": "kc10",
+   "stage": "finish",
+   "title": "Up, up and away",
+   "text": "Fasten it on and let them fly.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Cape",
+   "scene": {
+    "els": [
+     {
+      "k": "path",
+      "d": "M 165 30 L 235 30 L 350 250 Q 200 290 50 250 Z",
+      "tone": "main"
+     },
+     {
+      "k": "panel",
+      "x": 120,
+      "y": 22,
+      "w": 160,
+      "h": 16,
+      "tone": "band",
+      "rx": 6
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "bean-bags",
+  "crayon-roll"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

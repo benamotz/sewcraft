@@ -1,0 +1,537 @@
+{
+ "id": "wrap-skirt",
+ "title": "Gathered Wrap Skirt",
+ "category": "clothing",
+ "difficulty": "intermediate",
+ "summary": "A soft gathered wrap skirt with long ties that wrap round and pass through a buttonhole.",
+ "description": "One big rectangle gathered onto a long waistband with ties. Adjustable fit, no zipper, and it suits nearly every body. Introduces gathering and a buttonhole.",
+ "tags": [
+  "clothing",
+  "skirt",
+  "gathering",
+  "adjustable",
+  "summer"
+ ],
+ "minutes": [
+  150,
+  220
+ ],
+ "costUSD": [
+  15,
+  35
+ ],
+ "machineRequired": true,
+ "popularity": 77,
+ "constants": {
+  "sa": 1.5,
+  "hem": 3,
+  "bw": 4
+ },
+ "params": [
+  {
+   "id": "waist",
+   "label": "Waist",
+   "default": 72,
+   "min": 56,
+   "max": 100,
+   "step": 1
+  },
+  {
+   "id": "hip",
+   "label": "Hip",
+   "default": 98,
+   "min": 82,
+   "max": 108,
+   "step": 1,
+   "help": "Up to 108 cm with 140 cm wide fabric."
+  },
+  {
+   "id": "L",
+   "label": "Skirt length",
+   "default": 65,
+   "min": 40,
+   "max": 95,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "s",
+   "label": "S",
+   "values": {
+    "waist": 66,
+    "hip": 92,
+    "L": 63
+   }
+  },
+  {
+   "id": "m",
+   "label": "M",
+   "values": {
+    "waist": 72,
+    "hip": 98,
+    "L": 65
+   }
+  },
+  {
+   "id": "l",
+   "label": "L",
+   "values": {
+    "waist": 80,
+    "hip": 106,
+    "L": 66
+   }
+  }
+ ],
+ "customNote": "The skirt panel is 1.25 × hip wide (it wraps a quarter past itself) and gathers into a band 1.5 × waist long, so the overlap sits flat at the front. Ties and hem allowances are fixed.",
+ "finished": {
+  "label": "Finished skirt",
+  "dims": [
+   {
+    "label": "Length",
+    "value": "L"
+   },
+   {
+    "label": "Width (flat)",
+    "value": "hip*1.25"
+   },
+   {
+    "label": "Band",
+    "value": "waist*1.5"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "tape",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "safety-pin",
+  "seam-ripper"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Light woven fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Cotton lawn",
+    "Rayon",
+    "Double gauze",
+    "Linen (light)"
+   ],
+   "why": "Skirt, band and ties.",
+   "swatch": "#7F9473",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 140,
+    "widths": [
+     140,
+     150
+    ]
+   },
+   "weight": "Light"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "panel",
+   "name": "Skirt panel",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "hip*1.25 + 4",
+   "height": "L - bw + sa + hem",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#7F9473"
+  },
+  {
+   "id": "band",
+   "name": "Waistband",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "2*bw + 2*sa",
+   "height": "waist*1.5 + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#5F7354"
+  },
+  {
+   "id": "ties",
+   "name": "Tie",
+   "materialId": "main",
+   "quantity": 2,
+   "width": 8,
+   "height": 80,
+   "seamAllowance": 0,
+   "grain": "any",
+   "color": "#5F7354"
+  }
+ ],
+ "steps": [
+  {
+   "id": "ws1",
+   "stage": "prep",
+   "title": "Measure",
+   "text": "Measure your waist and hip and choose the length; enter them in Customise.",
+   "visual": {
+    "type": "template",
+    "name": "measure",
+    "args": {
+     "lines": "waist,hip"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Waist",
+     "value": "waist",
+     "unit": "len"
+    },
+    {
+     "label": "Hip",
+     "value": "hip",
+     "unit": "len"
+    },
+    {
+     "label": "Length",
+     "value": "L",
+     "unit": "len"
+    }
+   ]
+  },
+  {
+   "id": "ws2",
+   "stage": "prep",
+   "title": "Pre-wash",
+   "text": "Pre-wash and press.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "ws3",
+   "stage": "cut",
+   "title": "Cut the pieces",
+   "text": "Cut the panel across the full width, the waistband and two ties.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "panel",
+    "band",
+    "ties"
+   ]
+  },
+  {
+   "id": "ws4",
+   "stage": "sew",
+   "title": "Hem the side edges",
+   "text": "Double-fold hem both short side edges of the panel: 1 cm, then 1 cm.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 1,
+     "f2": 1
+    }
+   },
+   "measurements": [
+    {
+     "label": "Each fold",
+     "value": 1,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "hemming"
+   ]
+  },
+  {
+   "id": "ws5",
+   "stage": "sew",
+   "title": "Gather the top edge",
+   "text": "Sew two rows of long basting stitches along the top edge (1 cm and 1.3 cm from the edge). Pull the bobbin threads until the top measures the band length minus 3 cm, and spread the gathers evenly.",
+   "visual": {
+    "type": "template",
+    "name": "gather",
+    "args": {
+     "tone": "main"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Gathered length",
+     "value": "waist*1.5 - 3",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "gathering"
+   ]
+  },
+  {
+   "id": "ws6",
+   "stage": "assemble",
+   "title": "Attach the waistband",
+   "text": "Pin the band to the gathered edge right sides together, band extending 1.5 cm at each end. Sew with 1.5 cm. Press the band up, fold in half to the inside, fold the edge under and stitch in the ditch from the front.",
+   "visual": {
+    "type": "template",
+    "name": "binding",
+    "args": {
+     "tone": "main",
+     "bind": "band",
+     "width": "bw"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    },
+    {
+     "label": "Finished band",
+     "value": "bw",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band",
+    "panel"
+   ]
+  },
+  {
+   "id": "ws7",
+   "stage": "assemble",
+   "title": "Make and attach the ties",
+   "text": "Sew each tie into a tube, turn and press; fold one end in. Insert the raw end into each band end and topstitch across twice.",
+   "visual": {
+    "type": "template",
+    "name": "tube",
+    "args": {
+     "tone": "ties"
+    }
+   },
+   "pieces": [
+    "ties"
+   ],
+   "techniques": [
+    "edgestitching"
+   ]
+  },
+  {
+   "id": "ws8",
+   "stage": "assemble",
+   "title": "Make the buttonhole",
+   "text": "Wrap the skirt on. Mark where the inner tie meets the band at your side, and sew a 2.5 cm vertical buttonhole there for the tie to pass through.",
+   "visual": {
+    "type": "template",
+    "name": "mark",
+    "args": {
+     "tone": "band",
+     "label": "2.5 cm buttonhole at the side"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Buttonhole length",
+     "value": 2.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band"
+   ],
+   "techniques": [
+    "buttonholes"
+   ]
+  },
+  {
+   "id": "ws9",
+   "stage": "finish",
+   "title": "Hem",
+   "text": "Try on to check the length. Press 1 cm then 2 cm at the hem and stitch.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 1,
+     "f2": 2
+    }
+   },
+   "measurements": [
+    {
+     "label": "First fold",
+     "value": 1,
+     "unit": "len"
+    },
+    {
+     "label": "Second fold",
+     "value": 2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "panel"
+   ],
+   "techniques": [
+    "hemming"
+   ]
+  },
+  {
+   "id": "ws10",
+   "stage": "finish",
+   "title": "Wrap and tie",
+   "text": "Wrap the inner tie through the buttonhole, round your back, and tie at the side.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Wrap skirt",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 140,
+      "y": 50,
+      "w": 120,
+      "h": 18,
+      "tone": "band",
+      "rx": 3
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        140,
+        68
+       ],
+       [
+        260,
+        68
+       ],
+       [
+        310,
+        270
+       ],
+       [
+        90,
+        270
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "poly",
+      "pts": [
+       [
+        210,
+        68
+       ],
+       [
+        260,
+        68
+       ],
+       [
+        310,
+        270
+       ],
+       [
+        250,
+        270
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "fold",
+      "from": [
+       210,
+       68
+      ],
+      "to": [
+       250,
+       270
+      ]
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        262,
+        60
+       ],
+       [
+        300,
+        90
+       ],
+       [
+        292,
+        140
+       ]
+      ],
+      "color": "ties"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        262,
+        60
+       ],
+       [
+        320,
+        80
+       ],
+       [
+        330,
+        130
+       ]
+      ],
+      "color": "ties"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "circle-skirt",
+  "elastic-skirt",
+  "tiered-skirt"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

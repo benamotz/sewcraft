@@ -1,0 +1,535 @@
+{
+ "id": "circle-skirt",
+ "title": "Elastic-Waist Circle Skirt",
+ "category": "clothing",
+ "difficulty": "intermediate",
+ "summary": "A full, twirly circle skirt drafted from your hip measurement, with a comfy elastic waistband.",
+ "description": "Four quarter-circle panels, drafted with real geometry: the waist radius comes from your hip measurement so the skirt pulls on, and an elastic band gathers it gently to your waist. You'll learn staystitching, sewing bias edges and levelling a hem.",
+ "tags": [
+  "clothing",
+  "skirt",
+  "custom fit",
+  "curves",
+  "twirl"
+ ],
+ "minutes": [
+  180,
+  270
+ ],
+ "costUSD": [
+  20,
+  45
+ ],
+ "machineRequired": true,
+ "popularity": 88,
+ "featured": true,
+ "constants": {
+  "sa": 1.5,
+  "bw": 4,
+  "nh": 1,
+  "ew": 3
+ },
+ "params": [
+  {
+   "id": "waist",
+   "label": "Waist",
+   "default": 72,
+   "min": 56,
+   "max": 110,
+   "step": 1
+  },
+  {
+   "id": "hip",
+   "label": "Hip",
+   "default": 98,
+   "min": 82,
+   "max": 132,
+   "step": 1,
+   "help": "The waist opening is cut to fit over your hips."
+  },
+  {
+   "id": "L",
+   "label": "Skirt length",
+   "default": 55,
+   "min": 35,
+   "max": 85,
+   "step": 1,
+   "help": "Waist to hem, including the 4 cm band."
+  }
+ ],
+ "sizes": [
+  {
+   "id": "xs",
+   "label": "XS",
+   "values": {
+    "waist": 62,
+    "hip": 88,
+    "L": 52
+   }
+  },
+  {
+   "id": "s",
+   "label": "S",
+   "values": {
+    "waist": 66,
+    "hip": 92,
+    "L": 54
+   }
+  },
+  {
+   "id": "m",
+   "label": "M",
+   "values": {
+    "waist": 72,
+    "hip": 98,
+    "L": 55
+   }
+  },
+  {
+   "id": "l",
+   "label": "L",
+   "values": {
+    "waist": 80,
+    "hip": 106,
+    "L": 56
+   }
+  },
+  {
+   "id": "xl",
+   "label": "XL",
+   "values": {
+    "waist": 88,
+    "hip": 114,
+    "L": 57
+   }
+  }
+ ],
+ "customNote": "Geometry, not scaling: waist radius r = (hip + 4 cm) ÷ 2π, so the waist edge is long enough to pull over your hips; the outer radius is r + length − band + hem. Each quarter is cut with 1.5 cm side seam allowances. The cutting layout packs each quarter's bounding square — nesting the quarters can save fabric on wide bolts.",
+ "finished": {
+  "label": "Finished skirt",
+  "dims": [
+   {
+    "label": "Length",
+    "value": "L"
+   },
+   {
+    "label": "Hem circumference",
+    "value": "6.2832*((hip + 4)/6.2832 + L - bw + nh) - 6.2832*nh"
+   },
+   {
+    "label": "Elastic",
+    "value": "waist*0.9"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "tape",
+  "scissors",
+  "ruler",
+  "marker",
+  "pins",
+  "iron",
+  "safety-pin",
+  "seam-gauge?"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Drapey woven fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Rayon challis",
+    "Cotton lawn",
+    "Crepe",
+    "Linen (light)"
+   ],
+   "why": "Skirt and waistband.",
+   "swatch": "#C26A4E",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 150,
+    "widths": [
+     140,
+     150
+    ]
+   },
+   "weight": "Light, drapey",
+   "minWidthCm": 140
+  },
+  {
+   "id": "elastic",
+   "name": "Woven elastic, 3 cm",
+   "kind": "notion",
+   "required": true,
+   "quantity": "{waist*0.9 + 2}",
+   "why": "Waistband.",
+   "swatch": "#F1ECE4"
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "quarter",
+   "name": "Quarter circle",
+   "materialId": "main",
+   "quantity": 4,
+   "width": "sa + ((hip + 4)/6.2832 + L - bw + nh)",
+   "height": "sa + ((hip + 4)/6.2832 + L - bw + nh)",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#C26A4E",
+   "markings": [
+    "Waist edge radius {(hip + 4)/6.2832 - sa}; outer radius {(hip + 4)/6.2832 + L - bw + nh}"
+   ],
+   "outline": "M {sa + ((hip + 4)/6.2832 - sa)} 0 L {sa + ((hip + 4)/6.2832 + L - bw + nh)} 0 L {sa + ((hip + 4)/6.2832 + L - bw + nh)} {sa} A {((hip + 4)/6.2832 + L - bw + nh)} {((hip + 4)/6.2832 + L - bw + nh)} 0 0 1 {sa} {sa + ((hip + 4)/6.2832 + L - bw + nh)} L 0 {sa + ((hip + 4)/6.2832 + L - bw + nh)} L 0 {sa + ((hip + 4)/6.2832 - sa)} L {sa} {sa + ((hip + 4)/6.2832 - sa)} A {((hip + 4)/6.2832 - sa)} {((hip + 4)/6.2832 - sa)} 0 0 0 {sa + ((hip + 4)/6.2832 - sa)} {sa} Z"
+  },
+  {
+   "id": "band",
+   "name": "Waistband",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "hip + 4 + 2*sa",
+   "height": "2*bw + 2*sa",
+   "seamAllowance": "sa",
+   "grain": "any",
+   "color": "#A85A40"
+  }
+ ],
+ "steps": [
+  {
+   "id": "cs1",
+   "stage": "prep",
+   "title": "Measure waist, hip and length",
+   "text": "Measure your waist, the fullest part of your hips and the length from waist to hem. Enter them in Customise.",
+   "visual": {
+    "type": "template",
+    "name": "measure",
+    "args": {
+     "lines": "waist,hip"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Waist",
+     "value": "waist",
+     "unit": "len"
+    },
+    {
+     "label": "Hip",
+     "value": "hip",
+     "unit": "len"
+    },
+    {
+     "label": "Length",
+     "value": "L",
+     "unit": "len"
+    }
+   ]
+  },
+  {
+   "id": "cs2",
+   "stage": "prep",
+   "title": "Pre-wash",
+   "text": "Pre-wash and press. Rayon can shrink and twist; wash it the way you'll wash the skirt.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ]
+    }
+   },
+   "techniques": [
+    "prewash"
+   ]
+  },
+  {
+   "id": "cs3",
+   "stage": "cut",
+   "title": "Print and cut four quarters + band",
+   "text": "Print the quarter-circle pattern (it's large — many pages). Cut four quarters with the straight edges on the grain as shown, plus the waistband.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "beginner": "If you'd rather not print, pin a tape measure at the corner and swing it like a compass to mark both curves: the inner radius and the outer radius are listed in the cutting table.",
+   "pieces": [
+    "quarter",
+    "band"
+   ]
+  },
+  {
+   "id": "cs4",
+   "stage": "sew",
+   "title": "Staystitch the waist edges",
+   "text": "Staystitch 1.2 cm from the curved waist edge of every quarter. The waist curve is partly on the bias and stretches easily.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "dist": 12,
+     "label": "staystitch the waist curve"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Staystitch from edge",
+     "value": 1.2,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "quarter"
+   ],
+   "techniques": [
+    "staystitching"
+   ]
+  },
+  {
+   "id": "cs5",
+   "stage": "sew",
+   "title": "Sew the four side seams",
+   "text": "Sew the quarters together along their straight edges with 1.5 cm seams, forming a full circle. Neaten and press open.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "l",
+     "sa": 1.5,
+     "label": "straight edges together"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "quarter"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "finishing-edges"
+   ]
+  },
+  {
+   "id": "cs6",
+   "stage": "sew",
+   "title": "Make the waistband",
+   "text": "Sew the band's short ends together into a loop, leaving a 4 cm gap in the seam for the elastic (backstitch either side). Press the band in half lengthwise, wrong sides together.",
+   "visual": {
+    "type": "template",
+    "name": "fold",
+    "args": {
+     "tone": "band",
+     "label": "band loop pressed in half",
+     "dim": "bw"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Finished band",
+     "value": "bw",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band"
+   ],
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "cs7",
+   "stage": "assemble",
+   "title": "Attach the waistband",
+   "text": "Pin the band's raw edges to the skirt waist, right sides together, matching the band seam to a side seam. Sew with 1.5 cm, neaten and press up.",
+   "visual": {
+    "type": "template",
+    "name": "binding",
+    "args": {
+     "tone": "main",
+     "bind": "band"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "band",
+    "quarter"
+   ]
+  },
+  {
+   "id": "cs8",
+   "stage": "assemble",
+   "title": "Insert the elastic",
+   "text": "Cut the elastic, thread it through the band via the gap, overlap the ends 2 cm and zigzag. Close the gap.",
+   "visual": {
+    "type": "template",
+    "name": "elastic",
+    "args": {
+     "overlap": 2
+    }
+   },
+   "measurements": [
+    {
+     "label": "Elastic length",
+     "value": "waist*0.9 + 2",
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "elastic-waistband"
+   ]
+  },
+  {
+   "id": "cs9",
+   "stage": "finish",
+   "title": "Hang overnight, then level the hem",
+   "text": "Hang the skirt for 24 hours — the bias sections drop and lengthen. Put it on (or on a dress form) and have a helper mark an even hem with a ruler from the floor. Trim along the marks.",
+   "visual": {
+    "type": "template",
+    "name": "measure",
+    "args": {
+     "lines": "hip"
+    }
+   },
+   "beginner": "Skipping this gives a wavy hem that's longer at the sides. It's the one step you can't rush.",
+   "tips": [
+    "Use a yardstick standing on the floor and pin at the same height all round."
+   ]
+  },
+  {
+   "id": "cs10",
+   "stage": "finish",
+   "title": "Narrow hem",
+   "text": "Press a narrow double hem — 0.5 cm, then 0.5 cm — easing the fullness, and stitch.",
+   "visual": {
+    "type": "template",
+    "name": "hem",
+    "args": {
+     "tone": "main",
+     "f1": 0.5,
+     "f2": 0.5
+    }
+   },
+   "measurements": [
+    {
+     "label": "Each fold",
+     "value": 0.5,
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "quarter"
+   ],
+   "techniques": [
+    "hemming",
+    "sewing-curves"
+   ]
+  },
+  {
+   "id": "cs11",
+   "stage": "finish",
+   "title": "Twirl",
+   "text": "Press lightly and enjoy the swish.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Finished!"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Circle skirt",
+   "scene": {
+    "els": [
+     {
+      "k": "panel",
+      "x": 160,
+      "y": 40,
+      "w": 80,
+      "h": 22,
+      "tone": "band",
+      "rx": 4
+     },
+     {
+      "k": "path",
+      "d": "M 160 62 L 240 62 Q 340 160 370 260 Q 200 290 30 260 Q 60 160 160 62 Z",
+      "tone": "main"
+     },
+     {
+      "k": "fold",
+      "from": [
+       172.5,
+       70
+      ],
+      "to": [
+       90,
+       268
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       190.0,
+       70
+      ],
+      "to": [
+       160,
+       268
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       210.0,
+       70
+      ],
+      "to": [
+       240,
+       268
+      ]
+     },
+     {
+      "k": "fold",
+      "from": [
+       227.5,
+       70
+      ],
+      "to": [
+       310,
+       268
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "elastic-skirt",
+  "tiered-skirt",
+  "wrap-skirt"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}

@@ -1,0 +1,402 @@
+{
+ "id": "gift-bags",
+ "title": "Drawstring Gift Bags",
+ "category": "gifts",
+ "difficulty": "beginner",
+ "summary": "Reusable fabric gift wrap with a double drawstring — make any size.",
+ "description": "Replace paper wrapping with bags that get used again and again. One folded rectangle, two side seams, a casing and a ribbon. Change the size for anything from jewellery to a bottle.",
+ "tags": [
+  "gifts",
+  "beginner",
+  "quick",
+  "zero waste",
+  "scraps"
+ ],
+ "minutes": [
+  30,
+  45
+ ],
+ "costUSD": [
+  2,
+  6
+ ],
+ "machineRequired": true,
+ "popularity": 83,
+ "constants": {
+  "sa": 1,
+  "cas": 2.5,
+  "turn": 1
+ },
+ "params": [
+  {
+   "id": "W",
+   "label": "Finished width",
+   "default": 20,
+   "min": 10,
+   "max": 35,
+   "step": 1
+  },
+  {
+   "id": "H",
+   "label": "Finished height",
+   "default": 25,
+   "min": 12,
+   "max": 40,
+   "step": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "small",
+   "label": "Jewellery",
+   "values": {
+    "W": 12,
+    "H": 15
+   }
+  },
+  {
+   "id": "med",
+   "label": "Book",
+   "values": {
+    "W": 20,
+    "H": 25
+   }
+  },
+  {
+   "id": "bottle",
+   "label": "Bottle",
+   "values": {
+    "W": 18,
+    "H": 38
+   }
+  }
+ ],
+ "customNote": "The bag is one rectangle folded at the bottom: width + 2 seam allowances by 2 × (height + casing + turn-under). Casing depth stays 2.5 cm; ribbon length is 2 × width + 20 cm.",
+ "finished": {
+  "label": "Finished bag",
+  "dims": [
+   {
+    "label": "Width",
+    "value": "W"
+   },
+   {
+    "label": "Height",
+    "value": "H"
+   }
+  ]
+ },
+ "tools": [
+  "machine",
+  "scissors",
+  "iron",
+  "pins",
+  "safety-pin"
+ ],
+ "materials": [
+  {
+   "id": "main",
+   "name": "Cotton fabric",
+   "kind": "fabric",
+   "required": true,
+   "recommended": [
+    "Quilting cotton",
+    "Linen",
+    "Christmas prints"
+   ],
+   "why": "The bag.",
+   "swatch": "#7F9473",
+   "layout": {
+    "mode": "single",
+    "defaultWidth": 112,
+    "widths": [
+     50,
+     112,
+     140
+    ]
+   },
+   "alternatives": [
+    "Scraps or an old shirt"
+   ]
+  },
+  {
+   "id": "ribbon",
+   "name": "Ribbon or cord",
+   "kind": "notion",
+   "required": true,
+   "quantity": "2 pieces, each {2*W + 20} long",
+   "why": "The drawstrings.",
+   "swatch": "#C0583A",
+   "alternatives": [
+    "Baker's twine",
+    "Bias tape"
+   ]
+  },
+  "thread"
+ ],
+ "pieces": [
+  {
+   "id": "bag",
+   "name": "Bag",
+   "materialId": "main",
+   "quantity": 1,
+   "width": "W + 2*sa",
+   "height": "2*(H + cas + turn)",
+   "seamAllowance": "sa",
+   "grain": "lengthwise",
+   "color": "#7F9473",
+   "markings": [
+    "Fold line across the middle = bag bottom",
+    "Mark side-seam stop {cas + turn + 1} from each top edge"
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "id": "g1",
+   "stage": "prep",
+   "title": "Press",
+   "text": "Press your fabric.",
+   "visual": {
+    "type": "template",
+    "name": "press",
+    "args": {
+     "tones": [
+      "main"
+     ],
+     "label": "press flat"
+    }
+   },
+   "techniques": [
+    "pressing"
+   ]
+  },
+  {
+   "id": "g2",
+   "stage": "cut",
+   "title": "Cut one rectangle",
+   "text": "Cut a single rectangle — it folds in half to make the front, bottom and back.",
+   "visual": {
+    "type": "layout",
+    "materialId": "main"
+   },
+   "pieces": [
+    "bag"
+   ]
+  },
+  {
+   "id": "g3",
+   "stage": "sew",
+   "title": "Sew the sides",
+   "text": "Fold the rectangle in half (the fold is the bottom), right sides together. Sew both sides with a 1 cm seam, starting at the fold and stopping at the mark below the top edge. Backstitch firmly at the stop.",
+   "visual": {
+    "type": "template",
+    "name": "sew",
+    "args": {
+     "tone": "main",
+     "sides": "lr",
+     "label": "fold = bottom · right sides together"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Seam allowance",
+     "value": "sa",
+     "unit": "len"
+    },
+    {
+     "label": "Stop below top edge",
+     "value": "cas + turn + 1",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "bag"
+   ],
+   "techniques": [
+    "seam-allowance",
+    "backstitching"
+   ]
+  },
+  {
+   "id": "g4",
+   "stage": "sew",
+   "title": "Press open and secure the openings",
+   "text": "Press both seams open, including the unsewn sections at the top. Stitch round each little opening to hold the allowances flat.",
+   "visual": {
+    "type": "template",
+    "name": "edgestitch",
+    "args": {
+     "tone": "main",
+     "label": "stitch round each side opening"
+    }
+   },
+   "pieces": [
+    "bag"
+   ],
+   "techniques": [
+    "pressing",
+    "topstitching"
+   ]
+  },
+  {
+   "id": "g5",
+   "stage": "sew",
+   "title": "Make the casing",
+   "text": "Press 1 cm to the wrong side all round the top, then another 2.5 cm. Stitch close to the lower fold, all the way round.",
+   "visual": {
+    "type": "template",
+    "name": "casing",
+    "args": {
+     "tone": "main",
+     "depth": "cas",
+     "insert": "none",
+     "gap": false
+    }
+   },
+   "measurements": [
+    {
+     "label": "First fold",
+     "value": "turn",
+     "unit": "len"
+    },
+    {
+     "label": "Casing",
+     "value": "cas",
+     "unit": "len"
+    }
+   ],
+   "pieces": [
+    "bag"
+   ],
+   "techniques": [
+    "casing"
+   ]
+  },
+  {
+   "id": "g6",
+   "stage": "assemble",
+   "title": "Thread the ribbons",
+   "text": "Turn the bag right side out. Thread one ribbon in at the left opening, all the way round, and out the same side. Thread the second from the right. Knot each pair of ends.",
+   "visual": {
+    "type": "template",
+    "name": "cord",
+    "args": {
+     "tone": "main",
+     "label": "one ribbon from each side"
+    }
+   },
+   "measurements": [
+    {
+     "label": "Each ribbon",
+     "value": "2*W + 20",
+     "unit": "len"
+    }
+   ],
+   "techniques": [
+    "casing"
+   ]
+  },
+  {
+   "id": "g7",
+   "stage": "finish",
+   "title": "Fill and pull closed",
+   "text": "Pull both ribbons in opposite directions to close the bag.",
+   "visual": {
+    "type": "gallery",
+    "index": 0,
+    "label": "Wrap it up"
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "label": "Bag",
+   "scene": {
+    "els": [
+     {
+      "k": "poly",
+      "pts": [
+       [
+        130,
+        80
+       ],
+       [
+        270,
+        80
+       ],
+       [
+        290,
+        270
+       ],
+       [
+        110,
+        270
+       ]
+      ],
+      "tone": "main"
+     },
+     {
+      "k": "stitch",
+      "pts": [
+       [
+        128,
+        100
+       ],
+       [
+        272,
+        100
+       ]
+      ]
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        200,
+        92
+       ],
+       [
+        180,
+        50
+       ],
+       [
+        160,
+        60
+       ]
+      ],
+      "color": "#C0583A"
+     },
+     {
+      "k": "cord",
+      "pts": [
+       [
+        200,
+        92
+       ],
+       [
+        222,
+        50
+       ],
+       [
+        244,
+        60
+       ]
+      ],
+      "color": "#C0583A"
+     }
+    ]
+   }
+  }
+ ],
+ "related": [
+  "drawstring-backpack",
+  "scrunchie"
+ ],
+ "review": {
+  "status": "published",
+  "technicallyValidated": false,
+  "reviewer": "SewCraft editorial (sample)",
+  "updated": "2026-11-14",
+  "note": "Sample pattern; dimensions are internally consistent but not yet test-sewn."
+ }
+}
